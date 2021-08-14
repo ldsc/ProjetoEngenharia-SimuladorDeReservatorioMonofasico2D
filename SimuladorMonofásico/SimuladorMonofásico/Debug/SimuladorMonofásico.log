@@ -1,0 +1,26 @@
+﻿  CMatrix.cpp
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(5,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(13,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(17,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(18,21): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(20,22): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(33,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(38,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(42,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(45,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(46,22): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(57,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(58,21): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(114,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(118,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(119,21): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(125,25): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(136,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(147,25): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CMatrix.cpp(156,20): warning C4018: '<': incompatibilidade de signed/unsigned
+  CSimulador.cpp
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CSimulador.cpp(252,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\source\repos\SimuladorMonofásico\SimuladorMonofásico\CSimulador.cpp(260,20): warning C4018: '<': incompatibilidade de signed/unsigned
+  main.cpp
+  Gerando Código...
+  SimuladorMonofásico.vcxproj -> C:\Users\nicholas\source\repos\SimuladorMonofásico\Debug\SimuladorMonofásico.exe
