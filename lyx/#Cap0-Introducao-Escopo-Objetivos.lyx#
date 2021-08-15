@@ -996,7 +996,7 @@ status open
 
 
 \backslash
-lfoot{Nicholas de Almeida Pinto & Kevin Alves Bartelega} 
+lfoot{SeuNomeAqui} 
 \backslash
 rfoot{
 \backslash
@@ -1154,9 +1154,9 @@ Objetivo geral:
 
 \begin_deeper
 \begin_layout Itemize
-Desenvolver projeto de engenharia de software baseado em simulação numérica
- implícita computacional para determinar o campo de pressões em um poço
- dentro de um reservatório estratigráfico de óleo ou gás.
+Desenvolver um software baseado em simulação numérica implícita computacional
+ para determinar o campo de pressões em um poço dentro de um reservatório
+ de óleo ou gás.
 \end_layout
 
 \begin_layout Itemize
@@ -1190,26 +1190,6 @@ Modelar física e matematicamente o problema.
 
 \begin_layout Itemize
 Modelagem estática por meio de diagramas com interface amigável.
-\end_layout
-
-\begin_layout Itemize
-Calcular Permeabilidade.
-\end_layout
-
-\begin_layout Itemize
-Calcular Transmissibilidade.
-\end_layout
-
-\begin_layout Itemize
-Calcular Matriz de Coeficientes.
-\end_layout
-
-\begin_layout Itemize
-Resolver sistema.
-\end_layout
-
-\begin_layout Itemize
-Calcular Pressões.
 \end_layout
 
 \begin_layout Itemize
