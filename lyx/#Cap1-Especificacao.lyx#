@@ -411,27 +411,174 @@ especificação
 \begin_layout Standard
 Deseja-se desenvolver um software com interface em modo texto que seja capaz
  de determinar o comportamento das pressões dentro de um poço.
+ O processo é governado pela Equação.
+ Será utilizada a modelagem numérica pela discretização em volumes finitos
+ e método implícito de Newton para resolução.
+ 
 \end_layout
 
 \begin_layout Standard
-O programa deve ler os dados a partir de um documento de texto de formato
- *.txt e a partir deles, calcular diversos parâmetros tais como permeabilidade
- relativas, transmissibilidade e por fim pressão.
+Na dinâmica de execução do software, o usuário deverá entrar com os dados
+ relativos ao fluido, à matriz da rocha, ao meio poroso, ao grid-2D, ao
+ simulador, os valores das permeabilidade das camadas estrátigrafocas, inserir
+ espessuras delas, dizer ao software quais camadas simular, bem como o tipo
+ de fluido presente no reservatório, se óleo ou gás.
+ Poderá optar-se também pela inserção dos dados em um documentode texto*.txt.
+ Dada a primeira ou segunda escolha, o software calcula diversos parâmetros
+ tais como permeabilidade relativas, transmissibilidade e por fim pressão.
 \end_layout
 
 \begin_layout Standard
-O usuario poderá, caso prefira, digitar os valores das permeabilidade das
- camadas estrátigrafocas manualmente, inserir espessuras delas, dizer ao
- software quais camadas simular, bem como dizer ao software qual o tipo
- de fluido presente no reservatório , se óleo ou gás.
- Vale destacar que as propriedades usuais de fluido (viscosidade, compressibilid
-ade), rocha (porosidade) e temperatura também podem ser alteradas.
+Os dados com as suas respectivas unidades estão listados abaixo:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dados relativos ao fluido:
 \end_layout
 
 \begin_layout Standard
-O software será desenvolvido utilizando o conceito de programação orientada
- a objeto e utilizará interface em modo texto.
- Irá plotar gráficos que serão gerados com um programa externo (gnuplot).
+\begin_inset Formula $k\;\;$
+\end_inset
+
+permeabilidade 
+\begin_inset Formula $\left[md\right]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho_{f}\;\;$
+\end_inset
+
+massa específica do fluido 
+\begin_inset Formula $\:\left[kg/m^{3}\right]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{pf}\;\;$
+\end_inset
+
+calor especíco à pressão constante do uido 
+\begin_inset Formula $\:\left[J/KgK\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dados relativos à matriz da rocha:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phi\;\;$
+\end_inset
+
+porosidade absoluta 
+\begin_inset Formula $\left[m^{3}/m^{3}\right]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dados relativos ao meio poroso:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T\;\;$
+\end_inset
+
+temperatura absoluta 
+\begin_inset Formula $\left[K\right]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\;\;$
+\end_inset
+
+pressão 
+\begin_inset Formula $\left[Pa\right]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dados relativos ao grid bidimensional:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dx\;\;$
+\end_inset
+
+intervalo de discretização na direção x 
+\begin_inset Formula $\left[m\right]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dy\;\;$
+\end_inset
+
+intervalo de discretização na direção y 
+\begin_inset Formula $\left[m\right]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dados relativos ao simulador:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dt\;\;$
+\end_inset
+
+intervalo de tempo 
+\begin_inset Formula $\left[s\right]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+Após a entrada de dados pelo usuário, o programa irá calcular as propriedades
+ o programa irá resolver a EDP discretizada com um método numérico, obtendo
+ uma solução numérica implícita para cada passo de tempo, isto é, uma distribuiç
+ão da pressões P(x; y; t), como função das coordenadas espaciais e temporais.
+\end_layout
+
+\begin_layout Standard
+O software então irá plotar gráficos que serão gerados com um programa externo
+ (gnuplot).
+ 
+\end_layout
+
+\begin_layout Standard
+Por fim, vale destacar que o software cuja interface será em modo texto,
+ será escrito na linguagem C++ com o paradigma de orientação ao objeto,
+ uma linguagem reconhecida por sua grande eciência e facilidade no reaproveitame
+nto de códigos desenvolvidos previamente.
 \end_layout
 
 \begin_layout Standard
@@ -477,6 +624,186 @@ coloque aqueles que fazem sentido para seu sistema
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="block" valignment="top">
+<column alignment="block" valignment="top" width="11.5cm">
+<row>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RF-01
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="2cm" alignment="block" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O usuário tem a liberdade de escolher todos os dados de entrada, mencionados
+ na seção 2.2.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RF-02
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O usuário pode obter a distribuição de pressão (x,y) para qualquer tempo
+ (t).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RF-03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O usuário pode modelar o processo de simulação escolhendo qual tipo de fluido,
+ bem como as camadas estratigráficas nas quais haverá fluxo.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RF-04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O usuário poderá plotar seus resultados em um gráfico.
+ O gráfico poderá ser salvo como imagem ou ter seus dados exportados como
+ texto.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+K - Abaixo comentarios originais
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -727,6 +1054,109 @@ O usuário poderá plotar seus resultados em um gráfico.
 
 \begin_layout Subsection
 Requisitos não funcionais
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RNF-01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Os cálculos devem ser feitos utilizando-se o método numérico implícito para
+ cada passo de tempo.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RNF-02
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O programa deverá ser multi-plataforma, podendo ser executado em 
+\emph on
+Windows
+\emph default
+, 
+\emph on
+GNU/Linux
+\emph default
+ ou 
+\emph on
+Mac
+\emph default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+K - Abaixo comentarios originais
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
