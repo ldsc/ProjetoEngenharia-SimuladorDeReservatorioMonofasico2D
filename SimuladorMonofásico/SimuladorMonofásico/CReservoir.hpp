@@ -19,7 +19,6 @@ private:
 	double p_i{350.0};			/// pressoa inicial
 	double S{ 0 };				/// fator de pelicula
 	double Temperature{353.15};	/// temperatura do reservatorio
-	double beta{ 3.1831588e+9 };	/// beta de Forchheimer
 
 	bool aquifer{false};		/// presenca de aquifero por fronteira de Neumann?
 	bool infVol{false};			/// presenca de aquifero por volume infinito?
@@ -43,7 +42,6 @@ public:
 	double get_p_i() { return p_i; }
 	double get_S(){ return S; }
 	double get_Temperature() { return Temperature; }
-	double get_beta() { return beta; }
 	bool get_aquifer() { return aquifer; }
 	bool get_infVol() { return infVol; }
 
