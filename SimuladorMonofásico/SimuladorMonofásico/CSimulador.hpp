@@ -6,7 +6,7 @@
 #include <iostream>
 #include <iomanip>
 #include <ctime>
-#include<fstream>
+#include <fstream>
 
 #include "CGas.hpp"
 #include "CWell.hpp"
@@ -47,5 +47,7 @@ private:
 	void plot(std::vector<double> time, std::vector<double> Pw);
 
 	bool isErrorNotAcceptable(double dt, std::vector<double> R, CGrid* grid, CProps* props_nu, double q, CDiscretization* discretization);
+
+	void read_data_and_start_objects(std::string nameFile);
 };
 #endif

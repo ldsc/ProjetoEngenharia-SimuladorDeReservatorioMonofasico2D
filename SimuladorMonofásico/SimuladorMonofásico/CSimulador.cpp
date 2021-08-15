@@ -1,16 +1,12 @@
 #include "CSimulador.hpp"
 
 CSimulador::CSimulador() {
-	well = new CWell;
-	reservoir = new CReservoir;
-
-	if (reservoir->isLiquid())
-		fluido = new CLiquido;
-	else
-		fluido = new CGas;
-	discretization = new CDiscretization;
-
-	grid = new CGrid(reservoir, discretization, well);
+	std::cout << "Nome do arquivo: ";
+	std::string nameFile;
+	nameFile = "input.dat";
+	std::cout << nameFile << std::endl;
+	//std::cin >> nameFile;
+	read_data_and_start_objects(nameFile);
 }
 
 void CSimulador::run() {
@@ -266,4 +262,73 @@ bool CSimulador::isErrorNotAcceptable(double dt, std::vector<double> R, CGrid* g
 
 	double biggestNR = abs(R[0] / q) > NR ? abs(R[0] / q) : NR;
 	return (MB > discretization->get_eps_MB() || biggestNR > discretization->get_eps_NR());
+}
+
+void CSimulador::read_data_and_start_objects(std::string nameFile) {
+	std::ifstream file(nameFile);
+
+	std::string text;
+	std::getline(file, text);
+	std::getline(file, text);
+	std::getline(file, text);
+	std::getline(file, text);
+	std::getline(file, text);
+	
+	/// Pegando as variaveis do Poco
+	std::getline(file, text); 
+
+	std::vector<double> tp;
+	std::vector<double> qsc;
+	std::vector<double> dz;
+	std::vector<double> partial;
+	double rw;
+
+	int periodos;
+	file >> text; file >> text;
+	periodos = std::stoi(text);
+
+	/// pego os valores dos tps
+	file >> text;
+	for (int i = 0; i < periodos; i++) {
+		file >> text;
+		tp.push_back(std::stof(text));
+	}
+	std::getline(file, text);
+
+	/// pego os valores dos qsc
+	file >> text;
+	for (int i = 0; i < periodos; i++) {
+		file >> text;
+		qsc.push_back(std::stof(text));
+	}
+	std::getline(file, text);
+
+	/// pego os valores do h e partial
+	file >> text; file >> text;
+	periodos = std::stoi(text);
+	std::getline(file, text);
+	std::getline(file, text);
+
+	for (int i = 0; i < periodos; i++) {
+		file >> text;
+		dz.push_back(std::stof(text));
+		file >> text; file >> text;
+		partial.push_back(std::stof(text));
+	}
+	/// rw
+	file >> text; file >> text;
+	rw = std::stof(text);
+	well = new CWell(tp, qsc, dz, partial, rw);
+	well->print();
+
+
+	reservoir = new CReservoir;
+
+	if (reservoir->isLiquid())
+		fluido = new CLiquido;
+	else
+		fluido = new CGas;
+	discretization = new CDiscretization;
+
+	grid = new CGrid(reservoir, discretization, well);
 }
