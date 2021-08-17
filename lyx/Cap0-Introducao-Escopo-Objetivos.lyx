@@ -873,7 +873,11 @@ DESENVOLVIMENTO DO SOFTWARE
 \begin_inset Newline newline
 \end_inset
 
-SIMULADOR 2D
+
+\size default
+SIMULADOR DE RESERVATÓRIO MONOFÁSICO 2D
+\size large
+
 \begin_inset Newline newline
 \end_inset
 
@@ -896,10 +900,6 @@ Versão 1:
 \end_inset
 
 NICHOLAS DE ALMEIDA PINTO
-\begin_inset Newline newline
-\end_inset
-
-Versão 2:
 \begin_inset Newline newline
 \end_inset
 
@@ -996,7 +996,7 @@ status open
 
 
 \backslash
-lfoot{Nicholas de Almeida Pinto & Kevin Alves Bartelega} 
+lfoot{Nicholas de Almeida Pinto e Kevin Alves Bartelega} 
 \backslash
 rfoot{
 \backslash
@@ -1006,61 +1006,24 @@ today}
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Substitua "SeuNomeAqui" por seu nome e sobrenome
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Jamais retire o 
-\backslash
-today ele vai colocar data no material impresso
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-No presente projeto de engenharia desenvolve-se o software SIMULADOR 2D,
- um código em linguagem orientada a objeto que tem como principal objetivo
- implementar as equações vistas nas disciplinas de Avaliação de Formações
- e Engenharia de Reservatórios.
+No presente projeto de engenharia desenvolve-se o software SIMULADOR DE
+ RESERVATÓRIO MONOFÁSICO 2D, um código em linguagem orientada a objeto que
+ tem como principal objetivo implementar as equações vistas nas disciplinas
+ de Avaliação de Formações e Engenharia de Reservatórios.
  
 \end_layout
 
 \begin_layout Standard
 Dessa forma, a principal finalidade do programa é fornecer o cálculo do
  campo de pressões em um dado poço de um reservatório de óleo ou de gás.
- Para isso, utilizou-se uma simulação numérica computacional baseado no
+ Para isso, utilizou-se uma simulação numérica computacional baseada no
  método dos volumes finitos.
  Este é uma ferramenta poderosa de resolução de equações diferenciais parciais
  a um determinado volume de meio contínuo baseado, por exemplo, na resolução
- de balanços de massa 
-\end_layout
-
-\begin_layout Standard
-/——Abaixo comentarios originais———/
-\end_layout
-
-\begin_layout Standard
-No presente projeto de engenharia desenvolve-se o software XXX, um software
- aplicado a engenharia de petróleo e que utiliza o paradigma da orientação
- a objetos.
-\end_layout
-
-\begin_layout Itemize
-O primeiro parágrafo da introdução pode ser um super resumo do trabalho.
- A ideia é fazer um resumo do resumo.
+ de balanços de massa.
 \end_layout
 
 \begin_layout Section
@@ -1088,49 +1051,12 @@ Em se tratando da Engenharia de Reservatórios, o foco do estudo é o próprio
 \end_layout
 
 \begin_layout Standard
-Portanto, o problema que se propõe a resolver é a falta ou escassez de conhecime
-nto acerca das pressões em um poço.
+Portanto, o problema que se propõe a resolver é simulação de poços com proprieda
+des distintas, para otimizar a produção no reservatório.
  De posse dela - ou de pelo menos um valor próximo estimado pelo software,
  seria possível, por exemplo, dimensionar equipamentos de fundo do poço,
  prever tempo produtivo e quantificação o volume de fluido de completação,
  por exemplo.
-\end_layout
-
-\begin_layout Standard
-/——Abaixo comentarios originais———/
-\end_layout
-
-\begin_layout Standard
-Segundo o CREA/CONFEA um dos quesitos fundamentais que diferenciam a atuação
- de um tecnólogo da atuação de um engenheiro é a capacidade de desenvolver
- um projeto em engenharia; Neste trabalho, desenvolve-se um projeto em engenhari
-a de software aplicado a solução de um problema específico de engenharia
- de petróleo.
- Trabalhando-se com todo ciclo de um projeto, isto é, especificação, elaboração,
- análise, projeto, desenvolvimento, teste e documentação.
- 
-\end_layout
-
-\begin_layout Itemize
-ESTE MODELO TEM TEXTOS EXPLICATVOS QUE DEVEM SER ELIMINADOS DA VERSÃO FINAL.
- O OBJETIVO DE COLOCAR AS EXPLICAÇÕES É FACILITAR O ENTENDIMENTO DO QUE
- DEVE ENTRAR EM CADA SEÇÃO.
-\end_layout
-
-\begin_layout Itemize
-Definir o escopo do projeto de engenharia, a ideia geral do software, acentuar
- sua importância, usos e aplicações em engenharia [de petróleo].
-\end_layout
-
-\begin_layout Itemize
-Delimitar o assunto.
- Situá-lo no tempo e no espaço.
- Situá-lo em relação a outros softwares.
-\end_layout
-
-\begin_layout Itemize
-Neste capítulo podem entrar figuras que ilustram a ideia geral, o detalhamento
- será feito depois, na elaboração.
 \end_layout
 
 \begin_layout Section
@@ -1155,23 +1081,8 @@ Objetivo geral:
 \begin_deeper
 \begin_layout Itemize
 Desenvolver projeto de engenharia de software baseado em simulação numérica
- implícita computacional para determinar o campo de pressões em um poço
+ implícita computacional para determinar a evolução da pressão em um poço
  dentro de um reservatório estratigráfico de óleo ou gás.
-\end_layout
-
-\begin_layout Itemize
-—————Abaixo comentarios originais—–
-\end_layout
-
-\begin_layout Itemize
-Descreva aqui o objetivo geral do projeto de engenharia, incluindo vínculos
- com engenharia de petróleo e com modelagem matemática computacional (ideia
- de lógica, algoritmos,...).
-\end_layout
-
-\begin_layout Itemize
-Desenvolver um projeto de engenharia de software para ...[.....descrever de forma
- clara, direta, objetiva, o objetivo geral do software].
 \end_layout
 
 \end_deeper
@@ -1222,42 +1133,6 @@ Simular para diferentes camadas estratigráficas rochosas.
 
 \begin_layout Itemize
 Gerar gráficos externos a partir do software externo Gnuplot..
-\end_layout
-
-\begin_layout Itemize
-—————Abaixo comentarios originais—–
-\end_layout
-
-\begin_layout Itemize
-Modelar física e matematicamente o problema.
-\end_layout
-
-\begin_layout Itemize
-Modelagem estática do software (diagramas de caso de uso, de pacotes, de
- classes).
-\end_layout
-
-\begin_layout Itemize
-Modelagem dinâmica do software (desenvolver algoritmos e diagramas exemplificand
-o os fluxos de processamento).
-\end_layout
-
-\begin_layout Itemize
-Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
-o, cada parte do software].
-\end_layout
-
-\begin_layout Itemize
-Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
-o, cada parte do software].
-\end_layout
-
-\begin_layout Itemize
-Simular (realizar simulações para teste do software desenvolvido).
-\end_layout
-
-\begin_layout Itemize
-Implementar manual simplificado de uso do software.
 \end_layout
 
 \end_deeper
