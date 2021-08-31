@@ -149,22 +149,90 @@ name "sec:Elaboração"
 
 \begin_layout Standard
 Depois da definição dos objetivos, da especificação do software e da montagem
- dos primeiros diagramas de caso de uso, a equipe de desenvolvimento do
- projeto de engenharia passa por um processo de elaboração que envolve o
- estudo de conceitos relacionados ao sistema a ser desenvolvido, a análise
- de domínio e a identificação de pacotes.
+ dos primeiros diagramas, neste capítulo será apresentada a elaboração,
+ que envolve o estudo de conceitos relacionados ao sistema a ser desenvolvido,
+ a análise de domínio e a identificação de pacotes.
+ Esse processo é feito atraves de pesquisas bibliográficas e entrevistas,
+ que nos mostram o que é necessário para a formulação do programa.
+\end_layout
+
+\begin_layout Standard
+Uma analise dos requisitos para o funcionamento do programa será feita para
+ se avaliar as condições necessárias para o desenvolvimento de um sistema
+ útil, que satisfaça as necessidades requeridas e que permita extensão futura.
+\end_layout
+
+\begin_layout Section
+Análise de domínio
+\end_layout
+
+\begin_layout Standard
+Após estudo dos requisitos/especificações do sistema, algumas entrevistas,
+ estudos na biblioteca e disciplinas do curso foi possível identificar nosso
+ domínio de trabalho:
+\end_layout
+
+\begin_layout Itemize
+Engenharia de Reservatórios: parte fundamental na qual esse projeto se sustenta.
+ O software desenvolvido, utiliza conceitos tais como de propriedades dos
+ fuídos , propriedades de rochas, a Equação de Balanço de Materiais (EBM).
+ Ele então aplicará todos esses conceitos na caracterização adicional do
+ reservatório e do poço o que permite a predição do comportamento de ambos
+ ao longo da produção.
+\end_layout
+
+\begin_layout Itemize
+A Simulação de Reservatórios é um ramo da na engenharia de reservatório.
+ Trata da utilização do desenvolvimento de simuladores, que por meio de
+ modelos matemáticos buscam prever o comportamento de um reservátorio de
+ petróleo e de seus poços associados.
+ Os simuladores podem ser do tipo black oil ou composicionais, no primeiro
+ o óleo é considerado uma substância só, e no segundo uma mistura de diversas
+ substâncias.
  
 \end_layout
 
-\begin_layout Standard
-Na elaboração fazemos uma análise dos requisitos, ajustando os requisitos
- iniciais de forma a desenvolver um sistema útil, que atenda às necessidades
- do usuário e, na medida do possível, permita seu reuso e futura extensão.
+\begin_layout Itemize
+Modelagem Numérica Computacional que desenvole modelos matemáticos para
+ a solução de um determinado problema físico e então parte para um o modelo
+ computacional por meio de algoritmos a fim de encontrar a solução do problema.
+ Utilizou-se conceitos matemáticos de Cálculo Numérico, vistos na primeira
+ parte do curso e aprimorados no ciclo profissionalizantes.
+ Neste software foi utiliados, por exemplo, o método numérico de Newton-Raphson.
 \end_layout
 
-\begin_layout Standard
-Eliminam-se os requisitos "impossíveis" e ajusta-se a idéia do sistema de
- forma que este seja flexível, considerando-se aspectos como custos e prazos.
+\begin_layout Itemize
+A Termodinâmica é uma área da física que estuda os efeitos de mudanças na
+ temperatura, pressão, volume e outras propriedades termodinâmicas de um
+ sistema.
+ Ela é extremamente importante no desenvolvimento de um simulador de reservatóri
+o pois os fluidos de um reservatório sofrem diversas alterações físicas
+ durante sua produção, sendo necessária uma boa modelagem termodinâmica
+ para entender como eles reagirão a estas alterações.
+\end_layout
+
+\begin_layout Itemize
+Álgebra linear e Cálculo Integral e Diferencial na resolução de sistemas
+ de matrizes e em cálculos de derivadas paraciais, Jacobianos, por exemplo.
+\end_layout
+
+\begin_layout Itemize
+Pacote Gráco: usar-se-á um pacote gráfico para plotar o comportamento da
+ pressão, por exemplo, ao longo do poço e do reservatório para que haja
+ uma melhor compreeensão e vizualização.
+\end_layout
+
+\begin_layout Itemize
+Software: Serão utilizadas métodos e funções já existentes para a resolução
+ de sistemas de matrizes.
+\end_layout
+
+\begin_layout Itemize
+Elaboração 3.1.
+ Analise de dominio 3.2.
+ Formulação teorica 3.3.
+ Identificacao de pacotes - assuntos 3.4.
+ Diagrama de Pacotes - assuntos
 \end_layout
 
 \begin_layout Section
@@ -187,7 +255,7 @@ A equação do escoamento monofásico em meios porosos e em coordenadas cilíndr
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\alpha_{c}\frac{\partial}{\partial t}\left(\phi b\right)=\beta_{c}\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{k_{r}b}{\mu}\delta\frac{\partial p}{\partial r}\right)+\beta_{c}\frac{\partial}{\partial z}\left(\frac{k_{z}b}{\mu}\frac{\partial p}{\partial z}\right)+q_{sc}\label{eq:escoamento_monofasico}
+\alpha_{c}\frac{\partial}{\partial t}\left(\phi b\right)=\beta_{c}\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{k_{r}b}{\mu}\frac{\partial p}{\partial r}\right)+\beta_{c}\frac{\partial}{\partial z}\left(\frac{k_{z}b}{\mu}\frac{\partial p}{\partial z}\right)+q_{sc}\label{eq:escoamento_monofasico}
 \end{equation}
 
 \end_inset
@@ -250,13 +318,6 @@ onde:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\delta$
-\end_inset
-
- é o fator de correção de Forchheimer;
-\end_layout
-
-\begin_layout Itemize
 \begin_inset Formula $q_{sc}$
 \end_inset
 
@@ -301,7 +362,7 @@ onde a transmissibilidade
  é definida por:
 \begin_inset Formula 
 \begin{equation}
-T_{i\pm\frac{1}{2},j}=G_{i\pm\frac{1}{2},j}\left(\delta\frac{b}{\mu}\right)_{i\pm\frac{1}{2},j}
+T_{i\pm\frac{1}{2},j}=G_{i\pm\frac{1}{2},j}\left(\frac{b}{\mu}\right)_{i\pm\frac{1}{2},j}
 \end{equation}
 
 \end_inset
@@ -312,7 +373,7 @@ T_{i\pm\frac{1}{2},j}=G_{i\pm\frac{1}{2},j}\left(\delta\frac{b}{\mu}\right)_{i\p
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-T_{i,j\pm\frac{1}{2}}=G_{i,j\pm\frac{1}{2}}\left(\delta\frac{b}{\mu}\right)_{i,j\pm\frac{1}{2}}
+T_{i,j\pm\frac{1}{2}}=G_{i,j\pm\frac{1}{2}}\left(\frac{b}{\mu}\right)_{i,j\pm\frac{1}{2}}
 \end{equation}
 
 \end_inset
@@ -660,7 +721,7 @@ onde
 \begin_inset Formula $T$
 \end_inset
 
- é uma matriz esparsa penta diagonal não homogênea.
+ é uma matriz não homogênea.
 \end_layout
 
 \begin_layout Standard
@@ -714,6 +775,185 @@ H_{i,j}=\frac{\alpha_{c}V_{i,j}}{\Delta t}\left[\left(\phi b\right)_{i,j}^{n+1}-
 
 \begin_layout Subsection
 Jacobiano
+\end_layout
+
+\begin_layout Standard
+Para resolver esse sistema linear, foi utilizado o método de Newton-Raphson.
+ Esse método requer uma solução iterativa, por meio da equação abaixo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+J^{\left(\nu\right)}P^{\nu+1}=-R^{\left\{ \left(\nu\right)\right\} }
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+J=\left[\frac{\partial R_{i,j}}{\partial p_{i,j}}\right]_{nr*nz\,x\,nr*nz}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O 
+\begin_inset Formula $J$
+\end_inset
+
+ também pode ser calculado como:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+J=T+\tau-\eta
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+sendo 
+\begin_inset Formula $T$
+\end_inset
+
+ a matriz de transmissibilidades, 
+\begin_inset Formula $\tau$
+\end_inset
+
+ a derivada dos termos de fluxo e 
+\begin_inset Formula $\eta$
+\end_inset
+
+ as derivadas do termo de acúmulo.
+ Abaixo a equação para 
+\begin_inset Formula $\eta$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\eta_{i,j}=\frac{\alpha_{c}V_{b_{i,j}}}{\Delta t}\left(\phi_{i,j}\frac{\partial b_{i,j}}{\partial p_{i,j}}+b_{i}\frac{\partial\phi_{i,j}}{\partial p_{i,j}}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\eta=\left[\begin{array}{cccccccccc}
+0\\
+ & \eta_{1}\\
+ &  & \eta_{2}\\
+ &  &  & \eta_{3}\\
+ &  &  &  & \eta_{4}\\
+ &  &  &  &  & \eta_{5}\\
+ &  &  &  &  &  & \eta_{6}\\
+ &  &  &  &  &  &  & \eta_{7}\\
+ &  &  &  &  &  &  &  & \eta_{8}\\
+ &  &  &  &  &  &  &  &  & \eta_{9}
+\end{array}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tau_{i\pm\frac{1}{2},j}=\frac{\partial T_{i\pm\frac{1}{2},j}}{\partial p_{i\pm1,j}}\left(p_{i\pm1,j}-p_{i,j}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tau_{i,j\pm\frac{1}{2}}=\frac{\partial T_{i,j\pm\frac{1}{2}}}{\partial p_{i,j\pm1}}\left(p_{i,j\pm1}-p_{i,j\pm1}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{cccc}
+\tau_{i,j} & = & G_{i-1,j}\frac{\left(1-\varOmega\right)}{\mu_{i-\frac{1}{2},j}}\left[\frac{\partial b_{i,j}}{\partial p_{i,j}}-\left(\frac{b}{\mu}\right)_{i-\frac{1}{2},j}\frac{\partial\mu_{i,j}}{\partial p_{i,j}}\right]\left(p_{i-1,j}-p_{i,j}\right) & +\\
+ & + & G_{i+\frac{1}{2},j}\frac{\varOmega}{\mu_{i+\frac{1}{2},j}}\left[\frac{\partial b_{i}}{\partial p_{i}}-\left(\frac{b}{\mu}\right)_{i+\frac{1}{2},j}\frac{\partial\mu_{i,j}}{\partial p_{i,j}}\right]\left(p_{i+1,j}-p_{i,j}\right) & +\\
+ & + & G_{i,j-\frac{1}{2}}\left[\frac{\left(\mu_{i,j-1}+\mu_{i,j}\right)\frac{\partial b_{i,j}}{\partial p_{i,j}}+\left(b_{i,j-1}+b_{i,j}\right)\frac{\partial\mu_{i,j}}{\partial p_{i,j}}}{\left(\mu_{i,j-1}+\mu_{i,j}\right)^{2}}\right]\left(p_{i,j-1}-p_{i,j}\right) & +\\
+ & + & G_{i,j+\frac{1}{2}}\left[\frac{\left(\mu_{i,j+1}+\mu_{i,j}\right)\frac{\partial b_{i,j}}{\partial p_{i,j}}+\left(b_{i,j+1}+b_{i,j}\right)\frac{\partial\mu_{i,j}}{\partial p_{i,j}}}{\left(\mu_{i,j+1}+\mu_{i,j}\right)^{2}}\right]\left(p_{i,j+1}-p_{i,j}\right)
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As derivadas das transmissibilidades são:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial T_{i-\frac{1}{2},j}}{\partial p_{i-1,j}}=G_{i-1,j}\frac{\left(1-\varOmega\right)}{\mu_{i-\frac{1}{2},j}}\left[\frac{\partial b_{i-1,j}}{\partial p_{i-1,j}}-\left(\frac{b}{\mu}\right)_{i-\frac{1}{2},j}\frac{\partial\mu_{i-1,j}}{\partial p_{i-1,j}}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial T_{i+\frac{1}{2},j}}{\partial p_{i+1,j}}=G_{i+\frac{1}{2},j}\frac{\varOmega}{\mu_{i+\frac{1}{2},j}}\left[\frac{\partial b_{i+1,j}}{\partial p_{i+1,j}}-\left(\frac{b}{\mu}\right)_{i+\frac{1}{2},j}\frac{\partial\mu_{i+1,j}}{\partial p_{i+1,j}}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial T_{i,j\pm\frac{1}{2}}}{\partial p_{i,j\pm1}}=G_{i,j\pm\frac{1}{2}}\left[\frac{\left(\mu_{i,j+1}+\mu_{i,j}\right)\frac{\partial b_{i,j\pm1}}{\partial p_{i,j\pm1}}+\left(b_{i,j+1}+b_{i,j}\right)\frac{\partial\mu_{i,j\pm1}}{\partial p_{i,j\pm1}}}{\left(\mu_{i,j+1}+\mu_{i,j}\right)^{2}}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resultando em uma matriz com aparência igual ao da Transmissibilidade.
 \end_layout
 
 \begin_layout Standard
@@ -837,7 +1077,7 @@ Talvez o aspecto mais importante da elaboração seja o contato com o cliente.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -880,37 +1120,6 @@ literal "true"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Análise de domínio
-\end_layout
-
-\begin_layout Standard
-Após estudo dos requisitos/especificações do sistema, algumas entrevistas,
- estudos na biblioteca e disciplinas do curso foi possível identificar nosso
- domínio de trabalho:
-\end_layout
-
-\begin_layout Itemize
-Definição e caracterização do domínio a ser investigado 
-\end_layout
-
-\begin_layout Itemize
-Descrição das áreas/disciplinas relacionadas.
-\end_layout
-
-\begin_layout Itemize
-Descrição de questões associadas a espaço/tempo (espaço físico, local, instalaçã
-o).
-\end_layout
-
-\begin_layout Itemize
-Fotografias de sistemas equivalentes/parecidos.
-\end_layout
-
-\begin_layout Itemize
-...
 \end_layout
 
 \begin_layout Section
