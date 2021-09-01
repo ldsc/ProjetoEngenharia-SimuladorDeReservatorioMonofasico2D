@@ -167,9 +167,9 @@ Análise de domínio
 \end_layout
 
 \begin_layout Standard
-Após estudo dos requisitos/especificações do sistema, algumas entrevistas,
- estudos na biblioteca e disciplinas do curso foi possível identificar nosso
- domínio de trabalho:
+Após estudo dos requisitos/especificações do sistema, leitura de artigos
+ recomendados e disciplinas do curso foi possível identificar nosso domínio
+ de trabalho no desenvolvimento do simulador.
 \end_layout
 
 \begin_layout Itemize
@@ -236,11 +236,53 @@ Elaboração 3.1.
 \end_layout
 
 \begin_layout Section
-Fluxo monofásico
+Formulação teórica
+\end_layout
+
+\begin_layout Standard
+O petróleo é uma das matérias-primas mais importantes utilizadas pelo homem.
+ Infelizmente, os reservatórios rasos estão quase todos esgotados ou possuem
+ óleos de baixa qualidade, sendo necessária a extração em altas profundidades
+ e em reservatórios de geometria e propriedades complexas.
+\end_layout
+
+\begin_layout Standard
+Nesse contexto, os métodos de recuperação secundária e avançada são as ferrament
+as mais empregadas para otimizar a produção.
+ As jazidas de petróleo possuem uma quantidade de energia, denominada energia
+ primária, na época de sua descoberta, determinada pelas condições de pressão
+ e temperatura e pela natureza dos fluidos existentes.
+ Porém, à medida que os fluidos são produzidos, parte dessa energia primária
+ é dissipada e o efeito reflete-se principalmente no decréscimo da pressão
+ do reservatório e consequente redução da produtividade dos poços.
+\end_layout
+
+\begin_layout Standard
+Para minorar os efeitos do decréscimo da pressão e obter ótimas porcentagens
+ de recuperação, são utilizados métodos de recuperação avançados, como injeção
+ de água, gases, solventes, etc.
+ Mas somente injetar fluidos em poços próximos ao produtor não é suficiente
+ para maximizar a extração, é necessário também saber onde, quando, quanto
+ e quais devem ser as propriedades do fluido a ser injetado.
+ Para isto, são realizados, entre outros, testes de pressão, que permitem
+ identificar ou caracterizar o sistema fluido/rocha de cada reservatório.
+ Para a interpretação destes testes é necessário o desenvolvimento de um
+ modelo teórico que descreva o escoamento dos fluidos no reservatório.
+\end_layout
+
+\begin_layout Standard
+Em determinadas situações é factível resolver analiticamente as equações
+ do modelo, porém, estes casos se limitam com frequência ao escoamento monofásic
+o, regido por equações diferenciais lineares.
+ Em casos mais complexos, como a injeção de fluidos alheios ao reservatório,
+ possivelmente com diferentes temperaturas, a complexidade matemática do
+ modelo não permite a sua solução analítica.
+ Nestas situações, as equações diferenciais do modelo são resolvidas utilizando
+ métodos numéricos.
 \end_layout
 
 \begin_layout Subsection
-Formulação matemática
+Fluxo monofásico
 \end_layout
 
 \begin_layout Standard
@@ -956,370 +998,63 @@ As derivadas das transmissibilidades são:
 Resultando em uma matriz com aparência igual ao da Transmissibilidade.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-Abaixo original
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-O que é a análise de domínio
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Análise de domínio
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Análise-de-domínio"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Esta parte deve ser apagada na versão final; serve apenas como lembrete
- dos itens que vocês precisam considerar
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A análise de domínio é uma parte da elaboração; seu objetivo é entender
- o domínio, a abrangência do sistema a ser desenvolvido.
- Envolve itens como estimar o reuso do sistema.
- Neste ponto, o analista pensa no sistema de uma forma mais genérica, identifica
-ndo conceitos fundamentais que podem ser reaproveitados em outros sistemas.
- 
-\end_layout
-
-\begin_layout Itemize
-Estudo dos requisitos/especificações do sistema.
-\end_layout
-
-\begin_layout Itemize
-Definição e caracterização do domínio a ser investigado (área dos softwares
- e bibliotecas a serem investigadas).
- Uma boa maneira de identificar os assuntos relacionados ao sistema que
- está sendo desenvolvido é dar uma olhada nos livros, manuais e artigos
- da área.
-\end_layout
-
-\begin_layout Itemize
-Manter contato com especialistas que tenham domínio dos conceitos envolvidos.
- Segundo 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "prog-UML-MartimFowler"
-literal "true"
-
-\end_inset
-
-, estas pessoas "devem ser abertas, ter bastante conhecimento prático e
- estar disponíveis para perguntas".
-\end_layout
-
-\begin_layout Itemize
-Deve-se fazer entrevistas com os usuários do sistema (para detalhamento
- dos diagramas de caso de uso).
-\end_layout
-
-\begin_layout Itemize
-Identificação de amostras (instalar e testar softwares e bibliotecas similares).
-\end_layout
-
-\begin_layout Itemize
-Na elaboração deve-se analisar a possibilidade de se reaproveitar projetos
- antigos (sistemas existentes etc).
- Procurar as classes em bibliotecas existentes antes de implementá-las 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "prog-EngSof-Pressman"
-literal "true"
-
-\end_inset
-
-.
- Se a equipe de desenvolvimento já tem experiência com alguns sistemas,
- isto deve ser considerado.
- A idéia é reaproveitar o conhecimento legado.
-\end_layout
-
-\begin_layout Itemize
-Identificação e definição dos objetos genéricos (a serem reutilizados).
-\end_layout
-
-\begin_layout Standard
-Talvez o aspecto mais importante da elaboração seja o contato com o cliente.
- Quando o cliente/usuário tem uma noção básica de como o sistema é desenvolvido,
- ele passa a fazer solicitações que serão mais facilmente implementadas.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../imagens/AnaliseDeDominio.png
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Elaboração e análise de domínio
-\begin_inset CommandInset label
-LatexCommand label
-name "cap:Análise-de-domínio."
-
-\end_inset
-
- (adaptado de 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "prog-EngSof-Pressman"
-literal "true"
-
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Formulação teórica
-\end_layout
-
-\begin_layout Standard
-...coloque aqui texto explicando a formulação física-matemática, a descrição
- das equações que serão utilizadas...
-\end_layout
-
-\begin_layout Standard
-...aqui entram figuras, tabelas explicativas, equações a serem utilizadas no
- software...
-\end_layout
-
-\begin_layout Standard
-...logo depois, com os dados levantados na análise de domínio, e esta formulação
- teórica, iremos identificar os pacotes, os assuntos com os quais iremos
- trabalhar...
-\end_layout
-
-\begin_layout Standard
-...
- no final da formulação teórica, indicar livros e artigos que tem mais informaçã
-o sobre o assunto...
-\end_layout
-
-\begin_layout Standard
-...se vai usar modelos numéricos, colocar seção 3.3.x falando deles; no final
- citar/referenciar fontes...
-\end_layout
-
-\begin_layout Section
-O que é identificação de pacotes
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Identificação de pacotes
-\end_layout
-
-\end_inset
-
- – assuntos
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Identificação-de-pacotes"
-
-\end_inset
-
-
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Assuntos
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Esta parte deve ser apagada na versão final; serve apenas como lembrete
- dos itens que vocês precisam considerar
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Um assunto é aquilo que é tratado ou abordado em uma discussão, em um estudo
- e é utilizado para orientar o leitor em um modelo amplo e complexo.
-\end_layout
-
-\begin_layout Itemize
-Se um grupo de classes troca muitas informações entre si, provavelmente
- as classes fazem parte de um mesmo assunto.
- Assim, classes que se relacionam por meio de conceitos em comum fazem parte
- de uma mesma área, são reunidas e formam um assunto (pacote).
-\end_layout
-
-\begin_layout Itemize
-Em um pacote, os nomes de classes e de associações devem ser semelhantes.
- 
-\end_layout
-
-\begin_layout Itemize
-Preste atenção a semelhanças na forma.
- Procedimentos semelhantes indicam polimorfismo e são candidatos a superclasses.
- Usualmente a classe mais genérica de uma hierarquia de classes identifica
- um assunto.
- 
-\end_layout
-
 \begin_layout Section
 Identificação de pacotes – assuntos
 \end_layout
 
 \begin_layout Standard
-...aqui...
+A partir da analise dos modelos apresentados, pode-se identicar os seguintes
+ assuntos/ pacotes:
 \end_layout
 
 \begin_layout Itemize
-Nome Pacote: Descrição.
- O que é, para que serve, como se relaciona com os demais pacotes.
+Engenharia de Reservatórios: este pacote recebe arquivos digitados pelo
+ usuário ou os lê de um arquivo de extensão .txt.
+ Nele, os dados se separam, de acordo com suas característica: rocha, fluido,
+ aquífero, dados de produção, dados de injeção.
+ Quando juntas fornecem uma caracterização do reservatório como um todo
+ e servem de base para os cálculos da simulação.
 \end_layout
 
 \begin_layout Itemize
-Nome Pacote: Descrição.
- O que é, para que serve, como se relaciona com os demais pacotes.
+Simulador: Relaciona os pacotes, sendo responsavel pela criação e destruição
+ de objetos, assim como interagir com o usuário através de um interface
+ via texto para denir todas ações a serem tomadas.
 \end_layout
 
 \begin_layout Itemize
-Nome Pacote: Descrição.
- O que é, para que serve, como se relaciona com os demais pacotes.
+Modelagem Numérica Computacional: contém os algoritmos matemáticos necessários
+ para a solução do modelo do simulador, como por exemplo, o Método de Newton-Rap
+hson.
+ Este pacote está separado do simulador, pois um dos objetivos da AOO é
+ ter uma maior reusabilidade do código, assim, estando separados, é possível
+ aplicar este mesmo pacote para outros problemas de engenharia, como por
+ exemplo o de análise de teste de pressão.
 \end_layout
 
-\begin_layout Section
-O que é o diagrama de pacotes
-\emph on
-
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Diagrama de pacotes
+\begin_layout Itemize
+Termodinâmica: pacote que envolve todos os conceitos físicos (efeitos de
+ mudanças na temperatura, pressão, volume e outras propriedades termodinâmicas
+ de um sistema) sendo necessário no desenvolvimento de um simulador de reservató
+rio devido ao dinamismo do comportamento dos fluidos.
 \end_layout
 
-\end_inset
-
-
-\emph default
- – assuntos
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-assuntos
+\begin_layout Itemize
+Álgebra linear e Cálculo Integral e Diferencial: pacote com deduções matématicas
+, teoremas, e e deduções que são a base de todo o processo.
 \end_layout
 
-\end_inset
-
-
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-módulos
+\begin_layout Itemize
+Pacote Gráco: é um pacote que utiliza o gnuplot para plotar as soluções
+ numéricas obtidas, isto é, as distribuições de pressão.
+ Em outras palavras, é o software gnuplot que implementa a saída gráfica
+ dos dados calculados.
 \end_layout
 
-\end_inset
-
-
-\emph on
-
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Diagrama de pacotes (assuntos)
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:diagrama de assuntos-pacotes"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Um diagrama de pacotes é útil para mostrar as dependências entre as diversas
- partes do sistema; pode incluir: sistemas, subsistemas, hierarquias de
- classes, classes, interfaces, componentes, nós, colaborações e casos de
- uso.
-\end_layout
-
-\begin_layout Standard
-O exemplo da Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Diagrama-de-Pacotes"
-
-\end_inset
-
- apresenta um diagrama de pacotes para um sistema de métodos numéricos.
- Observe que o diagrama de pacotes inclui um pacote bibliotecas, o qual
- é dividido em bibliotecas matemáticas, de estatística e de simulação.
- A seguir o componente biblioteca de simulação será detalhado.
- 
+\begin_layout Itemize
+Biblioteca: Serão utilizadas métodos e funções já existentes para a resolução
+ de sistemas de matrizes, bibliotecas padrão de C++ tais como (STL) e biblioteca
+s como a iostream, iomanip, etc.
 \end_layout
 
 \begin_layout Section
@@ -1327,19 +1062,18 @@ Diagrama de pacotes – assuntos
 \end_layout
 
 \begin_layout Standard
-...aqui...
-\end_layout
-
-\begin_layout Standard
-coloque aqui texto falando do diagrama de pacotes, referencie a figura.
- Veja Figura 
+O diagrama de pacotes da Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagrama-de-Pacotes"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-.
+ mostra as relações existentes entre os pacotes deste software.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1351,8 +1085,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/AnaliseDeDominio.png
-	width 100text%
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Pacotes.eps
+	lyxscale 80
+	scale 50
+	rotateAngle 90
 
 \end_inset
 
@@ -1363,7 +1099,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de Pacotes
+Diagrama de Pacotes.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Diagrama-de-Pacotes"
