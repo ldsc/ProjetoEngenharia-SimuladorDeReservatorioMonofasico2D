@@ -900,6 +900,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../imagens/DiagCasoDeUso-AnaliseDosResultados.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -936,10 +937,20 @@ Diagrama de caso de uso específico
 \end_layout
 
 \begin_layout Standard
-O diagrama de caso de uso especíco descrito na Figura 
+Os diagramas de casos de uso específicos estão descritos nas Figuras 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "cap:Diagrama-caso-uso-geral"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-caso-de-uso-especifico:Titulo-1"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -950,24 +961,16 @@ reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
 
 \end_inset
 
- é detalhado na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
-
-\end_inset
-
  Ele mostra a interação usuário-software para calcular a pressão no reservatório
  e no poço usando o método numérico implícito.
- Nesse caso de uso especíco (4 etapas), o usuário insere os dados de entrada,
- escolhe o tipo de fluido (líquido), monta o poço (camadas estratigráficas
- com fluxo), propriedades do meio poroso, executa o software, gera gráficos
- e por fim, analisará os resultados (eventualmente gerará gráficos com os
- resultados obtidos utilizando um sistema externo, como o software 
-\emph on
-gnuplot
-\emph default
-).
+ 
+\end_layout
+
+\begin_layout Standard
+No primeiro caso de uso específico, ou sub caso, mostra-se as possibilidades
+ de se simular o software com fluido ora líquido ora gás, e penetração do
+ poço parcial ou total.
+ Entende-se por penetração as áreas abertas ao fluxo adjacentes ao poço.
 \end_layout
 
 \begin_layout Standard
@@ -979,7 +982,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/DiagCasoDeUso-AnaliseDosResultados-Especifico.png
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/DiagCasoDeUso-AnaliseDosResultados-Especifico1.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -995,6 +999,57 @@ Diagrama de caso de uso específico – Título
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Já no segundo caso de uso especíco (4 etapas), o usuário optou por simular
+ um líquido com penetração parcial.
+ Assim, insere os dados de entrada, define zonas de lfuxo no poço, executa
+ a simulação.
+ Depois disso, o software, gera gráficos e por fim, o usuário analisa os
+ resultados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/DiagCasoDeUso-AnaliseDosResultados-Especifico2.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de caso de uso específico – Título
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-caso-de-uso-especifico:Titulo-1"
 
 \end_inset
 

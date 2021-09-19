@@ -151,10 +151,6 @@ filename "Cap2-Elaboracao.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 \align block
 \begin_inset CommandInset include
 LatexCommand include
@@ -164,6 +160,10 @@ filename "Cap3-AnaliseOrientadaAObjeto.lyx"
 
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
 \align block
