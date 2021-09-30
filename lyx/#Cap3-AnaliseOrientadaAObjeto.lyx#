@@ -770,13 +770,13 @@ calculando a distribuição de pressão
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_de_Atividades.eps
-	lyxscale 50
+	filename ../imagens/DiagAtividade-MetodoArea.png
+	lyxscale 85
 	width 100text%
 
 \end_inset
