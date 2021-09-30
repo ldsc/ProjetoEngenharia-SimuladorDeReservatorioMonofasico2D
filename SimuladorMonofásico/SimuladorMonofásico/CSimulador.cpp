@@ -281,7 +281,6 @@ void CSimulador::read_data_and_start_objects(std::string nameFile) {
 	std::vector<double> qsc;
 	std::vector<double> dz;
 	std::vector<double> partial;
-	double rw;
 
 	int periodos;
 	file >> text; file >> text;
@@ -315,20 +314,95 @@ void CSimulador::read_data_and_start_objects(std::string nameFile) {
 		file >> text; file >> text;
 		partial.push_back(std::stof(text));
 	}
-	/// rw
+
 	file >> text; file >> text;
-	rw = std::stof(text);
+	double rw = std::stof(text);
 	well = new CWell(tp, qsc, dz, partial, rw);
-	well->print();
 
+	///
+	/// RESERVOIR
+	///
+	std::getline(file, text);	std::getline(file, text); std::getline(file, text);
+	file >> text; file >> text;
+	bool isLiquid = std::stoi(text);
 
-	reservoir = new CReservoir;
+	file >> text; file >> text;
+	double re = std::stof(text); std::getline(file, text);
 
+	file >> text; file >> text;
+	double theta = std::stof(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	double k0r = std::stof(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	double k0z = std::stof(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	double cphi = std::stof(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	double phi0 = std::stof(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	double p0 = std::stof(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	double p_i = std::stof(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	double S = std::stof(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	double Temperature = std::stof(text); std::getline(file, text);
+
+	reservoir = new CReservoir(isLiquid, rw, re, dz, theta, k0r, k0z, cphi, phi0, p0, p_i, S, Temperature);
+
+	///
+	/// DISCRETIZACAO
+	/// 
+	std::getline(file, text); std::getline(file, text);
+	int nz = dz.size();
+
+	file >> text; file >> text;
+	int nr = std::stoi(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	int nrs = std::stoi(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	int nt = std::stoi(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	int ntp = std::stoi(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	int max_iter = std::stoi(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	double dtmin = std::stof(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	double eps_NR = std::stof(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	double eps_MB = std::stof(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	double Ac = std::stof(text); std::getline(file, text);
+
+	file >> text; file >> text;
+	double Bc = std::stof(text); std::getline(file, text);
+
+	discretization = new CDiscretization(nz, nr, nrs, nt, ntp, max_iter, dtmin, eps_NR, eps_MB, Ac, Bc);
+
+	/// 
+	/// FLUID
+	/// 
 	if (reservoir->isLiquid())
 		fluido = new CLiquido;
 	else
 		fluido = new CGas;
-	discretization = new CDiscretization;
 
 	grid = new CGrid(reservoir, discretization, well);
 }

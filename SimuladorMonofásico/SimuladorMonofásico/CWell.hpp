@@ -14,6 +14,7 @@ private:
 	double rw{ 0.09486 };					/// raio do poco [m]
 
 public:
+	CWell() {}
 	CWell(std::vector<double> _tp, std::vector<double> _qsc, std::vector<double> _dz, std::vector<double> _partial, double _rw) : tp{ _tp }, qsc{ _qsc }, dz{ _dz }, partial{ _partial }, rw{ _rw }{}
 	std::vector<double> get_tp() { return tp; }
 	std::vector<double> get_qsc() { return qsc; }

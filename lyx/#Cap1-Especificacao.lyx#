@@ -358,8 +358,9 @@ Componentes principais
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sistema para cálculos da distribuição de pressão em um poço em função das
- coordenadas espaço-temporais, utilizando método numérico implícito
+Sistema para cálculos da distribuição de pressão em um poço/reservatório
+ em função das coordenadas espaço-temporais, utilizando método numérico
+ implícito
 \end_layout
 
 \end_inset
@@ -421,11 +422,11 @@ Deseja-se desenvolver um software com interface em modo texto que seja capaz
 Na dinâmica de execução do software, o usuário deverá entrar com os dados
  relativos ao fluido, à matriz da rocha, ao meio poroso, ao grid-2D, ao
  simulador, os valores das permeabilidade das camadas estrátigrafocas, inserir
- espessuras delas, dizer ao software quais camadas simular, bem como o tipo
- de fluido presente no reservatório, se óleo ou gás.
+ espessuras delas, dizer ao software quais camadas estão abertas à produção,
+ bem como o tipo de fluido presente no reservatório, se óleo ou gás.
  Poderá optar-se também pela inserção dos dados em um documentode texto*.txt.
- Dada a primeira ou segunda escolha, o software calcula diversos parâmetros
- tais como permeabilidade relativas, transmissibilidade e por fim pressão.
+ Dada a primeira ou segunda escolha, o software calcula suas propriedades
+ termo-físicas e, por fim, apresenta a pressão no poço e no reservatório.
 \end_layout
 
 \begin_layout Standard
@@ -563,9 +564,10 @@ intervalo de tempo
 
 \begin_layout Standard
 Após a entrada de dados pelo usuário, o programa irá calcular as propriedades
- o programa irá resolver a EDP discretizada com um método numérico, obtendo
- uma solução numérica implícita para cada passo de tempo, isto é, uma distribuiç
-ão da pressões P(x; y; t), como função das coordenadas espaciais e temporais.
+ do fluido escolhido, e irá resolver a EDP discretizada com um método numérico,
+ obtendo uma solução numérica implícita para cada passo de tempo, isto é,
+ uma distribuição da pressões P(r; z; t), como função das coordenadas espaciais
+ e temporais.
 \end_layout
 
 \begin_layout Standard
@@ -577,8 +579,8 @@ O software então irá plotar gráficos que serão gerados com um programa exter
 \begin_layout Standard
 Por fim, vale destacar que o software cuja interface será em modo texto,
  será escrito na linguagem C++ com o paradigma de orientação ao objeto,
- uma linguagem reconhecida por sua grande eciência e facilidade no reaproveitame
-nto de códigos desenvolvidos previamente.
+ uma linguagem reconhecida por sua grande eficiência e facilidade no reaproveita
+mento de códigos desenvolvidos previamente.
 \end_layout
 
 \begin_layout Standard
@@ -688,7 +690,7 @@ RF-02
 \begin_inset Text
 
 \begin_layout Plain Layout
-O usuário pode obter a distribuição de pressão (x,y) para qualquer tempo
+O usuário pode obter a distribuição de pressão (r,z) para qualquer tempo
  (t).
 \end_layout
 
@@ -771,7 +773,91 @@ RF-04
 \begin_inset Text
 
 \begin_layout Plain Layout
-O usuário poderá plotar seus resultados em um gráfico.
+Deve permitir o carregamento de arquivos criados pelo software.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RF-05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Deve mostrar os resultados na tela.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RF-06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O usuário poderá plotar seus resultados de simulação em gráficos.
  O gráfico poderá ser salvo como imagem ou ter seus dados exportados como
  texto.
 \end_layout

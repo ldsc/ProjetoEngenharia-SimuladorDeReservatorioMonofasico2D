@@ -17,6 +17,9 @@ private:
 	double Bc{ 0.0083621472 };		/// constante de conversao de unidades fluxo (ANP)
 
 public:
+	CDiscretization() {}
+	CDiscretization(int _nz, int _nr, int _nrs, int _nt, int _ntp, int _max_iter, double _dtmin, double _eps_NR, double _eps_MB, double _Ac, double _Bc):
+		nz{ _nz }, nr{ _nr }, nrs{ _nrs }, nt{ _nt }, ntp{ _ntp }, max_iter{ _max_iter }, dtmin{ _dtmin }, eps_NR{ _eps_NR }, eps_MB{ _eps_MB }, Ac{ _Ac }, Bc{ _Bc }{}
 	/// funcoes get
 	int get_nz()		{ return nz; }
 	int get_nr()		{ return nr; }

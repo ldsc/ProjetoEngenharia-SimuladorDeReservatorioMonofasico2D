@@ -1,10 +1,4 @@
 ﻿  CSimulador.cpp
 C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimulador.cpp(248,20): warning C4018: '<': incompatibilidade de signed/unsigned
 C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimulador.cpp(256,20): warning C4018: '<': incompatibilidade de signed/unsigned
-  CWell.cpp
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CWell.cpp(6,20): warning C4018: '<': incompatibilidade de signed/unsigned
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CWell.cpp(18,20): warning C4018: '<': incompatibilidade de signed/unsigned
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CWell.cpp(23,20): warning C4018: '<': incompatibilidade de signed/unsigned
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CWell.cpp(27,20): warning C4018: '<': incompatibilidade de signed/unsigned
-  Gerando Código...
   SimuladorMonofásico.vcxproj -> C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\Debug\SimuladorMonofásico.exe

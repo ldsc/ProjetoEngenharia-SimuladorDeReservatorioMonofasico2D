@@ -2,14 +2,15 @@
 #define CRESERVOIR_HPP
 
 #include<string>
+#include<vector>
 
 class CReservoir {
 private:
-	bool _isLiquid = 1;
+	bool _isLiquid{1};
 
 	double rw{ 0.09486 };		/// raio interno (poco)
 	double re{ 3000.0 };			/// raio externo
-	double h{ 2.0 };			/// altura do reservatorio
+	std::vector<double> dz{ 1, 1 };			/// altura do reservatorio
 	double theta{3.141592/6};	/// angulo estudado do reservatorio
 	double k0r{500};				/// permeabilidade horizontal
 	double k0z{ 100 };			/// permeabilidade vertical
@@ -24,6 +25,10 @@ private:
 	bool infVol{false};			/// presenca de aquifero por volume infinito?
 
 public:
+	CReservoir() {}
+	CReservoir( bool _isLiquid, double _rw, double _re, std::vector<double> _dz, double _theta, double _k0r, double _k0z, double _cphi, double _phi0, double _p0, double _p_i, double _S, double _Temperature) : _isLiquid{ _isLiquid }, 
+		rw{ _rw }, re{ _re }, dz{ _dz }, theta{ _theta }, k0r{ _k0r }, k0z{ _k0z }, cphi{ _cphi }, phi0{ _phi0 }, p0{ _p0 }, p_i{ _p_i }, S{ _S }, Temperature{ _Temperature } {}
+
 	double calc_phi(double p);
 
 	double calc_dphidp(double p);
@@ -32,7 +37,8 @@ public:
 	bool isLiquid() { return _isLiquid; }
 	double get_rw() { return rw; }
 	double get_re() { return re; }
-	double get_h() { return h; }
+	//double get_h() { return h; }
+	std::vector<double> get_dz() { return dz; }
 	double get_theta() { return theta; }
 	double get_k0r() { return k0r; }
 	double get_k0z() { return k0z; }
@@ -47,7 +53,7 @@ public:
 
 	void set_rw(double _rw) { rw = _rw; }
 	void set_re(double _re) { re = _re; }
-	void set_h(double _h) { h = _h; }
+	//void set_h(double _h) { h = _h; }
 
 };
 #endif

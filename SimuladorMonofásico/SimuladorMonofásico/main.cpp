@@ -3,6 +3,6 @@
 int main() {
 	CSimulador* simulator = new CSimulador;
 	
-	//simulator->run();
+	simulator->run();
 	return 0;
 }

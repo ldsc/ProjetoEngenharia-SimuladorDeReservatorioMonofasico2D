@@ -26,20 +26,20 @@ void CGrid::createPosicoes(CReservoir* reservoir) {
 	rph.push_back(reservoir->get_re());
 
 	/// ---------- profundidade ----------
-	double dz = reservoir->get_h() / nz;
+	std::vector<double> dz = reservoir->get_dz();
 	for (int j = 0; j < nz; j++) {
-		zmh.push_back(dz * j);
-		zph.push_back(dz * ((float)j + 1.0));
+		zmh.push_back(0.0+(j==0?0:dz[j]+zmh[j-1]));
+		zph.push_back(zmh[j]+dz[j]);
 		z.push_back((zmh[j] + zph[j]) / 2.0);
 	}
 }
 
 void CGrid::createVolumes(CReservoir* reservoir, double Ac) {
 	double vb;
-	double dz = reservoir->get_h() / nz;
+	std::vector<double> dz = reservoir->get_dz();
 	for (int k = 0; k < nz; k++) {
 		for (int i = 0; i < nr; i++) {
-			vb = 0.5 * (pow(rph[i], 2) - pow(rmh[i], 2)) * reservoir->get_theta() * dz;
+			vb = 0.5 * (pow(rph[i], 2) - pow(rmh[i], 2)) * reservoir->get_theta() * dz[k];
 			Vb.push_back( vb );
 			Vb_ac.push_back(vb * Ac);
 		}

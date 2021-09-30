@@ -5,20 +5,21 @@
 -------------------------
 # Poço
 periodos: 2
-tp: 0 300		/// tempos de mudanca na vazao na superficie [h]
-qsc: 0 -300		/// vazoes nos tempos de mudanca [m^3 std / dia]
-nz: 3			/// número de camadas do reservatório
+tp: 0 1000		/// tempos de mudanca na vazao na superficie [h]
+qsc: 0 -500		/// vazoes nos tempos de mudanca [m^3 std / dia]
+nz: 5			/// número de camadas do reservatório
 dz | aberto/fechado
-2  | 1
-3  | 0
-10 | 1
+1  | 1
+1  | 0
+1  | 0
+1  | 0
+1  | 0
 rw: 0.09486	
 
 # Reservatório
-isLiquid = 1
-rw: 0.09486 		/// raio interno (poco)
+isLiquid: 1
 re: 3000.0 		/// raio externo
-theta: 3.141592/6	/// angulo estudado do reservatorio
+theta: 0.52359866666	/// angulo estudado do reservatorio
 k0r: 500		/// permeabilidade horizontal
 k0z: 100 		/// permeabilidade vertical
 cphi: 1.0e-4		/// compressibilidadae da formacao
@@ -28,16 +29,8 @@ p_i: 350.0		/// pressoa inicial
 S: 0 			/// fator de pelicula
 Temperature: 353.15	/// temperatura do reservatorio
 
-# Liquido
-cf: 14.7e-5 		/// compressibilidade do fluido [cm^2/kgf]
-b0: 1.0 		/// inverso do fator volume formacao na pressao p0 [m^3 std / m^3]
-p0: 1.0335123 		/// pressao de referencia [kgf/cm^2]
-mu: 1.0 		/// viscosidade [cp]
-cmu: 0.0 
-
 # Discretização
-nz: 2			/// qtd de volumes na altura
-nr: 50 			/// qtd de volumes na largura
+nr: 20 			/// qtd de volumes na largura
 nrs: 1 			/// qtd de volumes na regiao danificada
 nt: 100 		/// qtd de tempos
 ntp: 100 		/// qtd de tempos
@@ -47,3 +40,10 @@ eps_NR: 1.0e-6 		/// tolerancia de convergencia dos residuos
 eps_MB: 1.0e-8 		/// tolerancia de convergencia do balanco de materiais
 Ac: 24 			/// constante de conversao de unidades acumulo (ANP)
 Bc: 0.0083621472 	/// constante de conversao de unidades fluxo (ANP)
+
+# Liquido
+cf: 14.7e-5 		/// compressibilidade do fluido [cm^2/kgf]
+b0: 1.0 		/// inverso do fator volume formacao na pressao p0 [m^3 std / m^3]
+p0: 1.0335123 		/// pressao de referencia [kgf/cm^2]
+mu: 1.0 		/// viscosidade [cp]
+cmu: 0.0 
