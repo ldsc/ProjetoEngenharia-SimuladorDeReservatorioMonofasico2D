@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass extbook
 \begin_preamble
 \usepackage {graphicx}
@@ -30,16 +32,18 @@
 \language_package auto
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -70,6 +74,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -84,7 +89,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -121,8 +129,8 @@ thechapter - Documentação}
 
 \begin_layout Standard
 Todo projeto de engenharia precisa ser bem documentado.
- Neste sentido, apresenta-se neste capítulo a documentação de uso do "software
- XXXX".
+ Neste sentido, apresenta-se neste capítulo a documentação de uso do "Simulador
+ Monofásico 2D".
  Esta documentação tem o formato de uma apostila que explica passo a passo
  como usar o software.
  
@@ -134,27 +142,7 @@ Documentação do usuário
 
 \begin_layout Standard
 Descreve-se aqui o manual do usuário, um guia que explica, passo a passo
- a forma de instalação e uso do software desenvolvido.
-\end_layout
-
-\begin_layout Subsection
-Como instalar o software
-\end_layout
-
-\begin_layout Standard
-Para instalar o software execute o seguinte passo a passo:
-\end_layout
-
-\begin_layout Itemize
-blablabla
-\end_layout
-
-\begin_layout Itemize
-..
-\end_layout
-
-\begin_layout Itemize
-.
+ a forma de instalação e uso do software Simulador Monofásico 2D.
 \end_layout
 
 \begin_layout Subsection
@@ -162,18 +150,33 @@ Como rodar o software
 \end_layout
 
 \begin_layout Standard
-Para rodar o software ....blablabla
+Para rodar o software é necessário:
+\end_layout
+
+\begin_layout Itemize
+Executar o arquivo main.cpp via terminal ou abrí-lo diretamente de seu compilador
+ C++.
+\end_layout
+
+\begin_layout Itemize
+Seguir as instruções auto-explicativas do programa.
 \end_layout
 
 \begin_layout Standard
-Veja no Capítulo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Teste"
+Após compilado, preencha o arquivo de texto nos moldes que vem com o simulador
+ (caso escolha pela entrada por arquivo de disco).
+ Por mais que sejam arquivos-exemplo, eles são modelos de funcionamento
+ e sua organização não pode ser alterada, caso seja, o simulador não rodará
+ adequadamente.
+ É preferível que a entrada seja por arquivo de disco, o que tornará a simulação
+ menos laborosa.
+ Porém, caso prefira, a entrada de dados pode ser manual diretamente na
+ tela do simulador.
+\end_layout
 
-\end_inset
-
- - Teste, exemplos de uso do software.
+\begin_layout Standard
+Ao executar, o usuário será levado à tela inicial, onde escolherá o tipo
+ de......................
 \end_layout
 
 \begin_layout Section
@@ -194,11 +197,13 @@ Para compilar o software é necessário atender as seguintes dependências:
 \end_layout
 
 \begin_layout Itemize
-Instalar o compilador g++ da GNU disponível em 
+No sistema operacional GNU/Linux: instalar o compilador g++ da GNU disponível
+ em 
 \begin_inset CommandInset href
 LatexCommand href
 name "http://gcc.gnu.org"
 target "http://gcc.gnu.org"
+literal "false"
 
 \end_inset
 
@@ -211,8 +216,8 @@ yum install gcc
 \end_layout
 
 \begin_layout Itemize
-Biblioteca CGnuplot; os arquivos para acesso a biblioteca CGnuplot devem
- estar no diretório com os códigos do software;
+No sistema operacional Windows: instalar um compilador apropriado, tal como
+ Dev C++ ou Microsoft Visual Basic for Applications.
 \end_layout
 
 \begin_layout Itemize
@@ -224,6 +229,7 @@ gnuplot
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.gnuplot.info/"
+literal "false"
 
 \end_inset
 
@@ -237,24 +243,13 @@ gnuplot
 \end_layout
 
 \begin_layout Itemize
+O programa depende ou não da existência de um arquivo de dados (formato
+ .txt).
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
 Coloque aqui quaisquer dependências de arquivos com dados
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Coloque aqui quaisquer dependências de softwares ou sistemas externos
 \end_layout
 
 \end_inset
@@ -285,6 +280,10 @@ doxygen
 
 \begin_layout Itemize
 Veja informações sobre uso do formato JAVADOC em:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -292,6 +291,7 @@ Veja informações sobre uso do formato JAVADOC em:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html"
+literal "false"
 
 \end_inset
 
@@ -305,6 +305,10 @@ Veja informações sobre o software
 doxygen
 \family default
  em
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -312,6 +316,7 @@ doxygen
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.stack.nl/~dimitri/doxygen/"
+literal "false"
 
 \end_inset
 
@@ -347,6 +352,10 @@ Abra um terminal.
 
 \begin_layout Itemize
 Vá para o diretório onde esta o código.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -381,6 +390,10 @@ xywizard.
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -397,6 +410,10 @@ Peça para o
 doxygen
 \family default
  gerar a documentação.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -409,6 +426,10 @@ doxygen
 \end_deeper
 \begin_layout Itemize
 Verifique a documentação gerada abrindo o arquivo html/index.html.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper

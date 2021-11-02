@@ -162,10 +162,6 @@ filename "Cap3-AnaliseOrientadaAObjeto.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 \align block
 \begin_inset CommandInset include
 LatexCommand include
@@ -176,10 +172,31 @@ filename "Cap4-Projeto.lyx"
 
 \end_layout
 
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap6-Implementacao.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
 \begin_layout Plain Layout
 \align block
 \begin_inset Note Note
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\align block
+o projeto orientado a objeto deixou de ser capítulo e virou uma seção dentro
+ do arquivo Cap4-Projeto.lyx
+\end_layout
 
 \begin_layout Plain Layout
 \align block
@@ -189,20 +206,8 @@ filename "Cap5-ProjetoOrientadoAObjeto.lyx"
 
 \end_inset
 
-o projeto orientado a objeto deixou de ser capítulo e virou uma seção dentro
- do arquivo Cap4-Projeto.lyx
-\end_layout
-
-\end_inset
-
 
 \end_layout
-
-\begin_layout Plain Layout
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap6-Implementacao.lyx"
 
 \end_inset
 
