@@ -184,6 +184,28 @@ filename "Cap6-Implementacao.lyx"
 \end_layout
 
 \begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap7-Teste.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap8-Documentacao.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -208,28 +230,6 @@ filename "Cap5-ProjetoOrientadoAObjeto.lyx"
 
 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap7-Teste.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap8-Documentacao.lyx"
 
 \end_inset
 
@@ -263,8 +263,9 @@ rhead{}
 
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
+btprint "btPrintCited"
 bibfiles "bibliografia"
-options "apalike"
+options "bibtotoc,apalike"
 
 \end_inset
 

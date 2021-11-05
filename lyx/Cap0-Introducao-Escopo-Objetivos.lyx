@@ -1024,6 +1024,32 @@ Dessa forma, a principal finalidade do programa é fornecer o cálculo do
  Este é uma ferramenta poderosa de resolução de equações diferenciais parciais
  a um determinado volume de meio contínuo baseado, por exemplo, na resolução
  de balanços de massa.
+ 
+\begin_inset CommandInset citation
+LatexCommand keyonly
+key "adb-prog-livroCpp"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "adb-prog-livroCpp"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "okoko"
+key "adb-prog-livroCpp"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

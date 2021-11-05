@@ -1,0 +1,30 @@
+\hypertarget{_c_gnuplot_8hpp_source}{}\doxysection{CGnuplot.\+hpp}
+\label{_c_gnuplot_8hpp_source}\index{ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CGnuplot.hpp@{ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CGnuplot.hpp}}
+\mbox{\hyperlink{_c_gnuplot_8hpp}{Vá para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CGNUPLOT\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CGNUPLOT\_HPP}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#ifdef \_WIN32}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define GNUPLOT\_NAME "{}C:\(\backslash\)\(\backslash\)Program\(\backslash\)"{} \(\backslash\)"{}Files\(\backslash\)\(\backslash\)gnuplot\(\backslash\)\(\backslash\)bin\(\backslash\)\(\backslash\)gnuplot -\/p"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#else }}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define GNUPLOT\_NAME "{}gnuplot"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_gnuplot}{CGnuplot}} \{}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_c_gnuplot_aaa92507c69964e9e6bd4beb3c1dc2595}{CGnuplot}}() \{\}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_gnuplot_a9191a0e014def0011331d3d7d3d4a91e}{plot}}(std::string name, std::string xlabel, std::string ylabel, std::string saveName);}
+\DoxyCodeLine{21     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_gnuplot_a4ac69ac4fcde3cbd51f4be0850ecde18}{semilogx}}(std::string name, std::string xlabel, std::string ylabel, std::string saveName);}
+\DoxyCodeLine{22     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_gnuplot_ac067bf5b27210c2a5091a1d4f57ca2c5}{semilogy}}(std::string name, std::string xlabel, std::string ylabel, std::string saveName);}
+\DoxyCodeLine{23 \};}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

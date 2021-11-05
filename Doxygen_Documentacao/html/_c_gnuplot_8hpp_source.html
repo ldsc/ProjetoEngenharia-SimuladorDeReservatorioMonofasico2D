@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetoEngenharia-Simulador2D-Nicholas-Kevin: Código-Fonte de ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/listagens/CGnuplot.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ProjetoEngenharia-Simulador2D-Nicholas-Kevin<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Simulação 2D de injeção ou produção de líquido ou gás em um poço em um reservatório estratigráfico com camdas abertas ou fechadas ao fluxo</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8dc5174817a13192d20f31d6c2d02a1b.html">ProgramacaoPratica2021</a></li><li class="navelem"><a class="el" href="dir_ea358974b4eb4b47531125e603dc7daa.html">ProjetoEngenharia-Simulador2D-Nicholas-Kevin</a></li><li class="navelem"><a class="el" href="dir_c3d72360761acc54df12ff3ea3de3a85.html">listagens</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">CGnuplot.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_gnuplot_8hpp.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CGNUPLOT_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CGNUPLOT_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define GNUPLOT_NAME &quot;C:\\Program\&quot; \&quot;Files\\gnuplot\\bin\\gnuplot -p&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#else </span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="_c_gnuplot_8hpp.html#a6cc39afc9f5a6940ea2890908deb2a60">   13</a></span><span class="preprocessor">#define GNUPLOT_NAME &quot;gnuplot&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_c_gnuplot.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="class_c_gnuplot.html">CGnuplot</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_c_gnuplot.html#aaa92507c69964e9e6bd4beb3c1dc2595">   18</a></span>    <a class="code hl_function" href="class_c_gnuplot.html#aaa92507c69964e9e6bd4beb3c1dc2595">CGnuplot</a>() {}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_gnuplot.html#a9191a0e014def0011331d3d7d3d4a91e">plot</a>(std::string name, std::string xlabel, std::string ylabel, std::string saveName);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_gnuplot.html#a4ac69ac4fcde3cbd51f4be0850ecde18">semilogx</a>(std::string name, std::string xlabel, std::string ylabel, std::string saveName);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_gnuplot.html#ac067bf5b27210c2a5091a1d4f57ca2c5">semilogy</a>(std::string name, std::string xlabel, std::string ylabel, std::string saveName);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_c_gnuplot_html"><div class="ttname"><a href="class_c_gnuplot.html">CGnuplot</a></div><div class="ttdef"><b>Definition:</b> CGnuplot.hpp:16</div></div>
+<div class="ttc" id="aclass_c_gnuplot_html_a4ac69ac4fcde3cbd51f4be0850ecde18"><div class="ttname"><a href="class_c_gnuplot.html#a4ac69ac4fcde3cbd51f4be0850ecde18">CGnuplot::semilogx</a></div><div class="ttdeci">static void semilogx(std::string name, std::string xlabel, std::string ylabel, std::string saveName)</div><div class="ttdef"><b>Definition:</b> CGnuplot.cpp:40</div></div>
+<div class="ttc" id="aclass_c_gnuplot_html_a9191a0e014def0011331d3d7d3d4a91e"><div class="ttname"><a href="class_c_gnuplot.html#a9191a0e014def0011331d3d7d3d4a91e">CGnuplot::plot</a></div><div class="ttdeci">static void plot(std::string name, std::string xlabel, std::string ylabel, std::string saveName)</div><div class="ttdef"><b>Definition:</b> CGnuplot.cpp:5</div></div>
+<div class="ttc" id="aclass_c_gnuplot_html_aaa92507c69964e9e6bd4beb3c1dc2595"><div class="ttname"><a href="class_c_gnuplot.html#aaa92507c69964e9e6bd4beb3c1dc2595">CGnuplot::CGnuplot</a></div><div class="ttdeci">CGnuplot()</div><div class="ttdef"><b>Definition:</b> CGnuplot.hpp:18</div></div>
+<div class="ttc" id="aclass_c_gnuplot_html_ac067bf5b27210c2a5091a1d4f57ca2c5"><div class="ttname"><a href="class_c_gnuplot.html#ac067bf5b27210c2a5091a1d4f57ca2c5">CGnuplot::semilogy</a></div><div class="ttdeci">static void semilogy(std::string name, std::string xlabel, std::string ylabel, std::string saveName)</div><div class="ttdef"><b>Definition:</b> CGnuplot.cpp:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

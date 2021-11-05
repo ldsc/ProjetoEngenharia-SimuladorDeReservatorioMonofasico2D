@@ -705,8 +705,8 @@ para gerar a documentação do desenvolvedor no formato html.
 \family typewriter
 doxygen
 \family default
- lê os arquivos com os códigos (*.h e *.cpp) e gera uma documentação muito
- útil e de fácil navegação no formato html ou pdf.
+ lê os arquivos com os códigos (*.h e *.cpp), por exemplo, e gera uma documentação
+ muito útil e de fácil navegação no formato html ou pdf.
  Com ele você pode documentar classes, funções, constantes.
  
 \end_layout
@@ -756,117 +756,72 @@ literal "false"
 
 \end_layout
 
-\begin_layout Standard
-Para sistema operacioanl Windows, dentro de Sources e Binaries, segui-se
- com o dwnload em doxygen-1.9.2-setup.exe (48.0MB).
-\end_layout
-
 \end_deeper
 \begin_layout Standard
-Passos para gerar a documentação usando o 
-\family typewriter
-doxygen
-\family default
+Para instalação do Doxygen foi criado a seguinte metodologia:
+\end_layout
+
+\begin_layout Enumerate
+Acessar o link 
+\begin_inset CommandInset href
+LatexCommand href
+name "Doxygen"
+target "https://www.doxygen.nl/index.html"
+literal "false"
+
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Aba Downloads -> Sources and Binaries -> doxygen-1.9.2-setup.exe (48.0MB);
+\end_layout
+
+\begin_layout Enumerate
+Proceder com a instalação;
+\end_layout
+
+\begin_layout Enumerate
+Abrir doxywizard;
+\end_layout
+
+\begin_layout Enumerate
+Seguir passo a passo no Tutorial Doxygen - Criando a documentação do seu
+ programa pelo link 
+\begin_inset CommandInset href
+LatexCommand href
+name "Passos para documentar"
+target "https://www.youtube.com/watch?v=Rl50qI6e7HU"
+literal "false"
+
+\end_inset
+
 .
 \end_layout
 
-\begin_layout Itemize
-Documente o código usando o formato JAVADOC.
- Um bom exemplo de código documentado é apresentado nos arquivos da biblioteca
- CGnuplot, abra os arquivos 
-\family typewriter
-CGnuplot.h
-\family default
- e 
-\family typewriter
-CGnuplot.cpp
-\family default
- no editor de texto e veja como o código foi documentado.
-\end_layout
-
-\begin_layout Itemize
-Abra um terminal.
-\end_layout
-
-\begin_layout Itemize
-Vá para o diretório onde esta o código.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout LyX-Code
-
-\family typewriter
-cd /caminho/para/seu/codigo
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Peça para o 
-\family typewriter
-doxygen
-\family default
- gerar o arquivo de definições (arquivo que diz para o doxygem como deve
- ser a documentação).
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout LyX-Code
-
-\family typewriter
-dogygen -g
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Peça para o 
-\family typewriter
-doxygen
-\family default
- gerar a documentação.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout LyX-Code
-
-\family typewriter
-doxygen
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Verifique a documentação gerada abrindo o arquivo html/index.html.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout LyX-Code
-firefox html/index.html
+\begin_layout Enumerate
+Teclar Run -> Run doxygen -> Show html input.
 \end_layout
 
 \begin_layout Standard
-ou
+Gera-se então, em um diretório de escolha do usuário, saídas em latex, html
+ (index.html) e um relatório no formato rtf (
+\shape italic
+Rich Text Format
+\shape default
+) com todos os arquivos apresentados no caminho gerado em html (
+\begin_inset CommandInset href
+LatexCommand href
+target "file:///C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/Doxygen_Documentacao/html/index.html"
+literal "false"
+
+\end_inset
+
+).
+ Pode-se salvar o progresso em uma Doxyfile.
 \end_layout
 
-\begin_layout LyX-Code
-chrome html/index.html
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 Apresenta-se a seguir algumas imagens com as telas das saídas geradas pelo
  software 
@@ -875,16 +830,239 @@ doxygen
 \end_layout
 
 \begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:logo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra o cabeçalho do projeto que contém logo do projeto, sinopse e versão.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Logo_Doxygen.PNG
+	lyxscale 80
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cabeçalho do projeto - doxygen.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:logo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Lista-de-classes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ exibe a tela do doxygen que permite a listar as classes que o programa
+ contém.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Classes_Doxygen.png
+	lyxscale 80
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lista de classes - doxygen
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Lista-de-classes"
+
+\end_inset
+
 .
- A Fig.
- 7.1 exibe a tela do doxygen que permite a listar as classes que o programa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Já a Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Lista-de-arquivos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ exibe a tela do doxygen que permite a listar as arquivos que o programa
  contém.
- Já a Fig.
- 7.2 exibe a tela do doxygen que permite a listar as arquivos que o programa
- contém.
- Por m, a Fig.
- 7.3 mostra a tela do doxygen que permite acessar, por exemplo, o código
- da classe CFluido.h.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Arquivos_Doxygen.png
+	lyxscale 80
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lista de arquivos - doxygen.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Lista-de-arquivos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por fim, a Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Código-fonte-CSimulador"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra a tela do doxygen que permite acessar, por exemplo, o código da
+ classe CSimulador.hpp.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/CSimulador_doxygen.PNG
+	lyxscale 80
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Código fonte CSimulador - doxygen.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Código-fonte-CSimulador"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
