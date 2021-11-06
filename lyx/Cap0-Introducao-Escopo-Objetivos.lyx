@@ -989,6 +989,10 @@ pagenumbering{arabic}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1008,12 +1012,24 @@ today}
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 No presente projeto de engenharia desenvolve-se o software SIMULADOR DE
  RESERVATÓRIO MONOFÁSICO 2D, um código em linguagem orientada a objeto que
  tem como principal objetivo implementar as equações vistas nas disciplinas
- de Avaliação de Formações e Engenharia de Reservatórios.
- 
+ de Avaliação de Formações e Engenharia de Reservatórios (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pico_2018"
+literal "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -1025,31 +1041,6 @@ Dessa forma, a principal finalidade do programa é fornecer o cálculo do
  a um determinado volume de meio contínuo baseado, por exemplo, na resolução
  de balanços de massa.
  
-\begin_inset CommandInset citation
-LatexCommand keyonly
-key "adb-prog-livroCpp"
-literal "false"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "adb-prog-livroCpp"
-literal "false"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-after "okoko"
-key "adb-prog-livroCpp"
-literal "false"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -1072,8 +1063,15 @@ Em se tratando da Engenharia de Reservatórios, o foco do estudo é o próprio
  exploração e por quanto tempo esse campo será viável.
  Dada uma aplicação de injeção ou produção em poços no reservatório, se
  faz necessário um conhecimento sólido e completo de como ele se comportará
- e influenciará a dinâmica de pressões no poço.
- 
+ e influenciará a dinâmica de pressões no poço (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa_2006"
+literal "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard

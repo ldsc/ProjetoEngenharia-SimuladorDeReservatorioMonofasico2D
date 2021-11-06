@@ -242,6 +242,10 @@ filename "Cap5-ProjetoOrientadoAObjeto.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \noindent
 \align block
 \begin_inset ERT
@@ -261,6 +265,16 @@ rhead{}
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align block
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"

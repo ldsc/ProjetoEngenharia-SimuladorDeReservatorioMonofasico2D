@@ -810,16 +810,8 @@ Gera-se então, em um diretório de escolha do usuário, saídas em latex, html
 \shape italic
 Rich Text Format
 \shape default
-) com todos os arquivos apresentados no caminho gerado em html (
-\begin_inset CommandInset href
-LatexCommand href
-target "file:///C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/Doxygen_Documentacao/html/index.html"
-literal "false"
-
-\end_inset
-
-).
- Pode-se salvar o progresso em uma Doxyfile.
+) com todos os arquivos apresentados no link em html.
+ Pode-se salvar o progresso em uma Doxyfile para não perder de vista.
 \end_layout
 
 \begin_layout Standard
