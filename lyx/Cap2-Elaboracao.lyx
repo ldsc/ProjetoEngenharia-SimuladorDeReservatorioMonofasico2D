@@ -367,6 +367,123 @@ onde:
 \end_layout
 
 \begin_layout Standard
+Considere o seguinte arranjo de um elemento de volume em coordenadas cilíndricas
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Arranjo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) e a malha (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:malha."
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) no sistema radial abaixo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Arranjo.PNG
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Elemento de volume em coordenadas cilndricas.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Arranjo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Malha.PNG
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Malha radial não-homogênea.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:malha."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Aplicando-se a dicretização por volumes finitos, podemos reecrever a Eq.
  
 \begin_inset CommandInset ref
@@ -576,8 +693,15 @@ O fator de compressibilidade
 \begin_inset Formula $Z$
 \end_inset
 
- está dado pela correlação apresentada por Kareem et al.
- (2016).
+ está dado pela correlação apresentada por 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kareem_2015"
+literal "false"
+
+\end_inset
+
+.
  Esta correlação permite calcular explicitamente fator de compressibilidade
  nas faixas 
 \begin_inset Formula $0.2\,≤\;p_{pr}\:≤\,15$
@@ -608,9 +732,16 @@ b=\frac{T_{o}p}{Tp_{o}Z}
 \end_layout
 
 \begin_layout Standard
-A viscosidade do gás é calculada pela correlação de Lee et al.
- (1966), como função da temperatura, a massa molecular aparente Ma e a massa
- específica:
+A viscosidade do gás é calculada pela correlação de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lee_1966"
+literal "false"
+
+\end_inset
+
+, como função da temperatura, a massa molecular aparente Ma e a massa específica
+:
 \end_layout
 
 \begin_layout Standard
@@ -622,6 +753,76 @@ A viscosidade do gás é calculada pela correlação de Lee et al.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Vale destacar que, para efeitos de simplificação, desconsiderou-se os efeitos
+ não-darcianos que podem ocorrer nas proximidades do poço.
+ A título de curiosiadade, a equação de Forchheimer é o modelo empregado
+ para representar tais eeitos ou feitos de inercia, causados pela a alta
+ velocidade.
+ Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aziz_1979"
+literal "false"
+
+\end_inset
+
+, em um sistema consistente de unidades, a Eq.
+ é:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+-\frac{\partial p}{\partial x}=\frac{\mu}{k}u+\beta\rho u\left|u\right|
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
+\begin_inset Formula $\beta$
+\end_inset
+
+ é o coeciente de Forchheimer, cuja dimensão e o inverso do comprimento,
+ 
+\begin_inset Formula $u$
+\end_inset
+
+ é a vazão por unidade de área e 
+\begin_inset Formula $x$
+\end_inset
+
+ a direção paralela ao escoamento.
+\end_layout
+
+\begin_layout Standard
+Em termos práticos, um fator de correção 
+\begin_inset Formula $\delta_{i\pm\frac{1}{2}}$
+\end_inset
+
+ deve ser calculado em conjunto com a solução nas interfaces (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MacDonald_1970"
+literal "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MacDonald_1970,Pico_2018"
+literal "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Subsection
@@ -844,6 +1045,31 @@ J=\left[\frac{\partial R_{i,j}}{\partial p_{i,j}}\right]_{nr*nz\,x\,nr*nz}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+onde 
+\begin_inset Formula $J$
+\end_inset
+
+ é a matriz Jacobiana, com as derivadas das equações de resíduo, com relação
+ às incógnitas (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aziz_1979"
+literal "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ertekin_2001"
+literal "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard

@@ -1,0 +1,133 @@
+\hypertarget{class_c_gas}{}\doxysection{Referência da Classe CGas}
+\label{class_c_gas}\index{CGas@{CGas}}
+
+
+{\ttfamily \#include $<$CGas.\+hpp$>$}
+
+Diagrama de hierarquia para CGas\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_gas}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_gas_a34e1748e391d99b4d0548b5364e12916}{CGas}} ()
+\item 
+double \mbox{\hyperlink{class_c_gas_a3d6a8ded441e0d45a731f11e47c0f373}{calc\+\_\+b}} (double p)
+\item 
+double \mbox{\hyperlink{class_c_gas_ae9e62321b33fb639a893248f68e2332d}{calc\+\_\+rho}} (double p)
+\item 
+double \mbox{\hyperlink{class_c_gas_a4f97a20ee36629fc405ccca0ceeee9d2}{calc\+\_\+dbdp}} (double p)
+\item 
+double \mbox{\hyperlink{class_c_gas_a83e6e30415551f40f54cde8bf69b5161}{calc\+\_\+mu}} (double p)
+\item 
+double \mbox{\hyperlink{class_c_gas_a4196da3326b75ab79d8e245f6e9bc93c}{calc\+\_\+dmudp}} (double p)
+\item 
+double \mbox{\hyperlink{class_c_gas_aef027ac7f491fe0b12863d204c27fd35}{Z\+\_\+\+KIAM}} (double p)
+\item 
+double \mbox{\hyperlink{class_c_gas_a8b24e9caf524f3c0130c22a1bdd3babc}{mu\+\_\+\+LGE}} (double rho)
+\item 
+std\+::string \mbox{\hyperlink{class_c_gas_a05579c8a6d16261d33ec0959f065d6e7}{get\+\_\+type}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+const double \mbox{\hyperlink{class_c_gas_a40ed42c9b7696aff68b8502985fe6014}{DELTA}} = 1.\+0e-\/5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{class_c_gas_a34e1748e391d99b4d0548b5364e12916}\label{class_c_gas_a34e1748e391d99b4d0548b5364e12916}} 
+\index{CGas@{CGas}!CGas@{CGas}}
+\index{CGas@{CGas}!CGas@{CGas}}
+\doxysubsubsection{\texorpdfstring{CGas()}{CGas()}}
+{\footnotesize\ttfamily CGas\+::\+CGas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{class_c_gas_a3d6a8ded441e0d45a731f11e47c0f373}\label{class_c_gas_a3d6a8ded441e0d45a731f11e47c0f373}} 
+\index{CGas@{CGas}!calc\_b@{calc\_b}}
+\index{calc\_b@{calc\_b}!CGas@{CGas}}
+\doxysubsubsection{\texorpdfstring{calc\_b()}{calc\_b()}}
+{\footnotesize\ttfamily double CGas\+::calc\+\_\+b (\begin{DoxyParamCaption}\item[{double}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementa \mbox{\hyperlink{class_c_fluido_a80e48b364b09339c7fb462e970002f35}{CFluido}}.
+
+\mbox{\Hypertarget{class_c_gas_a4f97a20ee36629fc405ccca0ceeee9d2}\label{class_c_gas_a4f97a20ee36629fc405ccca0ceeee9d2}} 
+\index{CGas@{CGas}!calc\_dbdp@{calc\_dbdp}}
+\index{calc\_dbdp@{calc\_dbdp}!CGas@{CGas}}
+\doxysubsubsection{\texorpdfstring{calc\_dbdp()}{calc\_dbdp()}}
+{\footnotesize\ttfamily double CGas\+::calc\+\_\+dbdp (\begin{DoxyParamCaption}\item[{double}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementa \mbox{\hyperlink{class_c_fluido_a0626f397f283dcd390c2df3de80fc25d}{CFluido}}.
+
+\mbox{\Hypertarget{class_c_gas_a4196da3326b75ab79d8e245f6e9bc93c}\label{class_c_gas_a4196da3326b75ab79d8e245f6e9bc93c}} 
+\index{CGas@{CGas}!calc\_dmudp@{calc\_dmudp}}
+\index{calc\_dmudp@{calc\_dmudp}!CGas@{CGas}}
+\doxysubsubsection{\texorpdfstring{calc\_dmudp()}{calc\_dmudp()}}
+{\footnotesize\ttfamily double CGas\+::calc\+\_\+dmudp (\begin{DoxyParamCaption}\item[{double}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementa \mbox{\hyperlink{class_c_fluido_a417335890e7bdee52d139162ddd232a4}{CFluido}}.
+
+\mbox{\Hypertarget{class_c_gas_a83e6e30415551f40f54cde8bf69b5161}\label{class_c_gas_a83e6e30415551f40f54cde8bf69b5161}} 
+\index{CGas@{CGas}!calc\_mu@{calc\_mu}}
+\index{calc\_mu@{calc\_mu}!CGas@{CGas}}
+\doxysubsubsection{\texorpdfstring{calc\_mu()}{calc\_mu()}}
+{\footnotesize\ttfamily double CGas\+::calc\+\_\+mu (\begin{DoxyParamCaption}\item[{double}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementa \mbox{\hyperlink{class_c_fluido_aa9887ff313699280568aad487ac1a0f8}{CFluido}}.
+
+\mbox{\Hypertarget{class_c_gas_ae9e62321b33fb639a893248f68e2332d}\label{class_c_gas_ae9e62321b33fb639a893248f68e2332d}} 
+\index{CGas@{CGas}!calc\_rho@{calc\_rho}}
+\index{calc\_rho@{calc\_rho}!CGas@{CGas}}
+\doxysubsubsection{\texorpdfstring{calc\_rho()}{calc\_rho()}}
+{\footnotesize\ttfamily double CGas\+::calc\+\_\+rho (\begin{DoxyParamCaption}\item[{double}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gas_a05579c8a6d16261d33ec0959f065d6e7}\label{class_c_gas_a05579c8a6d16261d33ec0959f065d6e7}} 
+\index{CGas@{CGas}!get\_type@{get\_type}}
+\index{get\_type@{get\_type}!CGas@{CGas}}
+\doxysubsubsection{\texorpdfstring{get\_type()}{get\_type()}}
+{\footnotesize\ttfamily std\+::string CGas\+::get\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplementa \mbox{\hyperlink{class_c_fluido_a8cf359cede91a304f3ecd29ee0bfe44b}{CFluido}}.
+
+\mbox{\Hypertarget{class_c_gas_a8b24e9caf524f3c0130c22a1bdd3babc}\label{class_c_gas_a8b24e9caf524f3c0130c22a1bdd3babc}} 
+\index{CGas@{CGas}!mu\_LGE@{mu\_LGE}}
+\index{mu\_LGE@{mu\_LGE}!CGas@{CGas}}
+\doxysubsubsection{\texorpdfstring{mu\_LGE()}{mu\_LGE()}}
+{\footnotesize\ttfamily double CGas\+::mu\+\_\+\+LGE (\begin{DoxyParamCaption}\item[{double}]{rho }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_gas_aef027ac7f491fe0b12863d204c27fd35}\label{class_c_gas_aef027ac7f491fe0b12863d204c27fd35}} 
+\index{CGas@{CGas}!Z\_KIAM@{Z\_KIAM}}
+\index{Z\_KIAM@{Z\_KIAM}!CGas@{CGas}}
+\doxysubsubsection{\texorpdfstring{Z\_KIAM()}{Z\_KIAM()}}
+{\footnotesize\ttfamily double CGas\+::\+Z\+\_\+\+KIAM (\begin{DoxyParamCaption}\item[{double}]{p }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Atributos}
+\mbox{\Hypertarget{class_c_gas_a40ed42c9b7696aff68b8502985fe6014}\label{class_c_gas_a40ed42c9b7696aff68b8502985fe6014}} 
+\index{CGas@{CGas}!DELTA@{DELTA}}
+\index{DELTA@{DELTA}!CGas@{CGas}}
+\doxysubsubsection{\texorpdfstring{DELTA}{DELTA}}
+{\footnotesize\ttfamily const double CGas\+::\+DELTA = 1.\+0e-\/5}
+
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+Programacao\+Pratica2021/\+Projeto\+Engenharia-\/\+Simulador2\+D-\/\+Nicholas-\/\+Kevin/listagens/\mbox{\hyperlink{_c_gas_8hpp}{CGas.\+hpp}}\item 
+Programacao\+Pratica2021/\+Projeto\+Engenharia-\/\+Simulador2\+D-\/\+Nicholas-\/\+Kevin/listagens/\mbox{\hyperlink{_c_gas_8cpp}{CGas.\+cpp}}\end{DoxyCompactItemize}

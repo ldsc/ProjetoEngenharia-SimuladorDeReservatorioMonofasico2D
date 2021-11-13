@@ -1,0 +1,128 @@
+\hypertarget{_c_grid_8hpp_source}{}\doxysection{CGrid.\+hpp}
+\label{_c_grid_8hpp_source}\index{ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CGrid.hpp@{ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CGrid.hpp}}
+\mbox{\hyperlink{_c_grid_8hpp}{Vá para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CGRID\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CGRID\_HPP}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include  <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <math.h>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_reservoir_8hpp}{CReservoir.hpp}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_discretization_8hpp}{CDiscretization.hpp}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_well_8hpp}{CWell.hpp}}"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_grid}{CGrid}} \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_c_grid_a9152abb814d90d9ffd15f8ae34062d8f}{CGrid}}(\mbox{\hyperlink{class_c_reservoir}{CReservoir}}* reservoir, \mbox{\hyperlink{class_c_discretization}{CDiscretization}}* discretization, \mbox{\hyperlink{class_c_well}{CWell}}* well);}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{private}:}
+\DoxyCodeLine{16     \textcolor{keywordtype}{int} nr, nz;}
+\DoxyCodeLine{17     \textcolor{keywordtype}{double} alpha;}
+\DoxyCodeLine{18     \textcolor{keywordtype}{double} omega;}
+\DoxyCodeLine{19     \textcolor{keywordtype}{double} dtheta;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     std::vector<double> time;   }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     std::vector<double> r;      }
+\DoxyCodeLine{24     std::vector<double> rph;    }
+\DoxyCodeLine{25     std::vector<double> rmh;    }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     std::vector<double> z;      }
+\DoxyCodeLine{28     std::vector<double> zph;    }
+\DoxyCodeLine{29     std::vector<double> zmh;    }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     std::vector<double> Vb;     }
+\DoxyCodeLine{32     std::vector<double> Vb\_ac;  }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     std::vector<double> kr;     }
+\DoxyCodeLine{35     std::vector<double> kz;     }
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     std::vector<double> kiph;   }
+\DoxyCodeLine{38     std::vector<double> kimh;   }
+\DoxyCodeLine{39     std::vector<double> kjph;   }
+\DoxyCodeLine{40     std::vector<double> kjmh;   }
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     std::vector<double> Giph;   }
+\DoxyCodeLine{43     std::vector<double> Gimh;   }
+\DoxyCodeLine{44     std::vector<double> Gjph;   }
+\DoxyCodeLine{45     std::vector<double> Gjmh;   }
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     std::vector<double> Gw;     }
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{keyword}{private}: }
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} createPosicoes(\mbox{\hyperlink{class_c_reservoir}{CReservoir}}* reservoir);}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} createVolumes(\mbox{\hyperlink{class_c_reservoir}{CReservoir}}* reservoir, \textcolor{keywordtype}{double} Ac);}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} createPermeabilidades(\mbox{\hyperlink{class_c_reservoir}{CReservoir}}* reservoir, \mbox{\hyperlink{class_c_discretization}{CDiscretization}}* discretization);}
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} createFatorGeometricos(\mbox{\hyperlink{class_c_reservoir}{CReservoir}}* reservoir, \mbox{\hyperlink{class_c_discretization}{CDiscretization}}* discretization, \mbox{\hyperlink{class_c_well}{CWell}}* well);}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} createTime(\mbox{\hyperlink{class_c_discretization}{CDiscretization}}* discretization, \mbox{\hyperlink{class_c_well}{CWell}}* well);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{keyword}{public}:}
+\DoxyCodeLine{58     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a9fac1c0016d4f8ed85533b90aa50ff76}{get\_time}}( \textcolor{keywordtype}{int} i) \{ \textcolor{keywordflow}{return} time[i]; \}}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a1bc54e636a6136de10b868a2ba1484d4}{get\_r}}( \textcolor{keywordtype}{int} i)   \{ \textcolor{keywordflow}{return} r[i]; \}}
+\DoxyCodeLine{61     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a5d692aa96a6733a5f067b4afb53ae1d9}{get\_rph}}( \textcolor{keywordtype}{int} i)   \{ \textcolor{keywordflow}{return} rph[i]; \}}
+\DoxyCodeLine{62     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a44e1693838b22b978700cb64dab1e839}{get\_rmh}}( \textcolor{keywordtype}{int} i)   \{ \textcolor{keywordflow}{return} rmh[i]; \}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a0035132f72a3c7ac16f8d3a0eb132fb4}{get\_z}}( \textcolor{keywordtype}{int} i)   \{ \textcolor{keywordflow}{return} z[i]; \}}
+\DoxyCodeLine{65     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a45fae3f11e02a20c9d19c57fe30055a5}{get\_zph}}( \textcolor{keywordtype}{int} i)   \{ \textcolor{keywordflow}{return} zph[i]; \}}
+\DoxyCodeLine{66     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_adecea43c405e4f31b380df1d831ce2a1}{get\_zmh}}( \textcolor{keywordtype}{int} i)   \{ \textcolor{keywordflow}{return} zmh[i]; \}}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a332a23d8fffe94bd2ed7470beea41520}{get\_Vb}}( \textcolor{keywordtype}{int} i) \{ \textcolor{keywordflow}{return} Vb[i]; \}}
+\DoxyCodeLine{69     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_afafa1783c3cdc4c5a3c4b7981d3cfe9d}{get\_Vb\_ac}}( \textcolor{keywordtype}{int} i)\{ \textcolor{keywordflow}{return} Vb\_ac[i]; \}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a68639f697c189e63b3dd024c98a2fcab}{get\_kr}}( \textcolor{keywordtype}{int} i) \{ \textcolor{keywordflow}{return} kr[i]; \}}
+\DoxyCodeLine{72     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_ad18cf14afb07d3a8a6a1390b5528010b}{get\_kz}}( \textcolor{keywordtype}{int} i) \{ \textcolor{keywordflow}{return} kz[i]; \}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_aa357081f21acc91baca02d0c5d068332}{get\_kiph}}( \textcolor{keywordtype}{int} i) \{ \textcolor{keywordflow}{return} kiph[i]; \}}
+\DoxyCodeLine{75     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a0eee407de8f1a0841e8b062864094125}{get\_kimh}}( \textcolor{keywordtype}{int} i) \{ \textcolor{keywordflow}{return} kimh[i]; \}}
+\DoxyCodeLine{76     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_afb05cc33f889e887098a2fda49e92096}{get\_kjph}}( \textcolor{keywordtype}{int} i) \{ \textcolor{keywordflow}{return} kjph[i]; \}}
+\DoxyCodeLine{77     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_ae4b016656234c195e874473d1b871026}{get\_kjmh}}( \textcolor{keywordtype}{int} i) \{ \textcolor{keywordflow}{return} kjmh[i]; \}}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_acc3a8458e712f6b3c469e17244195088}{get\_Giph}}( \textcolor{keywordtype}{int} i) \{ \textcolor{keywordflow}{return} Giph[i]; \}}
+\DoxyCodeLine{80     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a91b8caccee2280a37a72d2020d0b04a6}{get\_Gimh}}( \textcolor{keywordtype}{int} i) \{ \textcolor{keywordflow}{return} Gimh[i]; \}}
+\DoxyCodeLine{81     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a4395fcc80546b780a417b7bc8e37dffe}{get\_Gjph}}( \textcolor{keywordtype}{int} i) \{ \textcolor{keywordflow}{return} Gjph[i]; \}}
+\DoxyCodeLine{82     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a88f81b63c73ad95d27cba18423d76a1b}{get\_Gjmh}}( \textcolor{keywordtype}{int} i) \{ \textcolor{keywordflow}{return} Gjmh[i]; \}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a9523c1c65f1ac64b5711d9e16d94da05}{get\_Gw}}( \textcolor{keywordtype}{int} i) \{ \textcolor{keywordflow}{return} Gw[i]; \}}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{87     std::vector<double> \mbox{\hyperlink{class_c_grid_ab05eac16f5654db0b57993548df05b0a}{get\_time}}() \{ \textcolor{keywordflow}{return} time; \}}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89     std::vector<double> \mbox{\hyperlink{class_c_grid_af8f95dada793b5b014fff6aedd91fdf3}{get\_r}}() \{ \textcolor{keywordflow}{return} r; \}}
+\DoxyCodeLine{90     std::vector<double> \mbox{\hyperlink{class_c_grid_ab41ba0cc0f058915b5f64b130c7f62f6}{get\_rph}}() \{ \textcolor{keywordflow}{return} rph; \}}
+\DoxyCodeLine{91     std::vector<double> \mbox{\hyperlink{class_c_grid_ad95c328190671a83621c9ece98a0e3a2}{get\_rmh}}() \{ \textcolor{keywordflow}{return} rmh; \}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93     std::vector<double> \mbox{\hyperlink{class_c_grid_ab73c087380004533b3e36b510082dfb9}{get\_z}}() \{ \textcolor{keywordflow}{return} z; \}}
+\DoxyCodeLine{94     std::vector<double> \mbox{\hyperlink{class_c_grid_aee8187153d611c12b609a991ab4514f5}{get\_zph}}() \{ \textcolor{keywordflow}{return} zph; \}}
+\DoxyCodeLine{95     std::vector<double> \mbox{\hyperlink{class_c_grid_a83355c0aea320402d4e5a3576739e211}{get\_zmh}}() \{ \textcolor{keywordflow}{return} zmh; \}}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97     std::vector<double> \mbox{\hyperlink{class_c_grid_a53e28de0f7d92674676c4469ed8f0c9b}{get\_Vb}}() \{ \textcolor{keywordflow}{return} Vb; \}}
+\DoxyCodeLine{98     std::vector<double> \mbox{\hyperlink{class_c_grid_add4444999cebbdb0959fff7ff27fde35}{get\_Vb\_ac}}() \{ \textcolor{keywordflow}{return} Vb\_ac; \}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100     std::vector<double> \mbox{\hyperlink{class_c_grid_a68a4227035d15361140c08f05c9f0039}{get\_kr}}() \{ \textcolor{keywordflow}{return} kr; \}}
+\DoxyCodeLine{101     std::vector<double> \mbox{\hyperlink{class_c_grid_a8aadd79676f065195272e55b4ff0ade2}{get\_kz}}() \{ \textcolor{keywordflow}{return} kz; \}}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103     std::vector<double> \mbox{\hyperlink{class_c_grid_ae95a0bc5a9dae8f0e4419e8dce254485}{get\_kiph}}() \{ \textcolor{keywordflow}{return} kiph; \}}
+\DoxyCodeLine{104     std::vector<double> \mbox{\hyperlink{class_c_grid_a18e7a31d64bb97d4e9d212549cdc9084}{get\_kimh}}() \{ \textcolor{keywordflow}{return} kimh; \}}
+\DoxyCodeLine{105     std::vector<double> \mbox{\hyperlink{class_c_grid_a0902b18411d8791aecf2e295f346a58d}{get\_kjph}}() \{ \textcolor{keywordflow}{return} kjph; \}}
+\DoxyCodeLine{106     std::vector<double> \mbox{\hyperlink{class_c_grid_ac3bcf7314eb2308106bf8a78bf9dd293}{get\_kjmh}}() \{ \textcolor{keywordflow}{return} kjmh; \}}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108     std::vector<double> \mbox{\hyperlink{class_c_grid_a72bc066f30826ed828d331517208cdab}{get\_Giph}}() \{ \textcolor{keywordflow}{return} Giph; \}}
+\DoxyCodeLine{109     std::vector<double> \mbox{\hyperlink{class_c_grid_a149d050318ff4007d6244b3908827873}{get\_Gimh}}() \{ \textcolor{keywordflow}{return} Gimh; \}}
+\DoxyCodeLine{110     std::vector<double> \mbox{\hyperlink{class_c_grid_aa7aed0ccd12970a0092af84349baec72}{get\_Gjph}}() \{ \textcolor{keywordflow}{return} Gjph; \}}
+\DoxyCodeLine{111     std::vector<double> \mbox{\hyperlink{class_c_grid_a133765aa18ad7f5a058aa9502d506d54}{get\_Gjmh}}() \{ \textcolor{keywordflow}{return} Gjmh; \}}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113     std::vector<double> \mbox{\hyperlink{class_c_grid_a98881d43011645276e83efe8e9b21711}{get\_Gw}}() \{ \textcolor{keywordflow}{return} Gw; \}}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_grid_ae91fb92c342acdff4f34cf8626bcad8c}{get\_ntotal}}()              \{ \textcolor{keywordflow}{return} nr * nz; \}}
+\DoxyCodeLine{117     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_grid_adc53fa5c3292c0f11fb9fa37cedae943}{get\_nr}}()                  \{ \textcolor{keywordflow}{return} nr; \}}
+\DoxyCodeLine{118     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_grid_a6ac8801390bbbc42c6de8891aaedd962}{get\_nz}}()                  \{ \textcolor{keywordflow}{return} nz; \}}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a1cec2c95c40a02b9fb89e44406f92f6a}{get\_alpha}}()             \{ \textcolor{keywordflow}{return} alpha; \}}
+\DoxyCodeLine{121     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a891370e186d328ce71e6afe836306efb}{get\_omega}}()             \{ \textcolor{keywordflow}{return} omega; \}}
+\DoxyCodeLine{122     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_grid_a1442ef256229530abda58736cfaa2417}{get\_dtheta}}()               \{ \textcolor{keywordflow}{return} dtheta; \}}
+\DoxyCodeLine{123 \};}
+\DoxyCodeLine{124 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

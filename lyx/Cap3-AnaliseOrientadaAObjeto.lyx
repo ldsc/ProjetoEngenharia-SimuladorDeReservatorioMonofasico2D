@@ -93,6 +93,10 @@
 \begin_body
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -105,6 +109,11 @@ lhead{
 thechapter
 \backslash
 space - Análise Orientada a Objeto}  
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -169,21 +178,21 @@ Diagramas de classes
 O diagrama de classes é essencial para a montagem da versão inicial do código
  do software.
  Ele é constituído pelas classes, seus métodos e atributos, além das diversas
- relações entre elas.
- O diagrama aqui desenvolvido é composto por 8 classes é apresentado na
- Figura 
+ relações entre elas (heranaça, dependência, nível de acesso).
+ Então, o diagrama aqui desenvolvido é composto por 10 classes e é apresentado
+ na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "cap:Diagrama-de-classes"
 
 \end_inset
 
-.
- 
+ que se segue.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -191,8 +200,10 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/fig-3-9-Diagrama-de-classes-heranca.png
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/class diagram.eps
+	lyxscale 25
 	width 100text%
+	rotateAngle 90
 
 \end_inset
 
@@ -239,55 +250,126 @@ name "subsec:Dicionário-de-classes"
 \end_layout
 
 \begin_layout Itemize
-Classe CRocha: uma classe que representa a matriz de um meio poroso, contendo
- suas propriedades físicas características.
+Classe 
+\series bold
+CGas
+\series default
+: gás que satura o meio poroso, contendo sas propriedades físicas característica
+s.
  Sua função é fornecer informações para compor um meio poroso saturado.
+ Classe filha de CFluido, ou seja, herda propriedades e métodos da classe
+ mãe, e contém métodos e propriedades próprias.
+ Cabe destacar, fator de compressibilidade e constante universal dos gases.
 \end_layout
 
 \begin_layout Itemize
-CReservatorio: representa uma rocha reservatório, herda a classe CRocha
- e possui os atributos especícos do reservatório.
+Classe 
+\series bold
+CLiquido
+\series default
+: líquido que satura o meio poroso, contendo sas propriedades físicas caracterís
+ticas.
+ Sua função é fornecer informações para compor um meio poroso saturado.
+ Classe filha de CFluido.Classe filha de CFluido, ou seja, herda propriedades
+ e métodos da classe mãe, e contém métodos e propriedades próprias.
 \end_layout
 
 \begin_layout Itemize
-Classe CFluido: uma classe que representa o uido que satura o meio poroso,
- contendo sas propriedades físicas características.
- Sua função é fornecer informações para compor um meio poroso saturado,
- a classe CMeioPoroso.
- 
+Classe 
+\series bold
+CFluido
+\series default
+: classe virtual que representa o fluido que satura o meio poroso.
+ Basicamente, por meio de uma classe virtual, ao se criar uma subclasse
+ é possível torná-la mais específica não se precisando reimplementar toda
+ a classe, pois é possível alterar o comportamento pontualmente.
 \end_layout
 
 \begin_layout Itemize
-Classe CMeioPoroso: uma classe que representa um meio poroso saturado com
- um determinado fluido.
- Sua função é fornecer informações necessárias para a classe CMetodoNumerico.
- 
+Classe 
+\series bold
+CResevoir:
+\series default
+ representa uma rocha reservatório com atributos específicos do reservatório,
+ como pressão inicial, raio externo, compressibilidade, porosidade, temperatura,
+ permeabilidade.
 \end_layout
 
 \begin_layout Itemize
-Classe CGrid-2D: Uma classe que represenda o meio poroso como um domínio
- discretizado em 2D, uma grade.
- Sua função é identicar os pontos no espaço 2D em que a solução em volumes
+Classe 
+\series bold
+CProps
+\series default
+: classe que recebe características do fluido e do reservatório e calcula
+ propriedades de interesse.
+ Tudo que foi armazenado é acessado dinamicamente.
+ É a base de cálculo do método numérico poir implementa as derivadas e possui
+ métodos de atualização do conteúdo das células discretizadas.
+\end_layout
+
+\begin_layout Itemize
+Classe 
+\series bold
+CGrid
+\series default
+: classe que representa o meio poroso como um domínio discretizado, ou seja,
+ fornece o dimensionamento do poço e reservatório no espaço, uma grade propriame
+nte dita.
+ Sua função é identicar os pontos no espaço em que a solução em volumes
  finitos será calculada.
 \end_layout
 
 \begin_layout Itemize
-Classe CMetodoNumerico Uma classe que representa o método numérico utilizado.
- Um método cuja discretização da EBM pode ser resolvida implicitamente,
- obtendo a distribuição de pressões a partir dos dados do simulador, a classe
- CSimulador.
-\end_layout
-
-\begin_layout Itemize
-Classe CGnuplot: classe que fornece os métodos necessários para a geração
- de grácos.
- O programa externo Gnuplot é uma ferramenta utilizada para a geração de
- gráficos da distribuição de pressão, em função do tempo obtida pelo simulador.
+Classe 
+\series bold
+CDiscretization:
+\series default
+ armazena propriedades puras da simulação.
+ Dito de outra forma, propriedades da malha que não dependem da tempo e
+ que são estáticas.
  
 \end_layout
 
 \begin_layout Itemize
-Classe CSimulador: uma classe que representa o simulador.
+Classe 
+\series bold
+CWell
+\series default
+: classe que representa o poço.
+\end_layout
+
+\begin_layout Itemize
+Classe 
+\series bold
+CGnuplot
+\series default
+: classe que fornece os métodos necessários para a geração de gráficos.
+ Sucintamente, o programa externo Gnuplot é uma ferramenta utilizada para
+ a geração dos gráficos da distribuição de pressão, em função do tempo obtida
+ pelo simulador para o poço e reservatório.
+\end_layout
+
+\begin_layout Itemize
+Classe 
+\series bold
+CSimulator
+\series default
+: uma classe que representa o simulador, 
+\begin_inset Quotes eld
+\end_inset
+
+cérebro do software
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Ela quem dita as regras e comanda quais ações serão tomadas e em qual ordem.
+ Em destaque, possui o método Run, que dá o ponta pé inicial na resolução
+ pelo método numérico.
+ Como já foi dito, é um método cuja discretização da EBM pode ser resolvida
+ implicitamente, obtendo a distribuição de pressões.
+ Constantemente acessa a Classe CProps com valores em atualização a cada
+ passo de tempo.
 \end_layout
 
 \begin_layout Section
