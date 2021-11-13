@@ -20,5 +20,6 @@ public:
 	static void plot(std::string name, std::string xlabel, std::string ylabel, std::string saveName);
 	static void semilogx(std::string name, std::string xlabel, std::string ylabel, std::string saveName);
 	static void semilogy(std::string name, std::string xlabel, std::string ylabel, std::string saveName);
+	static void surfacePlot(std::string name, std::string saveName);
 };
 #endif

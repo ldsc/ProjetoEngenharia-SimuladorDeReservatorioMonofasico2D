@@ -1,6 +1,6 @@
 #include "CWell.hpp"
 
-double CWell::get_qsc(double t) {
+double CWell::Qsc(double t) {
 	bool end = true;
 	double q;
 	for (int i = 0; i < tp.size(); i++) {
@@ -12,7 +12,7 @@ double CWell::get_qsc(double t) {
 	return end ? qsc[qsc.size() - 1] : q;
 }
 
-void CWell::print() {
+void CWell::Print() {
 	std::cout << "\nObjeto Well" << std::endl;
 	std::cout << "tp: ";
 	for (int i = 0; i < tp.size(); i++) {

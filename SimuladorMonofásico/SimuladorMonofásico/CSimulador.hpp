@@ -36,17 +36,18 @@ private:
 	std::vector<double> WellPressure;			/// todas as pressoes do poco
 
 private:
-	std::vector<double> calc_H(CGrid* grid, CProps* props_n, CProps* props_nu, double dt);
-	std::vector<double> calc_Q(CGrid* grid, CWell* well, double time);
+	std::vector<double> calc_H(CProps* props_n, CProps* props_nu, double dt);
+	std::vector<double> calc_Q(double time);
 	std::vector<double> calc_X(double pw, std::vector<double> p);
-	std::vector<std::vector<double>> calc_T(CGrid* grid, CProps* props_n);
+	std::vector<std::vector<double>> calc_T(CProps* props_n);
 
-	std::vector<std::vector<double>> calc_eta(CGrid* grid, CProps* props_nu, double dt);
-	std::vector<std::vector<double>> calc_tau(CGrid* grid, CWell* well, CProps* props_nu, std::vector<double> p_nu, double pw_nu);
+	std::vector<std::vector<double>> calc_eta(CProps* props_nu, double dt);
+	std::vector<std::vector<double>> calc_tau(CProps* props_nu, std::vector<double> p_nu, double pw_nu);
 
 	void plot(std::vector<double> time, std::vector<double> Pw);
+	void plotSurface();
 
-	bool isErrorNotAcceptable(double dt, std::vector<double> R, CGrid* grid, CProps* props_nu, double q, CDiscretization* discretization);
+	bool isErrorNotAcceptable(double dt, std::vector<double> R, CProps* props_nu, double q);
 
 	void read_data_and_start_objects(std::string nameFile);
 };

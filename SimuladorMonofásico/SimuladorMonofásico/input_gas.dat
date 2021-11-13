@@ -1,0 +1,50 @@
+-------------------------
+ Simulador Monofásico 2D
+-------------------------
+--- Nicholas e Kevin ----
+-------------------------
+# Poço
+periodos: 2
+tp: 0 700 		/// tempos de mudanca na vazao na superficie [h]
+qsc: 0 -400000.0		/// vazoes nos tempos de mudanca [m^3 std / dia]
+nz: 4			/// número de camadas do reservatório
+dz | aberto/fechado
+11.1803  | 1
+11.1803  | 0
+11.1803  | 0
+11.1803  | 0
+rw: 0.1	
+
+# Reservatório
+isLiquid: 0
+re: 3000.0 		/// raio externo
+theta: 0.52359866666	/// angulo estudado do reservatorio
+k0r: 500		/// permeabilidade horizontal
+k0z: 100 		/// permeabilidade vertical
+cphi: 1.0e-4		/// compressibilidadae da formacao
+phi0: 0.2 		/// porosidade inicial
+p0: 1.033512		/// pressao de referencia
+p_i: 350.0		/// pressoa inicial
+S: 0 			/// fator de pelicula
+Temperature: 353.15	/// temperatura do reservatorio
+
+# Discretização
+nr: 40 			/// qtd de volumes na largura
+nrs: 1 			/// qtd de volumes na regiao danificada
+nt: 100 		/// qtd de tempos
+ntp: 100 		/// qtd de tempos
+max_iter: 24 		/// numero maximo de iteracoes
+dtmin: 1.0e-4  		/// passo de tempo minimo [h]
+eps_NR: 1.0e-6 		/// tolerancia de convergencia dos residuos
+eps_MB: 1.0e-8 		/// tolerancia de convergencia do balanco de materiais
+Ac: 24 			/// constante de conversao de unidades acumulo (ANP)
+Bc: 0.0083621472 	/// constante de conversao de unidades fluxo (ANP)
+
+# Gas
+cf: 0.00215094   % compressibilidade do fluido na condição inicial [cm^2/kgf]
+p0: 1.0335123    % pressão padrão [kgf/cm^2]
+mu: 0.0262317    % viscosidade na condição inicial [cp]
+T0: 288.75       % temperatura absoluta padrão [K]
+Tpc: 216.32;       % temperatura pseudocrítica [K]
+Ppc: 46.34;        % pressão pseudocrítica [kgf/cm^2]
+Ma: 20.3;         % massa molecular aparente [kg/kg-mol]

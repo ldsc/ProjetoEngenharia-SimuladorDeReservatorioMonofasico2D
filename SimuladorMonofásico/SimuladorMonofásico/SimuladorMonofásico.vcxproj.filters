@@ -88,6 +88,11 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="input.dat" />
+    <None Include="input_gas.dat">
+      <Filter>Arquivos de Recurso</Filter>
+    </None>
+    <None Include="input_liquido.dat">
+      <Filter>Arquivos de Recurso</Filter>
+    </None>
   </ItemGroup>
 </Project>

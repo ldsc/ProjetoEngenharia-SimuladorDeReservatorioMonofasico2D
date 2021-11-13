@@ -1,0 +1,11 @@
+caso 1:
+
+b = 1/2
+hd = 250
+erro máximo sem primeiros pontos: <0.3%
+
+caso 2:
+
+b=1/4
+hd = 250
+erro máximo sem primeiros pontos: <0.35%

@@ -22,21 +22,17 @@ private:
 
 	std::vector<double> b;
 	std::vector<double> dbdp;
-
 	std::vector<double> biph;
 	std::vector<double> bimh;
 	std::vector<double> bjph;
 	std::vector<double> bjmh;
 
-
 	std::vector<double> mu;
 	std::vector<double> dmudp;
-
 	std::vector<double> muiph;
 	std::vector<double> muimh;
 	std::vector<double> mujph;
 	std::vector<double> mujmh;
-
 
 	std::vector<double> phi;
 	std::vector<double> dphidp;
@@ -53,56 +49,33 @@ private:
 	void update_well(double pw);
 
 public:
-	void update(double pw, std::vector<double> pressure);
-
-	/// funcoes get do vetor completo
-	std::vector<double> get_phi()		{ return phi; }
-	std::vector<double> get_dphidp()	{ return dphidp; }
-	std::vector<double> get_b()			{ return b; }
-	std::vector<double> get_dbdp()		{ return dbdp; }
-
-	std::vector<double> get_biph()		{ return biph; }
-	std::vector<double> get_bimh()		{ return bimh; }
-	std::vector<double> get_bjph()		{ return bjph; }
-	std::vector<double> get_bjmh()		{ return bjmh; }
-
-
-	std::vector<double> get_mu()		{ return mu; }
-	std::vector<double> get_dmudp()		{ return dmudp; }
-
-	std::vector<double> get_muiph()		{ return mujph; }
-	std::vector<double> get_muimh()		{ return muimh; }
-	std::vector<double> get_mujph()		{ return mujph; }
-	std::vector<double> get_mujmh()		{ return mujmh; }
+	void Update(double pw, std::vector<double> pressure);
 
 	/// get com as posicoes desejadas
-	double get_phi(int i)		{ return phi[i]; }
-	double get_dphidp(int i)	{ return dphidp[i]; }
+	double Phi(int i)		{ return phi[i]; }
+	double Dphidp(int i)	{ return dphidp[i]; }
 
 
-	double get_b(int i)			{ return b[i]; }
-	double get_dbdp(int i)		{ return dbdp[i]; }
+	double B(int i)			{ return b[i]; }
+	double Dbdp(int i)		{ return dbdp[i]; }
+	double Biph(int i)		{ return biph[i]; }
+	double Bimh(int i)		{ return bimh[i]; }
+	double Bjph(int i)		{ return bjph[i]; }
+	double Bjmh(int i)		{ return bjmh[i]; }
 
-	double get_biph(int i)		{ return biph[i]; }
-	double get_bimh(int i)		{ return bimh[i]; }
-	double get_bjph(int i)		{ return bjph[i]; }
-	double get_bjmh(int i)		{ return bjmh[i]; }
-
-
-	double get_mu(int i)		{ return mu[i]; }
-	double get_dmudp(int i)		{ return dmudp[i]; }
-
-	double get_muiph(int i)		{ return mujph[i]; }
-	double get_muimh(int i)		{ return muimh[i]; }
-	double get_mujph(int i)		{ return mujph[i]; }
-	double get_mujmh(int i)		{ return mujmh[i]; }
+	double Mu(int i)		{ return mu[i]; }
+	double Dmudp(int i)		{ return dmudp[i]; }
+	double Muiph(int i)		{ return mujph[i]; }
+	double Muimh(int i)		{ return muimh[i]; }
+	double Mujph(int i)		{ return mujph[i]; }
+	double Mujmh(int i)		{ return mujmh[i]; }
 
 	/// props do poco
-	double get_bw()					{ return bw; }
-	double get_dbwdp1()				{ return dbwdp1; }
-	double get_dbwdpw()				{ return dbwdpw; }
-	double get_muw()				{ return muw; }
-	double get_dmuwdp1()			{ return dmuwdp1; }
-	double get_dmuwdpw()			{ return dmuwdpw; }
+	double Bw()					{ return bw; }
+	double Dbwdp1()				{ return dbwdp1; }
+	double Dbwdpw()				{ return dbwdpw; }
+	double Muw()				{ return muw; }
+	double Dmuwdp1()			{ return dmuwdp1; }
+	double Dmuwdpw()			{ return dmuwdpw; }
 };
 #endif

@@ -166,7 +166,8 @@
     <ClInclude Include="CWell.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="input.dat" />
+    <None Include="input_gas.dat" />
+    <None Include="input_liquido.dat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

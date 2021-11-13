@@ -10,6 +10,8 @@
 
 class CGas : public CFluido{
 public:
+	CGas(double _cf, double _p0, double _mu, double _T0, double _T, double _Tpc, double _Ppc, double _Ma):
+		cf{ _cf }, p0{ _p0 }, mu{ _mu }, T0{ _T0 }, T{ _T }, Tpc{ _Tpc }, Ppc{ _Ppc }, Ma{ _Ma }{}
 	CGas() {}
 
 public:
@@ -20,12 +22,13 @@ public:
 	double calc_mu(double p);
 	double calc_dmudp(double p);
 
-	double Z_KIAM(double p);
-	double mu_LGE(double rho);
-
 	std::string get_type() { return type; }
 
 private:
+
+	double Z_KIAM(double p);
+	double mu_LGE(double rho);
+
 	std::string type = "gas";
 
 	double cf{ 0.00215094 };	/// compressibilidade do fluido na condi??o inicial [cm^2/kgf]

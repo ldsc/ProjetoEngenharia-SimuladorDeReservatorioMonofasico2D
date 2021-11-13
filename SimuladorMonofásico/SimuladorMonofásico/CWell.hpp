@@ -16,13 +16,13 @@ private:
 public:
 	CWell() {}
 	CWell(std::vector<double> _tp, std::vector<double> _qsc, std::vector<double> _dz, std::vector<double> _partial, double _rw) : tp{ _tp }, qsc{ _qsc }, dz{ _dz }, partial{ _partial }, rw{ _rw }{}
-	std::vector<double> get_tp() { return tp; }
-	std::vector<double> get_qsc() { return qsc; }
-	std::vector<double> get_dz() { return dz; }
-	std::vector<double> get_partial() { return partial; }
-	double get_rw() { return rw; }
-	double get_qsc(double time);
-	double get_partial(int i) { return partial[i]; }
-	void print();
+	std::vector<double> Tp() { return tp; }
+	std::vector<double> Qsc() { return qsc; }
+	std::vector<double> Dz() { return dz; }
+	std::vector<double> Partial() { return partial; }
+	double Rw() { return rw; }
+	double Qsc(double time);
+	double Partial(int i) { return partial[i]; }
+	void Print();
 };
 #endif
