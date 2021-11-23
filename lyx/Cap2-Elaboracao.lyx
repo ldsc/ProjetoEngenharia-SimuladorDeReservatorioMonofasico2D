@@ -152,7 +152,7 @@ Depois da definição dos objetivos, da especificação do software e da montage
  dos primeiros diagramas, neste capítulo será apresentada a elaboração,
  que envolve o estudo de conceitos relacionados ao sistema a ser desenvolvido,
  a análise de domínio e a identificação de pacotes.
- Esse processo é feito atraves de pesquisas bibliográficas e entrevistas,
+ Esse processo é feito através de pesquisas bibliográficas e entrevistas,
  que nos mostram o que é necessário para a formulação do programa.
 \end_layout
 
@@ -175,7 +175,7 @@ Após estudo dos requisitos/especificações do sistema, leitura de artigos
 \begin_layout Itemize
 Engenharia de Reservatórios: parte fundamental na qual esse projeto se sustenta.
  O software desenvolvido, utiliza conceitos tais como de propriedades dos
- fuídos , propriedades de rochas, a Equação de Balanço de Materiais (EBM).
+ fluídos , propriedades de rochas, a Equação de Balanço de Materiais (EBM).
  Ele então aplicará todos esses conceitos na caracterização adicional do
  reservatório e do poço o que permite a predição do comportamento de ambos
  ao longo da produção.
@@ -184,7 +184,7 @@ Engenharia de Reservatórios: parte fundamental na qual esse projeto se sustenta
 \begin_layout Itemize
 A Simulação de Reservatórios é um ramo da na engenharia de reservatório.
  Trata da utilização do desenvolvimento de simuladores, que por meio de
- modelos matemáticos buscam prever o comportamento de um reservátorio de
+ modelos matemáticos buscam prever o comportamento de um reservatório de
  petróleo e de seus poços associados.
  Os simuladores podem ser do tipo black oil ou composicionais, no primeiro
  o óleo é considerado uma substância só, e no segundo uma mistura de diversas
@@ -193,12 +193,12 @@ A Simulação de Reservatórios é um ramo da na engenharia de reservatório.
 \end_layout
 
 \begin_layout Itemize
-Modelagem Numérica Computacional que desenvole modelos matemáticos para
+Modelagem Numérica Computacional que desenvolve modelos matemáticos para
  a solução de um determinado problema físico e então parte para um o modelo
  computacional por meio de algoritmos a fim de encontrar a solução do problema.
  Utilizou-se conceitos matemáticos de Cálculo Numérico, vistos na primeira
  parte do curso e aprimorados no ciclo profissionalizantes.
- Neste software foi utiliados, por exemplo, o método numérico de Newton-Raphson.
+ Neste software foi utilizados, por exemplo, o método numérico de Newton-Raphson.
 \end_layout
 
 \begin_layout Itemize
@@ -213,12 +213,12 @@ o pois os fluidos de um reservatório sofrem diversas alterações físicas
 
 \begin_layout Itemize
 Álgebra linear e Cálculo Integral e Diferencial na resolução de sistemas
- de matrizes e em cálculos de derivadas paraciais, Jacobianos, por exemplo.
+ de matrizes e em cálculos de derivadas parciais, Jacobianos, por exemplo.
 \end_layout
 
 \begin_layout Itemize
-Pacote Gráco: usar-se-á um pacote gráfico para plotar o comportamento da
- pressão, por exemplo, ao longo do poço e do reservatório para que haja
+Pacote Gráfico: usar-se-á um pacote gráfico para plotar o comportamento
+ da pressão, por exemplo, ao longo do poço e do reservatório para que haja
  uma melhor compreeensão e vizualização.
 \end_layout
 
@@ -403,7 +403,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Arranjo.PNG
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Arranjo.PNG
 	lyxscale 60
 	scale 60
 
@@ -450,7 +450,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Malha.PNG
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Malha.PNG
 	lyxscale 60
 	scale 60
 
@@ -1271,7 +1271,7 @@ rio devido ao dinamismo do comportamento dos fluidos.
 \end_layout
 
 \begin_layout Itemize
-Pacote Gráco: é um pacote que utiliza o gnuplot para plotar as soluções
+Pacote Gráfico: é um pacote que utiliza o gnuplot para plotar as soluções
  numéricas obtidas, isto é, as distribuições de pressão.
  Em outras palavras, é o software gnuplot que implementa a saída gráfica
  dos dados calculados.
@@ -1311,7 +1311,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Pacotes.eps
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Pacotes.eps
 	lyxscale 80
 	scale 50
 	rotateAngle 90

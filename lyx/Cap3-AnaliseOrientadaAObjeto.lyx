@@ -157,7 +157,7 @@ A AOO – Análise Orientada a Objeto é a terceira etapa do desenvolvimento
  de um projeto de engenharia, neste caso um software aplicado a engenharia
  de petróleo.
  Ela utiliza algumas regras para identificar os objetos de interesse, as
- relacões entre os pacotes, as classes, os atributos, os métodos, as heranças,
+ relações entre os pacotes, as classes, os atributos, os métodos, as heranças,
  as associações, as agregações, as composições e as dependências.
  O modelo de análise enfatiza o que deve ser feito e não como foi realizado.
  
@@ -166,8 +166,8 @@ A AOO – Análise Orientada a Objeto é a terceira etapa do desenvolvimento
 \begin_layout Standard
 Nas próximas seções, serão apresentados um conjunto de cinco diagramas (de
  classes, de sequência, de comunicação, de máquina de estado e de atividades)
- com o objetivo de identicar os objetos e seus relacionamentos e assim visualiza
-r o software de várias formas.
+ com o objetivo de identificar os objetos e seus relacionamentos e assim
+ visualizar o software de várias formas.
 \end_layout
 
 \begin_layout Section
@@ -178,7 +178,7 @@ Diagramas de classes
 O diagrama de classes é essencial para a montagem da versão inicial do código
  do software.
  Ele é constituído pelas classes, seus métodos e atributos, além das diversas
- relações entre elas (heranaça, dependência, nível de acesso).
+ relações entre elas (herança, dependência, nível de acesso).
  Então, o diagrama aqui desenvolvido é composto por 10 classes e é apresentado
  na Figura 
 \begin_inset CommandInset ref
@@ -254,8 +254,7 @@ Classe
 \series bold
 CGas
 \series default
-: gás que satura o meio poroso, contendo sas propriedades físicas característica
-s.
+: gás que satura o meio poroso, contendo as propriedades físicas características.
  Sua função é fornecer informações para compor um meio poroso saturado.
  Classe filha de CFluido, ou seja, herda propriedades e métodos da classe
  mãe, e contém métodos e propriedades próprias.
@@ -267,8 +266,8 @@ Classe
 \series bold
 CLiquido
 \series default
-: líquido que satura o meio poroso, contendo sas propriedades físicas caracterís
-ticas.
+: líquido que satura o meio poroso, contendo as propriedades físicas característ
+icas.
  Sua função é fornecer informações para compor um meio poroso saturado.
  Classe filha de CFluido.Classe filha de CFluido, ou seja, herda propriedades
  e métodos da classe mãe, e contém métodos e propriedades próprias.
@@ -303,7 +302,7 @@ CProps
 : classe que recebe características do fluido e do reservatório e calcula
  propriedades de interesse.
  Tudo que foi armazenado é acessado dinamicamente.
- É a base de cálculo do método numérico poir implementa as derivadas e possui
+ É a base de cálculo do método numérico por implementa as derivadas e possui
  métodos de atualização do conteúdo das células discretizadas.
 \end_layout
 
@@ -315,7 +314,7 @@ CGrid
 : classe que representa o meio poroso como um domínio discretizado, ou seja,
  fornece o dimensionamento do poço e reservatório no espaço, uma grade propriame
 nte dita.
- Sua função é identicar os pontos no espaço em que a solução em volumes
+ Sua função é identificar os pontos no espaço em que a solução em volumes
  finitos será calculada.
 \end_layout
 
@@ -373,7 +372,7 @@ cérebro do software
 \end_layout
 
 \begin_layout Section
-Diagrama de seqüência – eventos
+Diagrama de sequência – eventos
 \begin_inset Index idx
 status collapsed
 
@@ -417,14 +416,14 @@ name "subsec:diagrama de sequência"
 
 \shape italic
 \emph on
-O diagrama de seqüência enfatiza a troca de eventos e mensagens e sua ordem
+O diagrama de sequência enfatiza a troca de eventos e mensagens e sua ordem
  temporal.
  Contém informações sobre o fluxo de controle do software.
  Costuma ser montado a partir de um diagrama de caso de uso e estabelece
  o relacionamento dos atores (usuários e sistemas externos) com alguns objetos
  do sistema.
  O diagrama de sequência pode ser geral, englobando todas as operações do
- sistema ou especíco, que enfatiza uma determinada operação.
+ sistema ou específico, que enfatiza uma determinada operação.
 \end_layout
 
 \begin_layout Subsection
@@ -450,12 +449,12 @@ reference "cap:Diagrama-de-sequencia"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Sequencia_Geral.eps
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Sequencia_Geral.eps
 	lyxscale 50
 	width 100text%
 
@@ -468,7 +467,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de seqüência
+Diagrama de sequência
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-sequencia"
@@ -514,12 +513,12 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Sequencia_Especifico.eps
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Sequencia_Especifico.eps
 	lyxscale 50
 	width 100text%
 
@@ -532,7 +531,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de seqüência
+Diagrama de sequência
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-sequencia-1"
@@ -618,7 +617,7 @@ reference "subsec:Diagrama-de-Comunicação"
 \end_inset
 
  abaixo o diagrama de comunicação com foco no simulador propriamente dito.
- As linhas indicam or criação de obejtos ora acesso a funções das classes.
+ As linhas indicam ora criação de objetos ora acesso a funções das classes.
 \end_layout
 
 \begin_layout Standard
@@ -626,12 +625,12 @@ reference "subsec:Diagrama-de-Comunicação"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Comunicacao1.eps
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Comunicacao1.eps
 	lyxscale 50
 	width 100text%
 
@@ -680,8 +679,8 @@ noprefix "false"
  o poço com zonas abertas ao fluxo ou não.
  A seguir, fornecer dados ao simulador.
  Com todos os parâmetro já definidos e alocados na memória o computador
- processa-os a partir do obejto CMetodoNumerico.
- A comunicação continua com a exibição dos resultados para o usário e com
+ processa-os a partir do objeto CMetodoNumerico.
+ A comunicação continua com a exibição dos resultados para o usuário e com
  o fornecimento deles para o Gnuplot gerar os respectivos gráficos e fornecê-los
  ao usuário.
 \end_layout
@@ -691,12 +690,12 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Comunicacao2.eps
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Comunicacao2.eps
 	lyxscale 50
 	width 100text%
 
@@ -780,12 +779,12 @@ reference "cap:Diagrama-de-maquina-de-estado"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Maquina_Estado.eps
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Maquina_Estado.eps
 	lyxscale 50
 	width 100text%
 
@@ -831,7 +830,7 @@ reference "cap:Diagrama-de-atividades"
 \end_inset
 
  que o diagrama de atividades correspondente a uma atividade específica
- do diagrama de máguina de estado.
+ do diagrama de máquina de estado.
  Nesse caso, 
 \begin_inset Quotes eld
 \end_inset
@@ -852,12 +851,12 @@ calculando a distribuição de pressão
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_de_Atividades.eps
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_de_Atividades.eps
 	lyxscale 50
 	width 100text%
 

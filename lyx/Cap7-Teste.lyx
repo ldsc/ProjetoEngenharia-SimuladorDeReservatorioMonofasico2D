@@ -137,12 +137,7 @@ thechapter - Teste}
 \begin_layout Standard
 Todo projeto de engenharia passa por uma etapa de testes.
  Neste capítulo apresentamos alguns testes do software desenvolvido.
- Estes testes devem dar resposta aos diagramas de caso de uso inicialmente
- apresentados (diagramas de caso de uso geral e específicos).
-\end_layout
-
-\begin_layout Standard
-Para validar o software apresentado, é utilizado o artigo 
+ Para isso, é validado o software desenvolvido, e é utilizado o artigo 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bilhartz_1977"
@@ -151,7 +146,11 @@ literal "false"
 \end_inset
 
 , onde ele mostra o efeito da penetração parcial.
- Algumas definições importantes são:
+ 
+\end_layout
+
+\begin_layout Standard
+Algumas definições importantes definidas pelo artigo:
 \end_layout
 
 \begin_layout Itemize
@@ -266,6 +265,7 @@ Além disso, foi utilizado:
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -302,6 +302,7 @@ Teste 2, pressão ao longo do reservatório.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -353,7 +354,7 @@ No teste 2, buscou-se o cenário onde b=1/4 e
 
 .
  Para isso, foi utilizado as mesmas propriedades do fluido do caso anterior,
- com a mudança em:
+ com mudanças em:
 \end_layout
 
 \begin_layout Itemize
@@ -379,6 +380,7 @@ No teste 2, buscou-se o cenário onde b=1/4 e
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -415,6 +417,7 @@ Teste 2, pressão ao longo do reservatório.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -456,18 +459,19 @@ Desconsiderando os primeiros pontos de resultado do simulador, o erro ficou
 \end_layout
 
 \begin_layout Standard
-É importante citar que o simulador desenvolvido, varia as propriedades do
+É importante citar que o simulador desenvolvido varia as propriedades do
  fluido e da rocha com a pressão e foi modelado por volumes finitos, aumentando
  a precisão.
  O artigo comparado, não cita essa característica, tratando do assunto de
- forma mais abrangente e, por ser dos anos 1977, possuía menos poder computacion
-al para simulações complexas.
+ forma mais abrangente.
+ Além disso, por ser dos anos 1977, possuía menos poder computacional para
+ simulações complexas.
  
 \end_layout
 
 \begin_layout Standard
-Portanto, o erro do simulador com o artigo, poderia ser explicado por essa
- alta precisão.
+Portanto, o erro do simulador com o artigo poderia ser parcialmente explicado
+ por essa alta precisão das propriedades, da modelagem e avanço tecnológico.
 \end_layout
 
 \end_body

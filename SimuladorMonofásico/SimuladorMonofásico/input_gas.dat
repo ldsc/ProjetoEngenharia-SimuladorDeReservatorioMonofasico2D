@@ -41,10 +41,10 @@ Ac: 24 			/// constante de conversao de unidades acumulo (ANP)
 Bc: 0.0083621472 	/// constante de conversao de unidades fluxo (ANP)
 
 # Gas
-cf: 0.00215094   % compressibilidade do fluido na condição inicial [cm^2/kgf]
-p0: 1.0335123    % pressão padrão [kgf/cm^2]
-mu: 0.0262317    % viscosidade na condição inicial [cp]
-T0: 288.75       % temperatura absoluta padrão [K]
-Tpc: 216.32;       % temperatura pseudocrítica [K]
-Ppc: 46.34;        % pressão pseudocrítica [kgf/cm^2]
-Ma: 20.3;         % massa molecular aparente [kg/kg-mol]
+cf: 0.00215094   /// compressibilidade do fluido na condição inicial [cm^2/kgf]
+p0: 1.0335123    /// pressão padrão [kgf/cm^2]
+mu: 0.0262317    /// viscosidade na condição inicial [cp]
+T0: 288.75       /// temperatura absoluta padrão [K]
+Tpc: 216.32       /// temperatura pseudocrítica [K]
+Ppc: 46.34        /// pressão pseudocrítica [kgf/cm^2]
+Ma: 20.3         /// massa molecular aparente [kg/kg-mol]

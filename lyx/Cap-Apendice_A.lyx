@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass extbook
 \begin_preamble
 \usepackage {graphicx}
@@ -31,16 +33,18 @@
 \language_package auto
 \inputencoding utf8
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -83,6 +87,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -97,7 +102,10 @@
 \tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -111,7 +119,7 @@
 \begin_body
 
 \begin_layout Chapter
-Título do Apêndice
+Como modificar o arquivo inputdata
 \end_layout
 
 \begin_layout Standard
@@ -133,54 +141,1051 @@ thepage}
 
 \end_inset
 
-Descreve-se neste apêndice ...
-\end_layout
-
-\begin_layout Itemize
-Os anexos ou apêndices contém material auxiliar.
- Por exemplo, tabelas, gráficos, resultados de experimentos, algoritmos,
- códigos e simulações.
-\end_layout
-
-\begin_layout Itemize
-Um apêndice pode incluir assuntos mais gerais (geral demais para estar no
- núcleo do trabalho) ou mais específicos (detalhado demais para estar no
- núcleo do trabalho).
-\end_layout
-
-\begin_layout Itemize
-Pode conter um artigo de auxílio fundamental ao trabalho.
- 
-\end_layout
-
-\begin_layout Itemize
-Pode conter artigos publicados.
-\end_layout
-
-\begin_layout Itemize
-[tudo aquilo que for importante para a tese mas não essencial, deve ser
- colocado em apêndices]
-\end_layout
-
-\begin_layout Itemize
-[como exemplo, revisão de metodologias, técnicas, modelos matemáticos, ítens
- desenvolvidos por terceiros]
-\end_layout
-
-\begin_layout Itemize
-[algoritmos e programas devem ser colocados no apêndice]
-\end_layout
-
-\begin_layout Itemize
-[imagens detalhadas de programas desenvolvidos devem ser colocados no apêndice]
+Neste anexo, é apresentado como o usuário deve modificar o arquivo com as
+ propriedades iniciais da simulação.
 \end_layout
 
 \begin_layout Section
-Sub-Titulo do Apêndice
+Modificando o tipo de fluido
 \end_layout
 
 \begin_layout Standard
-.....conteúdo..
+Abaixo é mostrado o arquivo com inputs para o caso do líquido, com 5 camadas
+ de 1 metro cada, e somente a primeira aberta à produção.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Framed
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\color blue
+--------------------------------- Simulador Monofásico 2D ----------------------
+-------------
+\end_layout
+
+\begin_layout Plain Layout
+
+\color red
+-------------------------------------- Nicholas e Kevin ------------------------
+------------------
+\end_layout
+
+\begin_layout Plain Layout
+
+\color blue
+--------------------------------------------------------------------------------
+------------------------
+\end_layout
+
+\begin_layout Plain Layout
+
+\color blue
+# Poço periodos: 2
+\end_layout
+
+\begin_layout Plain Layout
+tp: 0 1000 
+\begin_inset Formula $\;\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// tempos de mudança na vazão na superfície 
+\begin_inset Formula $[h]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+qsc: 0 -500 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// vazões nos tempos de mudanca
+\begin_inset Formula $[m^{3}std/dia]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+nz: 5 
+\begin_inset Formula $\;\;\;\;\;\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// número de camadas do reservatório
+\end_layout
+
+\begin_layout Plain Layout
+dz | aberto/fechado 
+\color gray
+
+\begin_inset Formula $\;///$
+\end_inset
+
+ indicação da camada / aberto = 1; fechado = 0
+\end_layout
+
+\begin_layout Plain Layout
+1 | 1
+\end_layout
+
+\begin_layout Plain Layout
+1 | 0
+\end_layout
+
+\begin_layout Plain Layout
+1 | 0
+\end_layout
+
+\begin_layout Plain Layout
+1 | 0
+\end_layout
+
+\begin_layout Plain Layout
+1 | 0
+\end_layout
+
+\begin_layout Plain Layout
+rw: 0.09486 
+\begin_inset Formula $\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// raio do poço
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\color blue
+# Reservatório
+\end_layout
+
+\begin_layout Plain Layout
+isLiquid: 1 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// 1 = líquido; 0 = gás
+\end_layout
+
+\begin_layout Plain Layout
+re: 3000.0 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// raio externo do reservatório
+\end_layout
+
+\begin_layout Plain Layout
+theta: 0.52359866666 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// ângulo estudado do reservatorio
+\end_layout
+
+\begin_layout Plain Layout
+k0r: 500 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// permeabilidade horizontal
+\end_layout
+
+\begin_layout Plain Layout
+k0z: 100 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// permeabilidade vertical
+\end_layout
+
+\begin_layout Plain Layout
+cphi: 1.0e-4 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// compressibilidadae da formação
+\end_layout
+
+\begin_layout Plain Layout
+phi0: 0.2 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// porosidade inicial
+\end_layout
+
+\begin_layout Plain Layout
+p0: 1.033512 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// pressão de referência
+\end_layout
+
+\begin_layout Plain Layout
+p_i: 350.0 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// pressão inicial
+\end_layout
+
+\begin_layout Plain Layout
+S: 0 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// fator de película
+\end_layout
+
+\begin_layout Plain Layout
+Temperature: 353.15 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// temperatura do reservatorio
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\color blue
+# Discretização
+\end_layout
+
+\begin_layout Plain Layout
+nr: 20 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// quantidade de volumes na largura
+\end_layout
+
+\begin_layout Plain Layout
+nrs: 1 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// quantidade de volumes na região danificada
+\end_layout
+
+\begin_layout Plain Layout
+nt: 100 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// quantidade de tempos
+\end_layout
+
+\begin_layout Plain Layout
+ntp: 100
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// quantidade de tempos
+\end_layout
+
+\begin_layout Plain Layout
+max_iter: 24 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// número máximo de iterações
+\end_layout
+
+\begin_layout Plain Layout
+dtmin: 1.0e-4 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// passo de tempo mínimo
+\begin_inset Formula $[h]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+eps_NR: 1.0e-6 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// tolerância de convergência dos resíduos
+\end_layout
+
+\begin_layout Plain Layout
+eps_MB: 1.0e-8 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// tolerância de convergência do balanço de materiais
+\end_layout
+
+\begin_layout Plain Layout
+Ac: 24
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// constante de conversão de unidades acúmulo (ANP)
+\end_layout
+
+\begin_layout Plain Layout
+Bc: 0.0083621472
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// constante de conversão de unidades fluxo (ANP)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\color blue
+# Liquido
+\end_layout
+
+\begin_layout Plain Layout
+cf: 14.7e-5
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// compressibilidade do fluido
+\begin_inset Formula $[cm^{2}/kgf]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+b0: 1.0 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// inverso do fator volume formação na pressão p0 
+\begin_inset Formula $[m^{3}std/m^{3}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+p0: 1.0335123
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// pressao de referência 
+\begin_inset Formula $[kgf/cm^{2}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+mu: 1.0 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// viscosidade [cp]
+\end_layout
+
+\begin_layout Plain Layout
+cmu: 0.0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para escolher a opção de líquido, é importante modificar a variável do Reservató
+rio 
+\begin_inset Quotes eld
+\end_inset
+
+isLiquid
+\begin_inset Quotes erd
+\end_inset
+
+ para 1.
+ O líquido recebe 5 propriedades, conforme mostrado acima.
+ 
+\end_layout
+
+\begin_layout Standard
+Abaixo é mostrado o caso de gás, que recebe 7 propriedades.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Framed
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\color blue
+--------------------------------- Simulador Monofásico 2D ----------------------
+-------------
+\end_layout
+
+\begin_layout Plain Layout
+
+\color red
+-------------------------------------- Nicholas e Kevin ------------------------
+------------------
+\end_layout
+
+\begin_layout Plain Layout
+
+\color blue
+--------------------------------------------------------------------------------
+------------------------
+\end_layout
+
+\begin_layout Plain Layout
+
+\color blue
+# Poço periodos: 2
+\end_layout
+
+\begin_layout Plain Layout
+tp: 0 1000 
+\begin_inset Formula $\;\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// tempos de mudança na vazão na superfície 
+\begin_inset Formula $[h]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+qsc: 0 -500 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// vazões nos tempos de mudanca
+\begin_inset Formula $[m^{3}std/dia]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+nz: 5 
+\begin_inset Formula $\;\;\;\;\;\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// número de camadas do reservatório
+\end_layout
+
+\begin_layout Plain Layout
+dz | aberto/fechado 
+\color gray
+
+\begin_inset Formula $\;///$
+\end_inset
+
+ indicação da camada / aberto = 1; fechado = 0
+\end_layout
+
+\begin_layout Plain Layout
+1 | 1
+\end_layout
+
+\begin_layout Plain Layout
+1 | 0
+\end_layout
+
+\begin_layout Plain Layout
+1 | 0
+\end_layout
+
+\begin_layout Plain Layout
+1 | 0
+\end_layout
+
+\begin_layout Plain Layout
+1 | 0
+\end_layout
+
+\begin_layout Plain Layout
+rw: 0.09486 
+\begin_inset Formula $\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// raio do poço
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\color blue
+# Reservatório
+\end_layout
+
+\begin_layout Plain Layout
+isLiquid: 1 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// 1 = líquido; 0 = gás
+\end_layout
+
+\begin_layout Plain Layout
+re: 3000.0 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// raio externo do reservatório
+\end_layout
+
+\begin_layout Plain Layout
+theta: 0.52359866666 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// ângulo estudado do reservatorio
+\end_layout
+
+\begin_layout Plain Layout
+k0r: 500 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// permeabilidade horizontal
+\end_layout
+
+\begin_layout Plain Layout
+k0z: 100 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// permeabilidade vertical
+\end_layout
+
+\begin_layout Plain Layout
+cphi: 1.0e-4 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// compressibilidadae da formação
+\end_layout
+
+\begin_layout Plain Layout
+phi0: 0.2 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// porosidade inicial
+\end_layout
+
+\begin_layout Plain Layout
+p0: 1.033512 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// pressão de referência
+\end_layout
+
+\begin_layout Plain Layout
+p_i: 350.0 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// pressão inicial
+\end_layout
+
+\begin_layout Plain Layout
+S: 0 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// fator de película
+\end_layout
+
+\begin_layout Plain Layout
+Temperature: 353.15 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// temperatura do reservatorio
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\color blue
+# Discretização
+\end_layout
+
+\begin_layout Plain Layout
+nr: 20 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// quantidade de volumes na largura
+\end_layout
+
+\begin_layout Plain Layout
+nrs: 1 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// quantidade de volumes na região danificada
+\end_layout
+
+\begin_layout Plain Layout
+nt: 100 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// quantidade de tempos
+\end_layout
+
+\begin_layout Plain Layout
+ntp: 100
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// quantidade de tempos
+\end_layout
+
+\begin_layout Plain Layout
+max_iter: 24 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// número máximo de iterações
+\end_layout
+
+\begin_layout Plain Layout
+dtmin: 1.0e-4 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// passo de tempo mínimo
+\begin_inset Formula $[h]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+eps_NR: 1.0e-6 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// tolerância de convergência dos resíduos
+\end_layout
+
+\begin_layout Plain Layout
+eps_MB: 1.0e-8 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// tolerância de convergência do balanço de materiais
+\end_layout
+
+\begin_layout Plain Layout
+Ac: 24
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// constante de conversão de unidades acúmulo (ANP)
+\end_layout
+
+\begin_layout Plain Layout
+Bc: 0.0083621472
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// constante de conversão de unidades fluxo (ANP)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\color blue
+# Gas
+\end_layout
+
+\begin_layout Plain Layout
+cf: 0.00215094 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// compressibilidade do fluido
+\begin_inset Formula $[cm^{2}/kgf]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+p0: 1.08335123 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// pressão padrão [kgf/c
+\begin_inset Formula $m^{2}$
+\end_inset
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+mu: 0.0262317 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// viscosidade na condição inicial [cp]
+\end_layout
+
+\begin_layout Plain Layout
+T0: 288.75
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// temperatura absoluta padrão [K]
+\end_layout
+
+\begin_layout Plain Layout
+Tpc: 216.32 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// temperatura pseudocrítica [K]
+\end_layout
+
+\begin_layout Plain Layout
+Ppc: 46.34 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// pressão pseudocrítica [kgf/c
+\begin_inset Formula $m^{\ensuremath{2}}$
+\end_inset
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+Ma: 20.3 
+\begin_inset Formula $\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// massa molecular aparente [kg/kg-mol]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Modificando as camadas do reservatório
+\end_layout
+
+\begin_layout Standard
+Para modificar as camadas do reservatório, é necessário alterar os valores
+ de 
+\begin_inset Quotes eld
+\end_inset
+
+nz
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+dz | aberto/fechado
+\begin_inset Quotes erd
+\end_inset
+
+, onde 
+\begin_inset Quotes eld
+\end_inset
+
+nz
+\begin_inset Quotes erd
+\end_inset
+
+ é o número de camadas, e 
+\begin_inset Quotes eld
+\end_inset
+
+dz | aberto/fechado
+\begin_inset Quotes erd
+\end_inset
+
+ são valores adicionados nas linhas posteriores, com a espessura e se está
+ aberto ou fechado.
+ 
+\end_layout
+
+\begin_layout Standard
+Por exemplo, um reservatório com 2 camadas, a primeira fechada com 1 metro,
+ e a segunda aberta com 3 metros, fica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Framed
+position "t"
+hor_pos "c"
+has_inner_box 0
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+nz: 2 
+\begin_inset Formula $\;\;\;\;\;\;\;\;\;\;\;$
+\end_inset
+
+
+\color gray
+/// número de camadas do reservatório
+\end_layout
+
+\begin_layout Plain Layout
+dz | aberto/fechado 
+\color gray
+
+\begin_inset Formula $\;///$
+\end_inset
+
+ indicação da camada / aberto = 1; fechado = 0
+\end_layout
+
+\begin_layout Plain Layout
+1 | 0
+\end_layout
+
+\begin_layout Plain Layout
+3 | 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O simulador o valor de 
+\begin_inset Quotes eld
+\end_inset
+
+aberto/fechado
+\begin_inset Quotes erd
+\end_inset
+
+ aceita valores entre 0 e 1, onde 0 é totalmente fechado, e 1 totalmente
+ aberto à produção.
 \end_layout
 
 \end_body

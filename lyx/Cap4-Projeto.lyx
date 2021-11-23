@@ -136,7 +136,7 @@ thechapter - Projeto}
 
 \begin_layout Standard
 Neste capítulo do projeto de engenharia veremos questões associadas ao projeto
- do sistema, incluindo protocolos, recursos, plataformas suportadas, inplicações
+ do sistema, incluindo protocolos, recursos, plataformas suportadas, implicações
  nos diagramas feitos anteriormente, diagramas de componentes e implantação.
  Na segunda parte revisamos os diagramas levando em conta as decisões do
  projeto do sistema.
@@ -298,8 +298,8 @@ O programa é multiplataforma, o que permite executá-lo em Windows e Mac
 
 \begin_layout Itemize
 Ambiente de desenvolvimento Microsoft Visual C ++ ( MSVC ).
- Um compilador para a C , C ++ e C ++ / CX linguagens de programação pela
- Microsoft .
+ Um editor de códigos e compilador de diversas linguagens de programação
+ como python, C, C++, C#, desenvolvido pela Microsoft .
  MSVC é um software proprietário.
  Originalmente um produto autônomo que mais tarde tornou-se parte do Visual
  Studio e foi disponibilizado em versões de teste e 
@@ -313,7 +313,7 @@ freeware
 
 \begin_layout Itemize
 O software utilizara a biblioteca externa CGnuplot que permite acesso ao
- programa GNuplot.
+ programa Gnuplot.
  É um utilitário portátil de gráfico baseado em linha de comando para Linux,
  OS / 2, MS Windows, OSX, VMS e muitas outras plataformas.
  O código-fonte é protegido por direitos autorais, mas é distribuído gratuitamen
@@ -375,7 +375,7 @@ name "sec:Projeto-orientado-a-objeto"
 O projeto orientado a objeto é a etapa posterior ao projeto do sistema.
  Baseia-se na análise, mas considera as decisões do projeto do sistema.
  Acrescenta a análise desenvolvida e as características da plataforma escolhida
- (hardware, sistema operacional e linguagem de softwar).
+ (hardware, sistema operacional e linguagem de software).
  Passa pelo maior detalhamento do funcionamento do software, acrescentando
  atributos e métodos que envolvem a solução de problemas específicos não
  identificados durante a análise.Além disso, envolve a otimização da estrutura
@@ -430,12 +430,12 @@ Existe a necessidade de instalação do software Gnuplot para o funcionamento
 \end_layout
 
 \begin_layout Itemize
-O código possui comentarios com explicaçõess dos algoritmos a serem executados.
+O código possui comentários com explicações dos algoritmos a serem executados.
 \end_layout
 
 \begin_layout Itemize
 Neste projeto foi feita uma associação entre a biblioteca CGnuplot com as
- classse CSimulator, que por sua vez associa-se com as classes CReservoir,
+ classes CSimulator, que por sua vez associa-se com as classes CReservoir,
  CDiscretization, CGrid, CWell, CProps, CFluido, que se associação com CGas
  e CLiquido
 \end_layout
@@ -463,8 +463,8 @@ name "subsec:Efeito-do-projeto-no-modelo-dinamico"
 
 \begin_layout Itemize
 Não foi realizada nessa etapa do projeto uma vez que os diagramas de sequência,
- de comunicação, máquina de estado e de atividades serãoo modicados durante
- o desenvolvimento do codigo caso seja necessário.
+ de comunicação, máquina de estado e de atividades serão modicados durante
+ o desenvolvimento do código caso seja necessário.
 \end_layout
 
 \begin_layout Subsubsection
@@ -491,11 +491,11 @@ name "subsec:Efeito-do-projeto-nos-atributos"
 \begin_layout Itemize
 Como alguns atributos necessitavam de constante atualização, foi implementado
  uma função chamada update, que a cada passa de tempo, recalculava as propriedad
-es do sistema rerservatório e poço.
+es do sistema reservatório e poço.
 \end_layout
 
 \begin_layout Itemize
-As relações entre classes foram melhoradas e adaptadas em realação à herança
+As relações entre classes foram melhoradas e adaptadas em relação à herança
  entre CFluido com CGas e CLiquido.
  Basicamente, foi necessário melhor especificar com base nos atributos inerentes
  de cada uma delas.
@@ -526,16 +526,16 @@ Efeitos do projeto nos métodos
 \end_layout
 
 \begin_layout Itemize
-Em virtude de usar leitura de disco, um metodo de inserção de dados através
+Em virtude de usar leitura de disco, um método de inserção de dados através
  do teclado foi adicionado.
  
 \end_layout
 
 \begin_layout Itemize
-A razão da existência do método Run() presente em CSimulata se explica pela
- intenção em deixar o código mais enxuto e pela intenção de agrupar algoritmos
- de mesma natureza em um só método.
- Ele échamado e governa toda a execução do código.
+A razão da existência do método Run() presente em CSimulador se explica
+ pela intenção em deixar o código mais enxuto e pela intenção de agrupar
+ algoritmos de mesma natureza em um só método.
+ Ele é chamado e governa toda a execução do código.
 \end_layout
 
 \begin_layout Subsubsection
@@ -575,14 +575,14 @@ Heranças
 \begin_layout Itemize
 Sempre que um ou mais atributos e métodos se repetiam, foi necessário reavaliar
  o código.
- Desse modo, o item de ação voltou-se para op diagrama de classes que foi
+ Desse modo, o item de ação voltou-se para o diagrama de classes que foi
  reformulado algumas vezes em subdivisões de classes e criação de novas
  classes.
 \end_layout
 
 \begin_layout Itemize
-Algumas herancas puderam ser excluidas do diagrama, uma vez que alguns atributos
- necessarios inicialmente puderam ser passados atraves da chamada das funções.
+Algumas heranças puderam ser excluídas do diagrama, uma vez que alguns atributos
+ necessários inicialmente puderam ser passados através da chamada das funções.
 \end_layout
 
 \begin_layout Subsubsection
@@ -610,7 +610,7 @@ Associações
 \end_layout
 
 \begin_layout Itemize
-Algumas herancas foram trocadas por associac~oes e novas associac~oes foram
+Algumas heranças foram trocadas por associações e novas associações foram
  criadas para relacionamento com novas classes
 \end_layout
 
@@ -633,7 +633,7 @@ Logo no início optou-se por pedir todas as informações ao usuário juntas.
 \end_layout
 
 \begin_layout Itemize
-O sofwtware tem opção de parada para mudança de valores e depois retomada.
+O software tem opção de parada para mudança de valores e depois retomada.
 \end_layout
 
 \begin_layout Itemize
@@ -647,7 +647,7 @@ Possibilidade de inclusão de bibliotecas otimizadas para resolução do Método
 \end_layout
 
 \begin_layout Itemize
-A Classe CProps fo criada para reunir alguns atributos que estavam presentes
+A Classe CProps foi criada para reunir alguns atributos que estavam presentes
  na maioria dos cálculos e que necessitavam de atualizações constantes.
  Por conta disso eles foram retirados das respectivas classes e implementados
  em outra.
@@ -712,12 +712,12 @@ reference "cap:Diagrama-de-componentes"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Componente.eps
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Componente.eps
 	lyxscale 70
 	width 100text%
 
@@ -802,12 +802,12 @@ reference "cap:Diagrama-de-implantação."
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Implantacao.eps
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Implantacao.eps
 	lyxscale 70
 	width 80text%
 

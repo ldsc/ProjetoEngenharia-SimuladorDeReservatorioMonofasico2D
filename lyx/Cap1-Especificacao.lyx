@@ -239,7 +239,8 @@ Na dinâmica de execução do software, o usuário deverá entrar com os dados
  simulador, os valores das permeabilidade das camadas estrátigraficas, inserir
  espessuras delas, dizer ao software quais camadas abertas à produção, bem
  como o tipo de fluido presente no reservatório, se óleo ou gás.
- Poderá optar-se também pela inserção dos dados em um documentode texto*.txt.
+ Poderá optar-se também pela inserção dos dados em um documento de texto
+ *.txt.
  Dada a primeira ou segunda escolha, o software calcula suas propriedades
  termofísicas, e por fim, apresenta a pressão no poço e no reservatório.
 \end_layout
@@ -254,6 +255,7 @@ Os dados com as suas respectivas unidades estão listados abaixo:
 Dados relativos ao fluido:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula $k\;\;$
 \end_inset
@@ -280,19 +282,21 @@ massa específica do fluido
 \begin_inset Formula $c_{pf}\;\;$
 \end_inset
 
-calor especíco à pressão constante do uido 
+calor especíco à pressão constante do fluido 
 \begin_inset Formula $\:\left[J/KgK\right]$
 \end_inset
 
 .
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 Dados relativos à matriz da rocha:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula $\phi\;\;$
 \end_inset
@@ -304,12 +308,14 @@ porosidade absoluta
 ;
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 Dados relativos ao meio poroso:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula $T\;\;$
 \end_inset
@@ -332,12 +338,14 @@ pressão
 ;
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 Dados relativos ao grid bidimensional:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula $dx\;\;$
 \end_inset
@@ -360,12 +368,14 @@ intervalo de discretização na direção y
 ;
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 Dados relativos ao simulador:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula $dt\;\;$
 \end_inset
@@ -377,6 +387,7 @@ intervalo de tempo
 ;
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 Após a entrada de dados pelo usuário, o programa irá calcular as propriedades
  do fluido escolhido e irá resolver a EDP discretizada com um método numérico,
@@ -982,7 +993,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/DiagCasoDeUso-AnaliseDosResultados-Especifico1.png
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/DiagCasoDeUso-AnaliseDosResultados-Especifico1.png
 	lyxscale 50
 	width 100text%
 
@@ -1018,10 +1029,9 @@ name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
 \begin_layout Standard
 Já no segundo caso de uso especíco (4 etapas), o usuário optou por simular
  um líquido com penetração parcial.
- Assim, insere os dados de entrada, define zonas de lfuxo no poço, executa
+ Assim, insere os dados de entrada, define zonas de fluxo no poço, executa
  a simulação.
- Depois disso, o software, gera gráficos e por fim, o usuário analisa os
- resultados.
+ Depois disso, o software gera gráficos e o usuário analisa os resultados.
 \end_layout
 
 \begin_layout Standard
@@ -1033,7 +1043,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/DiagCasoDeUso-AnaliseDosResultados-Especifico2.png
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/DiagCasoDeUso-AnaliseDosResultados-Especifico2.png
 	lyxscale 50
 	width 100text%
 

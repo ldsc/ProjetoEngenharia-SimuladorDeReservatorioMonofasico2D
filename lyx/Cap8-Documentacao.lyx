@@ -159,7 +159,7 @@ Abrir o arquivo input.dat ou input.txt e preencher com as informações tal
 \end_layout
 
 \begin_layout Itemize
-Executar o arquivo main.cpp via terminal ou abrí-lo diretamente de seu compilador
+Executar o arquivo main.cpp via terminal ou abri-lo diretamente de seu compilador
  C++ de preferência.
 \end_layout
 
@@ -168,7 +168,7 @@ Seguir as instruções auto-explicativas do programa enquanto ele é executado.
 \end_layout
 
 \begin_layout Standard
-Aqui cabe uma resalva aos arquvios lidos do disco.
+Aqui cabe uma resalva aos arquivos lidos do disco.
  Por mais que sejam arquivos-exemplo, eles são modelos de funcionamento
  e sua organização não pode ser alterada, caso seja, o simulador não rodará
  adequadamente.
@@ -845,7 +845,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Logo_Doxygen.PNG
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Logo_Doxygen.PNG
 	lyxscale 80
 	scale 50
 
@@ -905,7 +905,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Classes_Doxygen.png
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Classes_Doxygen.png
 	lyxscale 80
 	scale 60
 
@@ -965,7 +965,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Arquivos_Doxygen.png
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Arquivos_Doxygen.png
 	lyxscale 80
 	scale 60
 
@@ -1024,7 +1024,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/CSimulador_doxygen.PNG
+	filename C:/Users/nicholas/Desktop/ProgramacaoPratica/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/CSimulador_doxygen.PNG
 	lyxscale 80
 	scale 60
 

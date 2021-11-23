@@ -1037,7 +1037,7 @@ Dessa forma, a principal finalidade do programa é fornecer o cálculo do
  campo de pressões em um dado poço de um reservatório de óleo ou de gás.
  Para isso, utilizou-se uma simulação numérica computacional baseada no
  método dos volumes finitos.
- Este é uma ferramenta poderosa de resolução de equações diferenciais parciais
+ Esta é uma ferramenta poderosa de resolução de equações diferenciais parciais
  a um determinado volume de meio contínuo baseado, por exemplo, na resolução
  de balanços de massa.
  
@@ -1075,9 +1075,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Portanto, o problema que se propõe a resolver é simulação de poços com proprieda
-des distintas, para otimizar a produção no reservatório.
- De posse dela - ou de pelo menos um valor próximo estimado pelo software,
+Portanto, o problema que se propõe a resolver é a simulação de poços com
+ propriedades distintas, para otimizar a produção no reservatório.
+ De posse dela - ou de, pelo menos, um valor próximo estimado pelo software,
  seria possível, por exemplo, dimensionar equipamentos de fundo do poço,
  prever tempo produtivo e quantificação o volume de fluido de completação,
  por exemplo.
@@ -1140,7 +1140,7 @@ Calcular Matriz de Coeficientes.
 \end_layout
 
 \begin_layout Itemize
-Resolver sistema.
+Resolver Sistemas de equações.
 \end_layout
 
 \begin_layout Itemize

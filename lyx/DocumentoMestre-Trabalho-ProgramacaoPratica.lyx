@@ -302,6 +302,17 @@ os arquivos a seguir contém informações para ajudar quem esta fazendo o
 \end_layout
 
 \begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap-Apendice_A.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
