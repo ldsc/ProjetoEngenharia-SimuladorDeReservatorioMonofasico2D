@@ -266,6 +266,8 @@ void CSimulador::plotSurface() {
 			outdata << grid->R(r) << " " << grid->Z(z) << " " << pressure[grid->Nr()*z+r] << std::endl;
 
 	CGnuplot::surfacePlot((name + ".dat").c_str(), (name + ".png").c_str());
+	
+	std::cin.get();
 }
 
 bool CSimulador::isErrorNotAcceptable(double dt, std::vector<double> R, CProps* props_nu, double q) {

@@ -15,7 +15,7 @@ void CGnuplot::plot(string name, string xlabel, string ylabel, string saveName) 
 	fprintf(pipe, "set term pngcairo\n");
 	fprintf(pipe, ("set output '" + saveName + "'\n").c_str());
 	fprintf(pipe, "replot\n");
-	fprintf(pipe, "set term win\n");
+	//fprintf(pipe, "set term win\n");
 	fflush(pipe);
 }
 
@@ -33,7 +33,7 @@ void CGnuplot::semilogy(string name, string xlabel, string ylabel, string saveNa
 	fprintf(pipe, "set term pngcairo\n");
 	fprintf(pipe, ("set output '" + saveName + "'\n").c_str());
 	fprintf(pipe, "replot\n");
-	fprintf(pipe, "set term win\n");
+	//fprintf(pipe, "set term win\n");
 	fflush(pipe);
 }
 
@@ -51,7 +51,7 @@ void CGnuplot::semilogx(string name, string xlabel, string ylabel, string saveNa
 	fprintf(pipe, "set term pngcairo\n");
 	fprintf(pipe, ("set output '" + saveName + "'\n").c_str());
 	fprintf(pipe, "replot\n");
-	fprintf(pipe, "set term win\n");
+	//fprintf(pipe, "set term win\n");
 	fflush(pipe);
 }
 
@@ -70,6 +70,8 @@ void CGnuplot::surfacePlot(string name, string saveName) {
 	fprintf(pipe, ("splot '" + name + "' with pm3d\n").c_str());
 	fprintf(pipe, ("set output '" + saveName + "'\n").c_str());
 	fprintf(pipe, "replot\n");
-	fprintf(pipe, "set term win\n");
+	//fprintf(pipe, "set term png\n");
+	
+	std::cin.get();
 	fflush(pipe);
 }
