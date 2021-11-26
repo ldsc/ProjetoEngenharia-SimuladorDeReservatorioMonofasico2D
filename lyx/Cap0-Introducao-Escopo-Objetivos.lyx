@@ -1037,10 +1037,9 @@ Dessa forma, a principal finalidade do programa é fornecer o cálculo do
  campo de pressões em um dado poço de um reservatório de óleo ou de gás.
  Para isso, utilizou-se uma simulação numérica computacional baseada no
  método dos volumes finitos.
- Este é uma ferramenta poderosa de resolução de equações diferenciais parciais
- a um determinado volume de meio contínuo baseado, por exemplo, na resolução
- de balanços de massa.
- 
+ Esta é uma ferramenta poderosa que pode ser aplicada para resolver equações
+ diferenciais parciais a um determinado volume de meio contínuo baseado,
+ por exemplo, nas equações de balanços de massa.
 \end_layout
 
 \begin_layout Section
@@ -1061,9 +1060,9 @@ Em se tratando da Engenharia de Reservatórios, o foco do estudo é o próprio
  para que se possa fazer predições cada vez mais condizentes com as medidas
  de campo e aumentar a segurança em dizer se um campo é viável ou não à
  exploração e por quanto tempo esse campo será viável.
- Dada uma aplicação de injeção ou produção em poços no reservatório, se
- faz necessário um conhecimento sólido e completo de como ele se comportará
- e influenciará a dinâmica de pressões no poço (
+ Dada uma aplicação de injeção ou produção em poços, se faz necessário um
+ conhecimento sólido e completo de como ele se comportará e influenciará
+ a dinâmica de pressões no resevatório (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Rosa_2006"
@@ -1079,8 +1078,8 @@ Portanto, o problema que se propõe a resolver é simulação de poços com prop
 des distintas, para otimizar a produção no reservatório.
  De posse dela - ou de pelo menos um valor próximo estimado pelo software,
  seria possível, por exemplo, dimensionar equipamentos de fundo do poço,
- prever tempo produtivo e quantificação o volume de fluido de completação,
- por exemplo.
+ prever tempo produtivo e quantificar o volume de fluido de completação
+ utilizado em uma operação, por exemplo.
 \end_layout
 
 \begin_layout Section
@@ -1104,7 +1103,7 @@ Objetivo geral:
 
 \begin_deeper
 \begin_layout Itemize
-Desenvolver projeto de engenharia de software baseado em simulação numérica
+Desenvolver um projeto de engenharia de software baseado em simulação numérica
  implícita computacional para determinar a evolução da pressão em um poço
  dentro de um reservatório estratigráfico de óleo ou gás.
 \end_layout
@@ -1128,15 +1127,15 @@ Modelagem estática por meio de diagramas com interface amigável.
 \end_layout
 
 \begin_layout Itemize
-Calcular Permeabilidade.
+Calcular permeabilidade.
 \end_layout
 
 \begin_layout Itemize
-Calcular Transmissibilidade.
+Calcular transmissibilidade.
 \end_layout
 
 \begin_layout Itemize
-Calcular Matriz de Coeficientes.
+Calcular matriz de coeficientes.
 \end_layout
 
 \begin_layout Itemize
@@ -1144,7 +1143,7 @@ Resolver sistema.
 \end_layout
 
 \begin_layout Itemize
-Calcular Pressões.
+Calcular pressões.
 \end_layout
 
 \begin_layout Itemize
