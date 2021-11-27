@@ -134,13 +134,18 @@ thechapter - Implementação}
 
 \end_layout
 
+\begin_layout Standard
+Neste capítulo do projeto de engenharia apresentamos os códigos fonte que
+ foram desenvolvidos.
+\end_layout
+
 \begin_layout Description
-Nota: os códigos devem ser documentados usando padrão 
+Nota: os códigos devem foram documentados usando padrão 
 \series bold
 javadoc
 \series default
 .
- Posteriormente usar o programa 
+ Posteriormente, foi usado o 
 \series bold
 doxygen 
 \series default
@@ -178,51 +183,6 @@ literal "false"
 \end_layout
 
 \end_deeper
-\begin_layout Description
-Nota: ao longo deste capítulo usamos inclusão direta de arquivos externos
- usando o pacote 
-\emph on
-listings
-\emph default
- do \SpecialChar LaTeX
-.
- Maiores detalhes de como a saída pode ser gerada estão disponíveis nos
- links abaixo.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset CommandInset href
-LatexCommand href
-target "http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset CommandInset href
-LatexCommand href
-target "http://mirrors.ctan.org/macros/latex/contrib/listings/listings.pdf"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-Neste capítulo do projeto de engenharia apresentamos os códigos fonte que
- foram desenvolvidos.
-\end_layout
-
 \begin_layout Section
 Código fonte
 \begin_inset CommandInset label
@@ -845,7 +805,7 @@ ref{main-cpp}
 
 \end_inset
 
- o arquivo com o código da função main
+ o arquivo com o código da função main.
 \end_layout
 
 \begin_layout Standard

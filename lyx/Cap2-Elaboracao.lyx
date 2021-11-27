@@ -152,12 +152,12 @@ Depois da definição dos objetivos, da especificação do software e da montage
  dos primeiros diagramas, neste capítulo será apresentada a elaboração,
  que envolve o estudo de conceitos relacionados ao sistema a ser desenvolvido,
  a análise de domínio e a identificação de pacotes.
- Esse processo é feito atraves de pesquisas bibliográficas e entrevistas,
+ Esse processo é feito através de pesquisas bibliográficas e entrevistas,
  que nos mostram o que é necessário para a formulação do programa.
 \end_layout
 
 \begin_layout Standard
-Uma analise dos requisitos para o funcionamento do programa será feita para
+Uma análise dos requisitos para o funcionamento do programa será feita para
  se avaliar as condições necessárias para o desenvolvimento de um sistema
  útil, que satisfaça as necessidades requeridas e que permita extensão futura.
 \end_layout
@@ -175,30 +175,33 @@ Após estudo dos requisitos/especificações do sistema, leitura de artigos
 \begin_layout Itemize
 Engenharia de Reservatórios: parte fundamental na qual esse projeto se sustenta.
  O software desenvolvido, utiliza conceitos tais como de propriedades dos
- fuídos , propriedades de rochas, a Equação de Balanço de Materiais (EBM).
+ fluídos, propriedades de rochas e a Equação de Balanço de Materiais (EBM).
  Ele então aplicará todos esses conceitos na caracterização adicional do
  reservatório e do poço o que permite a predição do comportamento de ambos
  ao longo da produção.
 \end_layout
 
 \begin_layout Itemize
-A Simulação de Reservatórios é um ramo da na engenharia de reservatório.
- Trata da utilização do desenvolvimento de simuladores, que por meio de
- modelos matemáticos buscam prever o comportamento de um reservátorio de
- petróleo e de seus poços associados.
- Os simuladores podem ser do tipo black oil ou composicionais, no primeiro
- o óleo é considerado uma substância só, e no segundo uma mistura de diversas
- substâncias.
+A Simulação de Reservatórios é um ramo da Engenharia de Reservatórios.
+ Trata da utilização e do desenvolvimento de simuladores que buscam prever
+ o comportamento de um reservatório de petróleo e de seus poços associados
+ por meio de modelos matemáticos.
+ Os simuladores podem ser do tipo 
+\shape italic
+black oil
+\shape default
+ ou composicionais, no primeiro o óleo é considerado uma substância só,
+ e no segundo uma mistura heterogênea.
  
 \end_layout
 
 \begin_layout Itemize
-Modelagem Numérica Computacional que desenvole modelos matemáticos para
+Modelagem Numérica Computacional que desenvolve modelos matemáticos para
  a solução de um determinado problema físico e então parte para um o modelo
  computacional por meio de algoritmos a fim de encontrar a solução do problema.
  Utilizou-se conceitos matemáticos de Cálculo Numérico, vistos na primeira
- parte do curso e aprimorados no ciclo profissionalizantes.
- Neste software foi utiliados, por exemplo, o método numérico de Newton-Raphson.
+ parte do curso e aprimorados no ciclo profissionalizante.
+ Neste software foi utilizado o método numérico de Newton-Raphson.
 \end_layout
 
 \begin_layout Itemize
@@ -206,33 +209,25 @@ A Termodinâmica é uma área da física que estuda os efeitos de mudanças na
  temperatura, pressão, volume e outras propriedades termodinâmicas de um
  sistema.
  Ela é extremamente importante no desenvolvimento de um simulador de reservatóri
-o pois os fluidos de um reservatório sofrem diversas alterações físicas
- durante sua produção, sendo necessária uma boa modelagem termodinâmica
- para entender como eles reagirão a estas alterações.
+o pois os fluidos dele sofrem diversas alterações físico-químicas durante
+ sua produção, sendo necessária uma boa modelagem termodinâmica para entender
+ como eles reagirão a estas alterações.
 \end_layout
 
 \begin_layout Itemize
 Álgebra linear e Cálculo Integral e Diferencial na resolução de sistemas
- de matrizes e em cálculos de derivadas paraciais, Jacobianos, por exemplo.
+ de matrizes e em cálculos de derivadas parciais, Jacobianos, por exemplo.
 \end_layout
 
 \begin_layout Itemize
-Pacote Gráco: usar-se-á um pacote gráfico para plotar o comportamento da
- pressão, por exemplo, ao longo do poço e do reservatório para que haja
+Pacote Gráfico: usar-se-á um pacote gráfico para plotar o comportamento
+ da pressão, por exemplo, ao longo do poço e do reservatório para que haja
  uma melhor compreeensão e vizualização.
 \end_layout
 
 \begin_layout Itemize
-Software: Serão utilizadas métodos e funções já existentes para a resolução
+Software: serão utilizadas métodos e funções já existentes para a resolução
  de sistemas de matrizes.
-\end_layout
-
-\begin_layout Itemize
-Elaboração 3.1.
- Analise de dominio 3.2.
- Formulação teorica 3.3.
- Identificacao de pacotes - assuntos 3.4.
- Diagrama de Pacotes - assuntos
 \end_layout
 
 \begin_layout Section
@@ -243,7 +238,15 @@ Formulação teórica
 O petróleo é uma das matérias-primas mais importantes utilizadas pelo homem.
  Infelizmente, os reservatórios rasos estão quase todos esgotados ou possuem
  óleos de baixa qualidade, sendo necessária a extração em altas profundidades
- e em reservatórios de geometria e propriedades complexas.
+ e em reservatórios de geometria e propriedades complexas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa_2006"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -254,16 +257,24 @@ as mais empregadas para otimizar a produção.
  e temperatura e pela natureza dos fluidos existentes.
  Porém, à medida que os fluidos são produzidos, parte dessa energia primária
  é dissipada e o efeito reflete-se principalmente no decréscimo da pressão
- do reservatório e consequente redução da produtividade dos poços.
+ do reservatório e consequente redução da produtividade dos poços
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dake_2014"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 Para minorar os efeitos do decréscimo da pressão e obter ótimas porcentagens
  de recuperação, são utilizados métodos de recuperação avançados, como injeção
  de água, gases, solventes, etc.
- Mas somente injetar fluidos em poços próximos ao produtor não é suficiente
- para maximizar a extração, é necessário também saber onde, quando, quanto
- e quais devem ser as propriedades do fluido a ser injetado.
+ No entanto, somente injetar fluidos em poços próximos ao produtor não é
+ suficiente para maximizar a extração, é necessário também saber onde, quando,
+ quanto e quais devem ser as propriedades do fluido a ser injetado.
  Para isto, são realizados, entre outros, testes de pressão, que permitem
  identificar ou caracterizar o sistema fluido/rocha de cada reservatório.
  Para a interpretação destes testes é necessário o desenvolvimento de um
@@ -278,7 +289,15 @@ o, regido por equações diferenciais lineares.
  possivelmente com diferentes temperaturas, a complexidade matemática do
  modelo não permite a sua solução analítica.
  Nestas situações, as equações diferenciais do modelo são resolvidas utilizando
- métodos numéricos.
+ métodos numéricos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pico_2018"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -327,7 +346,7 @@ onde:
 \begin_inset Formula $b$
 \end_inset
 
- é o inverso do fator volume formação (Volume do óleo nas condições padrão
+ é o inverso do fator volume formação (volume do óleo nas condições padrão
  / volume do óleo nas condições de reservatório);
 \end_layout
 
@@ -416,7 +435,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Elemento de volume em coordenadas cilndricas.
+Elemento de volume em coordenadas cilndricas
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Arranjo"
@@ -463,7 +482,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Malha radial não-homogênea.
+Malha radial não-homogênea
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:malha."
@@ -569,7 +588,7 @@ As propriedades dos fluidos nas interfaces são:
 \end_layout
 
 \begin_layout Standard
-As permeabilidades nas interfaces são dadas pelo conjeuntop de 4 equações
+As permeabilidades nas interfaces são dadas pelo conjunto de 4 equações
  abaixo:
 \end_layout
 
@@ -619,7 +638,7 @@ k_{i,j-\frac{1}{2}}=\frac{z_{i,j}-z_{i,j-1}}{\frac{z_{i,j}-z_{i,j-\frac{1}{2}}}{
 
 \begin_layout Standard
 Seguem abaixo outras fórmulas utilizadas no desenvolvimento anterior colocadas
- aqui para não quebra alinha de raciocínio:
+ aqui para não quebrar a linha de raciocínio:
 \end_layout
 
 \begin_layout Standard
@@ -673,7 +692,7 @@ Propriedades dos gases
 \end_layout
 
 \begin_layout Standard
-O comportamento de gás está definido pela equação de estado de gás real
+O comportamento de um gás está definido pela equação de estado de gás real
  abaixo:
 \end_layout
 
@@ -740,8 +759,7 @@ literal "false"
 
 \end_inset
 
-, como função da temperatura, a massa molecular aparente Ma e a massa específica
-:
+, como função da temperatura, massa molecular aparente Ma e massa específica:
 \end_layout
 
 \begin_layout Standard
@@ -759,8 +777,7 @@ literal "false"
 Vale destacar que, para efeitos de simplificação, desconsiderou-se os efeitos
  não-darcianos que podem ocorrer nas proximidades do poço.
  A título de curiosiadade, a equação de Forchheimer é o modelo empregado
- para representar tais eeitos ou feitos de inercia, causados pela a alta
- velocidade.
+ para representar tais efeitos de inércia, causados pela alta velocidade.
  Segundo 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -789,7 +806,7 @@ onde
 \begin_inset Formula $\beta$
 \end_inset
 
- é o coeciente de Forchheimer, cuja dimensão e o inverso do comprimento,
+ é o coeciente de Forchheimer, cuja dimensão é o inverso do comprimento,
  
 \begin_inset Formula $u$
 \end_inset
@@ -817,7 +834,7 @@ literal "false"
 ;
 \begin_inset CommandInset citation
 LatexCommand cite
-key "MacDonald_1970,Pico_2018"
+key "Pico_2018"
 literal "false"
 
 \end_inset
@@ -834,6 +851,8 @@ No caso de um líquido, as equações foram:
 \end_layout
 
 \begin_layout Standard
+
+\series bold
 Para inverso do fator volume formação:
 \end_layout
 
@@ -849,6 +868,8 @@ b_{l}=b_{l}^{0}\left(1+c_{l}\left(p_{l}-p_{l}^{0}\right)\right)
 \end_layout
 
 \begin_layout Standard
+
+\series bold
 Para viscosidade:
 \end_layout
 
@@ -868,8 +889,8 @@ Equação geral
 \end_layout
 
 \begin_layout Standard
-De posse das equações anteriores, é possível reescrever a equação da discretizaç
-ão por volumes finitos (Eq.
+De posse das equações anteriores, foi possível reescrever a equação da discretiz
+ação por volumes finitos (Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1221,7 +1242,7 @@ As derivadas das transmissibilidades são:
 \end_layout
 
 \begin_layout Standard
-Resultando em uma matriz com aparência igual ao da Transmissibilidade.
+resultando em uma matriz com aparência igual ao da Transmissibilidade.
 \end_layout
 
 \begin_layout Section
@@ -1229,7 +1250,7 @@ Identificação de pacotes – assuntos
 \end_layout
 
 \begin_layout Standard
-A partir da analise dos modelos apresentados, pode-se identicar os seguintes
+A partir da análise dos modelos apresentados, pode-se identicar os seguintes
  assuntos/ pacotes:
 \end_layout
 
@@ -1238,14 +1259,14 @@ Engenharia de Reservatórios: este pacote recebe arquivos digitados pelo
  usuário ou os lê de um arquivo de extensão .txt.
  Nele, os dados se separam, de acordo com suas característica: rocha, fluido,
  aquífero, dados de produção, dados de injeção.
- Quando juntas fornecem uma caracterização do reservatório como um todo
+ Quando juntos, fornecem uma caracterização do reservatório como um todo
  e servem de base para os cálculos da simulação.
 \end_layout
 
 \begin_layout Itemize
-Simulador: Relaciona os pacotes, sendo responsavel pela criação e destruição
+Simulador: relaciona os pacotes, sendo responsável pela criação e destruição
  de objetos, assim como interagir com o usuário através de um interface
- via texto para denir todas ações a serem tomadas.
+ via texto para definir todas ações a serem tomadas.
 \end_layout
 
 \begin_layout Itemize
@@ -1255,7 +1276,7 @@ hson.
  Este pacote está separado do simulador, pois um dos objetivos da AOO é
  ter uma maior reusabilidade do código, assim, estando separados, é possível
  aplicar este mesmo pacote para outros problemas de engenharia, como por
- exemplo o de análise de teste de pressão.
+ exemplo o de análise de testes de pressão.
 \end_layout
 
 \begin_layout Itemize
@@ -1267,18 +1288,19 @@ rio devido ao dinamismo do comportamento dos fluidos.
 
 \begin_layout Itemize
 Álgebra linear e Cálculo Integral e Diferencial: pacote com deduções matématicas
-, teoremas, e e deduções que são a base de todo o processo.
+, teoremas.
+ Base de todo o processo.
 \end_layout
 
 \begin_layout Itemize
-Pacote Gráco: é um pacote que utiliza o gnuplot para plotar as soluções
+Pacote Gráfico: é um pacote que utiliza o gnuplot para plotar as soluções
  numéricas obtidas, isto é, as distribuições de pressão.
  Em outras palavras, é o software gnuplot que implementa a saída gráfica
  dos dados calculados.
 \end_layout
 
 \begin_layout Itemize
-Biblioteca: Serão utilizadas métodos e funções já existentes para a resolução
+Biblioteca: serão utilizadas métodos e funções já existentes para a resolução
  de sistemas de matrizes, bibliotecas padrão de C++ tais como (STL) e biblioteca
 s como a iostream, iomanip, etc.
 \end_layout
@@ -1304,6 +1326,7 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1325,8 +1348,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de Pacotes.
- 
+Diagrama de Pacotes 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Diagrama-de-Pacotes"

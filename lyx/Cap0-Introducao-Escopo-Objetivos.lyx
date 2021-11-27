@@ -936,7 +936,7 @@ MACAÉ - RJ
 \begin_inset Newline newline
 \end_inset
 
-Novembro - 2021
+Dezembro - 2021
 \end_layout
 
 \begin_layout Standard
@@ -1074,9 +1074,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Portanto, o problema que se propõe a resolver é simulação de poços com proprieda
-des distintas, para otimizar a produção no reservatório.
- De posse dela - ou de pelo menos um valor próximo estimado pelo software,
+Portanto, o problema que se propõe a resolver é a simulação de poços com
+ propriedades distintas, para otimizar a produção no reservatório.
+ De posse dela - ou de, pelo menos, um valor próximo estimado pelo software,
  seria possível, por exemplo, dimensionar equipamentos de fundo do poço,
  prever tempo produtivo e quantificar o volume de fluido de completação
  utilizado em uma operação, por exemplo.
@@ -1139,7 +1139,7 @@ Calcular matriz de coeficientes.
 \end_layout
 
 \begin_layout Itemize
-Resolver sistema.
+Resolver Sistemas de equações.
 \end_layout
 
 \begin_layout Itemize

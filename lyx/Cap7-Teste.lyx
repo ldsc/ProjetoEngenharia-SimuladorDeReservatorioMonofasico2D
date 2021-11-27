@@ -137,45 +137,144 @@ thechapter - Teste}
 \begin_layout Standard
 Todo projeto de engenharia passa por uma etapa de testes.
  Neste capítulo apresentamos alguns testes do software desenvolvido.
- Estes testes devem dar resposta aos diagramas de caso de uso inicialmente
- apresentados (diagramas de caso de uso geral e específicos).
-\end_layout
-
-\begin_layout Section
-Teste 1: Descrição
-\end_layout
-
-\begin_layout Standard
-No início apresente texto explicativo do teste:
-\end_layout
-
-\begin_layout Itemize
-O que esta sendo testado?
-\end_layout
-
-\begin_layout Itemize
-Como o teste vai ser realizado?
-\end_layout
-
-\begin_layout Itemize
-Como o programa será validado?
-\end_layout
-
-\begin_layout Standard
-A seguir apresente texto explicando a sequência do teste e imagens do programa
- (captura de tela).
-\end_layout
-
-\begin_layout Standard
-coloque aqui texto falando do diagrama de pacotes, referencie a figura.
- Veja Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Teste-TelaPrograma-Captura1"
+ Na sua validação foi utilizado o artigo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bilhartz_1977"
+literal "false"
 
 \end_inset
 
 .
+ Para efeitos de simplificação, este artigo mostra como se dá o efeito da
+ penetração parcial em um poço.
+ A seguir, algumas definições importantes definidas pelos autores:
+\end_layout
+
+\begin_layout Itemize
+Razão de penetração: 
+\begin_inset Formula $b=\frac{h_{w}}{h}$
+\end_inset
+
+, é a razão entre a altura aberta à produção e a altura total do reservatório;
+\end_layout
+
+\begin_layout Itemize
+Espessura do poço adimensional: 
+\begin_inset Formula $h_{D}=\frac{h_{w}}{r_{w}}\sqrt{\frac{k_{r}}{k_{w}}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+Tempo adimensional: 
+\begin_inset Formula $T_{D}=t\frac{C_{1}k_{r}}{\phi\mu(c_{f}+c_{\phi})r_{w}^{2}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+Pressão adimensional: 
+\begin_inset Formula $P_{D}=(p_{i}-p)\frac{bk_{r}h}{C_{2}q\mu}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Transformando os resultados do simulador para o tempo e pressão adimensional
+ apresentados acima, foi possível comparar os valores com a Tabela 1 do
+ artigo.
+\end_layout
+
+\begin_layout Section
+Teste 1
+\end_layout
+
+\begin_layout Standard
+No teste 1, buscou-se o cenário onde 
+\begin_inset Formula $b=1/2$
+\end_inset
+
+ e 
+\begin_inset Formula $h_{D}=250$
+\end_inset
+
+.
+ Para isso, foram utilizadas as seguintes propriedades:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $h=10m$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r_{w}=0.0447m$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $h_{w}=5m$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k_{r}=500md;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $k_{z}=100md;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\phi=0.2;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q=1000m^{3}/dia;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p_{i}=350kgf/cm^{2};$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-1,-pressão"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ abaixo tem-se o comportamento da pressão ao longo do reservatório para
+ o Teste #1.
 \end_layout
 
 \begin_layout Standard
@@ -186,13 +285,27 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/surf_plot.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela do programa mostrando xxx
+Teste 1: pressão ao longo do reservatório.
+ A pressão é menor na região destacada em verde, visto que está aberta à
+ produção
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Teste-TelaPrograma-Captura1"
+name "fig:Teste-1,-pressão"
 
 \end_inset
 
@@ -209,41 +322,19 @@ name "fig:Teste-TelaPrograma-Captura1"
 
 \end_layout
 
-\begin_layout Section
-Teste 2: Descrição
-\end_layout
-
 \begin_layout Standard
-No início apresente texto explicativo do teste:
-\end_layout
-
-\begin_layout Itemize
-O que esta sendo testado?
-\end_layout
-
-\begin_layout Itemize
-Como o teste vai ser realizado?
-\end_layout
-
-\begin_layout Itemize
-Como o programa será validado?
-\end_layout
-
-\begin_layout Standard
-A seguir apresente texto explicando a sequência do teste e imagens do programa
- (captura de tela).
-\end_layout
-
-\begin_layout Standard
-Coloque aqui texto falando do diagrama de pacotes, referencie a figura.
- Veja Figura 
+Na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Teste-TelaPrograma-Captura2"
+reference "fig:Comp1"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-.
+ foi feito um match entre simulador e artigo.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -254,13 +345,29 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/comp1.eps
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela do programa mostrando xxx
+No canto superior esquerdo, é apresentada a comparação da pressão do poço
+ do simulador com o artigo.
+ À direta, o erro ao longo do tempo.
+ Por sua vez, no canto inferior esquerdo, é apresentado a comparação com
+ interpolação do artigo, ao passo que na direita, a comparação com valores
+ adimensionais
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Teste-TelaPrograma-Captura2"
+name "fig:Comp1"
 
 \end_inset
 
@@ -275,6 +382,192 @@ name "fig:Teste-TelaPrograma-Captura2"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Como pode ser observado, ambos os dados encontram-se bem próximos.
+ Desconsiderando os primeiros pontos de resultado do simulador, o erro ficou
+ próximo à 0,4%, o que é excelente.
+\end_layout
+
+\begin_layout Section
+Teste 2
+\end_layout
+
+\begin_layout Standard
+No teste 2, buscou-se o cenário onde
+\begin_inset Formula $b=1/4$
+\end_inset
+
+ e 
+\begin_inset Formula $h_{D}=250$
+\end_inset
+
+.
+ Para isso, foram utilizadas as mesmas propriedades do fluido do caso anterior,
+ salvo mudanças em:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $h=44.7212m$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r_{w}=0.1m$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $h_{w}=11.1803m$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-2,-pressão"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ abaixo tem-se o comportamento da pressão ao longo do reservatório para
+ o Teste #2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/surf_plot_comp2.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Teste 2: pressão ao longo do reservatório.
+ A pressão é menor (região verde), por ser a região aberta à produção 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-2,-pressão"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Comp1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ foi feito um match entre simulador e artigo, tal como feito na Figura anterior.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/comp2.eps
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+No canto superior esquerdo, é apresentada a comparação da pressão do poço
+ do simulador com o artigo.
+ À direita, o erro ao longo do tempo.
+ Por sua vez, no canto inferior esquerdo, é apresentada a comparação com
+ interpolação do artigo, e na direita, a comparação com valores adimensionais
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:comp2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Desconsiderando os primeiros pontos de resultado, o erro ficou próximo à
+ 0,38%.
+\end_layout
+
+\begin_layout Standard
+É importante citar que o simulador desenvolvido varia as propriedades do
+ fluido e da rocha com a pressão e foi modelado por volumes finitos, aumentando
+ a precisão.
+ O artigo comparado, não cita essa característica, tratando do assunto de
+ forma mais abrangente.
+ Além disso, por ser dos anos 1977, possuía menos poder computacional para
+ simulações mais complexas.
+ 
+\end_layout
+
+\begin_layout Standard
+Portanto, o erro do simulador com o artigo poderia ser parcialmente explicado
+ por essa alta precisão das propriedades, da modelagem e avanço tecnológico.
 \end_layout
 
 \end_body

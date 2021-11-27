@@ -107,6 +107,13 @@
 
 \begin_layout Chapter
 Documentação 
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Documentação"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -129,10 +136,9 @@ thechapter - Documentação}
 
 \begin_layout Standard
 Todo projeto de engenharia precisa ser bem documentado.
- Neste sentido, apresenta-se neste capítulo a documentação de uso do "Simulador
- Monofásico 2D".
- Esta documentação tem o formato de uma apostila que explica passo a passo
- como usar o software.
+ Neste sentido, apresenta-se neste capítulo a documentação sobre o uso do
+ "Simulador Monofásico 2D".
+ Esta documentação trás um passo a passo de como usar o software.
  
 \end_layout
 
@@ -141,8 +147,8 @@ Documentação do usuário
 \end_layout
 
 \begin_layout Standard
-Descreve-se aqui o manual do usuário, um guia que explica, passo a passo
- a forma de instalação e uso do software Simulador Monofásico 2D.
+Descreve-se aqui o manual do usuário, um guia que para instalação e uso
+ do software Simulador Monofásico 2D.
 \end_layout
 
 \begin_layout Subsection
@@ -168,7 +174,7 @@ Seguir as instruções auto-explicativas do programa enquanto ele é executado.
 \end_layout
 
 \begin_layout Standard
-Aqui cabe uma resalva aos arquvios lidos do disco.
+Aqui cabe uma resalva aos arquivos lidos do disco.
  Por mais que sejam arquivos-exemplo, eles são modelos de funcionamento
  e sua organização não pode ser alterada, caso seja, o simulador não rodará
  adequadamente.
@@ -183,8 +189,8 @@ Documentação para desenvolvedor
 \end_layout
 
 \begin_layout Standard
-Apresenta-se nesta seção a documentação para o desenvolvedor, isto é, informaçõe
-s para usuários que queiram modificar, aperfeiçoar ou ampliar este software.
+Apresenta-se nesta seção a documentação para desenvolvedor, isto é, informações
+ para usuários que queiram modificar, aperfeiçoar ou ampliar este software.
 \end_layout
 
 \begin_layout Subsection
@@ -222,7 +228,7 @@ No sistema operacional Windows: instalar um compilador apropriado, tal como
 \begin_layout Itemize
 O software 
 \family typewriter
-gnuplot
+Gnuplot
 \family default
 , disponível no endereço 
 \begin_inset CommandInset href
@@ -694,8 +700,8 @@ Como gerar a documentação usando doxygen
 \end_layout
 
 \begin_layout Standard
-A documentação do código do software deve ser feita usando o padrão JAVADOC,
- conforme apresentada no Capítulo - Documentação, do livro texto da disciplina.
+A documentação do código deve ser feita usando o padrão JAVADOC, conforme
+ apresentada no Capítulo - Documentação, do livro texto da disciplina.
  Depois de documentar o código, use o software 
 \family typewriter
 doxygen 
@@ -737,7 +743,7 @@ Veja informações sobre o software
 \family typewriter
 doxygen
 \family default
- em
+ em:
 \begin_inset Separator latexpar
 \end_inset
 
@@ -806,11 +812,11 @@ Teclar Run -> Run doxygen -> Show html input.
 
 \begin_layout Standard
 Gera-se então, em um diretório de escolha do usuário, saídas em latex, html
- (index.html) e um relatório no formato rtf (
+ e um relatório no formato rtf (
 \shape italic
 Rich Text Format
 \shape default
-) com todos os arquivos apresentados no link em html.
+) com todos os arquivos apresentados em html.
  Pode-se salvar o progresso em uma Doxyfile para não perder de vista.
 \end_layout
 
@@ -858,7 +864,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Cabeçalho do projeto - doxygen.
+Cabeçalho do projeto - doxygen
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:logo"
@@ -925,7 +931,7 @@ name "fig:Lista-de-classes"
 
 \end_inset
 
-.
+
 \end_layout
 
 \end_inset
@@ -978,7 +984,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Lista de arquivos - doxygen.
+Lista de arquivos - doxygen
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Lista-de-arquivos"
@@ -1037,7 +1043,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Código fonte CSimulador - doxygen.
+Código fonte CSimulador - doxygen
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Código-fonte-CSimulador"

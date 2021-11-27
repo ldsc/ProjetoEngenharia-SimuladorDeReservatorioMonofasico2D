@@ -227,7 +227,7 @@ Especificação
 \begin_layout Standard
 Deseja-se desenvolver um software com interface em modo texto que seja capaz
  de determinar o comportamento das pressões dentro de um poço.
- O processo é governado pela Equação da Equação da Difusividade Hidráulica.
+ O processo é governado pela Equação da Difusividade Hidráulica.
  Será utilizada a modelagem numérica pela discretização em volumes finitos
  e método implícito de Newton para resolução.
  
@@ -239,7 +239,8 @@ Na dinâmica de execução do software, o usuário deverá entrar com os dados
  simulador, os valores das permeabilidade das camadas estrátigraficas, inserir
  espessuras delas, dizer ao software quais camadas abertas à produção, bem
  como o tipo de fluido presente no reservatório, se óleo ou gás.
- Poderá optar-se também pela inserção dos dados em um documentode texto*.txt.
+ Poderá optar-se também pela inserção dos dados em um documento de texto
+ *.txt.
  Dada a primeira ou segunda escolha, o software calcula suas propriedades
  termofísicas, e por fim, apresenta a pressão no poço e no reservatório.
 \end_layout
@@ -254,6 +255,7 @@ Os dados com as suas respectivas unidades estão listados abaixo:
 Dados relativos ao fluido:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula $k\;\;$
 \end_inset
@@ -280,19 +282,21 @@ massa específica do fluido
 \begin_inset Formula $c_{pf}\;\;$
 \end_inset
 
-calor especíco à pressão constante do uido 
+calor especíco à pressão constante do fluido 
 \begin_inset Formula $\:\left[J/KgK\right]$
 \end_inset
 
 .
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 Dados relativos à matriz da rocha:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula $\phi\;\;$
 \end_inset
@@ -304,12 +308,14 @@ porosidade absoluta
 ;
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 Dados relativos ao meio poroso:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula $T\;\;$
 \end_inset
@@ -332,12 +338,14 @@ pressão
 ;
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 Dados relativos ao grid bidimensional:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula $dx\;\;$
 \end_inset
@@ -360,12 +368,14 @@ intervalo de discretização na direção y
 ;
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 Dados relativos ao simulador:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula $dt\;\;$
 \end_inset
@@ -377,6 +387,7 @@ intervalo de tempo
 ;
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 Após a entrada de dados pelo usuário, o programa irá calcular as propriedades
  do fluido escolhido e irá resolver a EDP discretizada com um método numérico,
@@ -892,6 +903,7 @@ reference "cap:Diagrama-caso-uso-geral"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -901,7 +913,7 @@ status open
 \begin_inset Graphics
 	filename ../imagens/DiagCasoDeUso-AnaliseDosResultados.png
 	lyxscale 50
-	width 100text%
+	scale 30
 
 \end_inset
 
@@ -967,14 +979,15 @@ reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
 \end_layout
 
 \begin_layout Standard
-No primeiro caso de uso específico, ou sub caso, mostra-se as possibilidades
- de se simular o software com fluido ora líquido ora gás, e penetração do
- poço parcial ou total.
+No primeiro caso de uso específico mostra-se as possibilidades de se simular
+ o software com fluido ora líquido ora gás, e penetração do poço parcial
+ ou total.
  Entende-se por penetração as áreas abertas ao fluxo adjacentes ao poço.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -984,7 +997,7 @@ status open
 \begin_inset Graphics
 	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/DiagCasoDeUso-AnaliseDosResultados-Especifico1.png
 	lyxscale 50
-	width 100text%
+	scale 30
 
 \end_inset
 
@@ -995,7 +1008,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de caso de uso específico – Título
+Diagrama de caso de uso específico – Escolha do fluido e estratigrafia do
+ poço
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
@@ -1018,14 +1032,14 @@ name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
 \begin_layout Standard
 Já no segundo caso de uso especíco (4 etapas), o usuário optou por simular
  um líquido com penetração parcial.
- Assim, insere os dados de entrada, define zonas de lfuxo no poço, executa
+ Assim, insere os dados de entrada, define zonas de fluxo no poço, executa
  a simulação.
- Depois disso, o software, gera gráficos e por fim, o usuário analisa os
- resultados.
+ Depois disso, o software gera gráficos e o usuário analisa os resultados.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1035,7 +1049,7 @@ status open
 \begin_inset Graphics
 	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/DiagCasoDeUso-AnaliseDosResultados-Especifico2.png
 	lyxscale 50
-	width 100text%
+	scale 30
 
 \end_inset
 
@@ -1046,7 +1060,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de caso de uso específico – Título
+Diagrama de caso de uso específico – Poço com penetração parcial e líquido
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-caso-de-uso-especifico:Titulo-1"
