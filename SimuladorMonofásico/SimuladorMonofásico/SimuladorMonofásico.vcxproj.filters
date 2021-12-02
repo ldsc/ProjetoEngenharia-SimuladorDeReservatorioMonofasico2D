@@ -36,7 +36,7 @@
     <ClCompile Include="CGrid.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="CSimulador.cpp">
+    <ClCompile Include="CSimuladorMonofasico2D.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="CMatrix.cpp">
@@ -71,7 +71,7 @@
     <ClInclude Include="CGrid.hpp">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="CSimulador.hpp">
+    <ClInclude Include="CSimuladorMonofasico2D.hpp">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="CMatrix.hpp">

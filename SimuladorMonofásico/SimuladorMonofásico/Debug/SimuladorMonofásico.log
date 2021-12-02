@@ -1,10 +1,13 @@
-﻿  CSimulador.cpp
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimulador.cpp(49,29): warning C4018: '<': incompatibilidade de signed/unsigned
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimulador.cpp(250,20): warning C4018: '<': incompatibilidade de signed/unsigned
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimulador.cpp(273,20): warning C4018: '<': incompatibilidade de signed/unsigned
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimulador.cpp(436,41): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimulador.cpp(436,37): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimulador.cpp(436,33): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimulador.cpp(436,29): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimulador.cpp(436,25): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
+﻿  CGas.cpp
+  CSimuladorMonofasico2D.cpp
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(49,29): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(250,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(275,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(438,41): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(438,37): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(438,33): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(438,29): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(438,25): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
+  main.cpp
+  Gerando Código...
   SimuladorMonofásico.vcxproj -> C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\Debug\SimuladorMonofásico.exe

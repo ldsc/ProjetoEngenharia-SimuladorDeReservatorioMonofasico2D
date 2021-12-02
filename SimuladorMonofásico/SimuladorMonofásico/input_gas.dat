@@ -7,12 +7,13 @@
 periodos: 2
 tp: 0 700 		/// tempos de mudanca na vazao na superficie [h]
 qsc: 0 -400000.0		/// vazoes nos tempos de mudanca [m^3 std / dia]
-nz: 4			/// número de camadas do reservatório
+nz: 5			/// número de camadas do reservatório
 dz | aberto/fechado
-11.1803  | 1
-11.1803  | 0
-11.1803  | 0
-11.1803  | 0
+2 | 1
+2 | 0
+2 | 1
+2 | 0
+2 | 0
 rw: 0.1	
 
 # Reservatório
