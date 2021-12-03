@@ -1,8 +1,7 @@
-#include "CSimulador.hpp"
+#include "CSimuladorMonofasico2D.hpp"
 
 int main() {
-	CSimulador* simulator = new CSimulador;
-	
+	CSimuladorMonofasico2D* simulator = new CSimuladorMonofasico2D;
 	simulator->run();
 	return 0;
 }

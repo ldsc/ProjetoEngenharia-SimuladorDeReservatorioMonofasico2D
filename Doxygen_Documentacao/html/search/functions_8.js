@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z_5fkiam_0',['Z_KIAM',['../class_c_gas.html#aef027ac7f491fe0b12863d204c27fd35',1,'CGas']]]
+  ['lu_5fsolver_0',['LU_solver',['../class_c_matrix.html#a77c0b9e0d482509ee55ba2010cde42f8',1,'CMatrix']]]
 ];

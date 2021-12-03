@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
-  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['mu_5flge_2',['mu_LGE',['../class_c_gas.html#a8b24e9caf524f3c0130c22a1bdd3babc',1,'CGas']]]
+  ['eps_5fmb_0',['Eps_MB',['../class_c_discretization.html#a3f8063b2e9aaa7bdef2d0d46585c616b',1,'CDiscretization']]],
+  ['eps_5fnr_1',['Eps_NR',['../class_c_discretization.html#a9805479299fd3cb9b353f2170f639227',1,'CDiscretization']]]
 ];

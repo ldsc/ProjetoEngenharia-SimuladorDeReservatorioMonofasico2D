@@ -1,0 +1,60 @@
+\hypertarget{_c_simulador_monofasico2_d_8hpp_source}{}\doxysection{CSimulador\+Monofasico2\+D.\+hpp}
+\label{_c_simulador_monofasico2_d_8hpp_source}\index{C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CSimuladorMonofasico2D.hpp@{C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CSimuladorMonofasico2D.hpp}}
+\mbox{\hyperlink{_c_simulador_monofasico2_d_8hpp}{Vá para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CSimuladorMonofasico2D\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CSimuladorMonofasico2D\_HPP}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <iomanip>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_gas_8hpp}{CGas.hpp}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_well_8hpp}{CWell.hpp}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_grid_8hpp}{CGrid.hpp}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_props_8hpp}{CProps.hpp}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_matrix_8hpp}{CMatrix.hpp}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_fluido_8hpp}{CFluido.hpp}}"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_gnuplot_8hpp}{CGnuplot.hpp}}"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_liquido_8hpp}{CLiquido.hpp}}"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_reservoir_8hpp}{CReservoir.hpp}}"{}}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_discretization_8hpp}{CDiscretization.hpp}}"{}}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_simulador_monofasico2_d}{CSimuladorMonofasico2D}} \{}
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_c_simulador_monofasico2_d_a14a5b8c7a5901d5e3028c16c9b0ce779}{CSimuladorMonofasico2D}}();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_simulador_monofasico2_d_a2aafac4d6c3eff6b2e2e2722f929de0e}{run}}();}
+\DoxyCodeLine{27 \textcolor{keyword}{private}:}
+\DoxyCodeLine{28     \textcolor{keyword}{const} \textcolor{keywordtype}{double} PI = 3.141592;}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_c_well}{CWell}}* well;}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_c_grid}{CGrid}}* grid;}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_c_fluido}{CFluido}}* fluido;}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_c_reservoir}{CReservoir}}* reservoir;}
+\DoxyCodeLine{33     \mbox{\hyperlink{class_c_discretization}{CDiscretization}}* discretization;}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     std::vector<std::vector<double>> Pressure;  }
+\DoxyCodeLine{36     std::vector<double> WellPressure;           }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{keyword}{private}:}
+\DoxyCodeLine{39     std::vector<double> calc\_H(\mbox{\hyperlink{class_c_props}{CProps}}* props\_n, \mbox{\hyperlink{class_c_props}{CProps}}* props\_nu, \textcolor{keywordtype}{double} dt);}
+\DoxyCodeLine{40     std::vector<double> calc\_Q(\textcolor{keywordtype}{double} time);}
+\DoxyCodeLine{41     std::vector<double> calc\_X(\textcolor{keywordtype}{double} pw, std::vector<double> p);}
+\DoxyCodeLine{42     std::vector<std::vector<double>> calc\_T(\mbox{\hyperlink{class_c_props}{CProps}}* props\_n);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     std::vector<std::vector<double>> calc\_eta(\mbox{\hyperlink{class_c_props}{CProps}}* props\_nu, \textcolor{keywordtype}{double} dt);}
+\DoxyCodeLine{45     std::vector<std::vector<double>> calc\_tau(\mbox{\hyperlink{class_c_props}{CProps}}* props\_nu, std::vector<double> p\_nu, \textcolor{keywordtype}{double} pw\_nu);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} plot(std::vector<double> time, std::vector<double> Pw);}
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} plotSurface();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{bool} isErrorNotAcceptable(\textcolor{keywordtype}{double} dt, std::vector<double> R, \mbox{\hyperlink{class_c_props}{CProps}}* props\_nu, \textcolor{keywordtype}{double} q);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} read\_data\_and\_start\_objects(std::string nameFile);}
+\DoxyCodeLine{53 \};}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

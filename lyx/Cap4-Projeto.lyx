@@ -426,9 +426,9 @@ O código possui comentários com explicações dos algoritmos a serem executado
 
 \begin_layout Itemize
 Neste projeto foi feita uma associação entre a biblioteca CGnuplot com as
- classes CSimulator, que por sua vez associa-se com as classes CReservoir,
- CDiscretization, CGrid, CWell, CProps, CFluido, que se associam com CGas
- e CLiquido
+ classes CSimuladorMonofasico2D, que por sua vez associa-se com as classes
+ CReservoir, CDiscretization, CGrid, CWell, CProps, CFluido, que se associam
+ com CGas e CLiquido
 \end_layout
 
 \begin_layout Subsubsection
@@ -523,9 +523,9 @@ Em virtude de usar leitura de disco, um método de inserção de dados através
 \end_layout
 
 \begin_layout Itemize
-A razão da existência do método Run() presente em CSimulador se explica
- pela intenção em deixar o código mais enxuto e pela intenção de agrupar
- algoritmos de mesma natureza em um só método.
+A razão da existência do método Run() presente em CSimuladorMonofasico2D
+ se explica pela intenção em deixar o código mais enxuto e pela intenção
+ de agrupar algoritmos de mesma natureza em um só método.
  Ele é chamado e governa toda a execução do código.
 \end_layout
 
@@ -701,7 +701,8 @@ reference "cap:Diagrama-de-componentes"
  De posse do diagrama de componentes, temos a lista de todos os arquivos
  necessários para compilar e rodar o software.
  Por ele, podemos perceber as dependências de cada componente.
- Por exemplo, o componente CSimulator depende de todos outros para funcionar.
+ Por exemplo, o componente CSimuladorMonofasico2D depende de todos outros
+ para funcionar.
  E por sua vez, o CFluido para funcionar, depende do CGas ou CLiquido.
 \end_layout
 

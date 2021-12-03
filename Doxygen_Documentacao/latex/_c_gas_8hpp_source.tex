@@ -1,5 +1,5 @@
 \hypertarget{_c_gas_8hpp_source}{}\doxysection{CGas.\+hpp}
-\label{_c_gas_8hpp_source}\index{ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CGas.hpp@{ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CGas.hpp}}
+\label{_c_gas_8hpp_source}\index{C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CGas.hpp@{C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CGas.hpp}}
 \mbox{\hyperlink{_c_gas_8hpp}{Vá para a documentação desse arquivo.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CGAS\_HPP}}
@@ -14,35 +14,38 @@
 \DoxyCodeLine{10 }
 \DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_gas}{CGas}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_fluido}{CFluido}}\{}
 \DoxyCodeLine{12 \textcolor{keyword}{public}:}
-\DoxyCodeLine{13     \mbox{\hyperlink{class_c_gas_a34e1748e391d99b4d0548b5364e12916}{CGas}}() \{\}}
-\DoxyCodeLine{14 }
-\DoxyCodeLine{15 \textcolor{keyword}{public}:}
-\DoxyCodeLine{16     \textcolor{keyword}{const} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_a40ed42c9b7696aff68b8502985fe6014}{DELTA}} = 1.0e-\/5;}
-\DoxyCodeLine{17     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_a3d6a8ded441e0d45a731f11e47c0f373}{calc\_b}}(\textcolor{keywordtype}{double} p);}
-\DoxyCodeLine{18     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_ae9e62321b33fb639a893248f68e2332d}{calc\_rho}}(\textcolor{keywordtype}{double} p);}
-\DoxyCodeLine{19     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_a4f97a20ee36629fc405ccca0ceeee9d2}{calc\_dbdp}}(\textcolor{keywordtype}{double} p);}
-\DoxyCodeLine{20     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_a83e6e30415551f40f54cde8bf69b5161}{calc\_mu}}(\textcolor{keywordtype}{double} p);}
-\DoxyCodeLine{21     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_a4196da3326b75ab79d8e245f6e9bc93c}{calc\_dmudp}}(\textcolor{keywordtype}{double} p);}
-\DoxyCodeLine{22 }
-\DoxyCodeLine{23     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_aef027ac7f491fe0b12863d204c27fd35}{Z\_KIAM}}(\textcolor{keywordtype}{double} p);}
-\DoxyCodeLine{24     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_a8b24e9caf524f3c0130c22a1bdd3babc}{mu\_LGE}}(\textcolor{keywordtype}{double} rho);}
-\DoxyCodeLine{25 }
-\DoxyCodeLine{26     std::string \mbox{\hyperlink{class_c_gas_a05579c8a6d16261d33ec0959f065d6e7}{get\_type}}() \{ \textcolor{keywordflow}{return} type; \}}
-\DoxyCodeLine{27 }
-\DoxyCodeLine{28 \textcolor{keyword}{private}:}
-\DoxyCodeLine{29     std::string type = \textcolor{stringliteral}{"{}gas"{}};}
-\DoxyCodeLine{30 }
-\DoxyCodeLine{31     \textcolor{keywordtype}{double} cf\{ 0.00215094 \};    }
-\DoxyCodeLine{32     \textcolor{keywordtype}{double} p0\{ 1.0335123 \};     }
-\DoxyCodeLine{33     \textcolor{keywordtype}{double} mu\{ 0.0262317 \};     }
-\DoxyCodeLine{34     \textcolor{keywordtype}{double} T0\{ 288.75 \};        }
-\DoxyCodeLine{35     \textcolor{keywordtype}{double} T\{ 353.15 \};         }
-\DoxyCodeLine{36     \textcolor{keywordtype}{double} Tpc\{ 216.32 \};       }
-\DoxyCodeLine{37     \textcolor{keywordtype}{double} Ppc\{ 46.34 \};        }
-\DoxyCodeLine{38     \textcolor{keywordtype}{double} Ma\{ 20.3 \};          }
-\DoxyCodeLine{39 }
-\DoxyCodeLine{40     \textcolor{keyword}{const} \textcolor{keywordtype}{double} R = 0.08478;   }
-\DoxyCodeLine{41 \};}
-\DoxyCodeLine{42 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_c_gas_ab176d1c898da7844778a5159d5d4c252}{CGas}}(\textcolor{keywordtype}{double} \_cf, \textcolor{keywordtype}{double} \_p0, \textcolor{keywordtype}{double} \_mu, \textcolor{keywordtype}{double} \_T0, \textcolor{keywordtype}{double} \_T, \textcolor{keywordtype}{double} \_Tpc, \textcolor{keywordtype}{double} \_Ppc, \textcolor{keywordtype}{double} \_Ma):}
+\DoxyCodeLine{14         cf\{ \_cf \}, p0\{ \_p0 \}, mu\{ \_mu \}, T0\{ \_T0 \}, T\{ \_T \}, Tpc\{ \_Tpc \}, Ppc\{ \_Ppc \}, Ma\{ \_Ma \}\{\}}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_c_gas_a34e1748e391d99b4d0548b5364e12916}{CGas}}() \{\}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \textcolor{keyword}{const} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_a40ed42c9b7696aff68b8502985fe6014}{DELTA}} = 1.0e-\/5;}
+\DoxyCodeLine{19     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_a3d6a8ded441e0d45a731f11e47c0f373}{calc\_b}}(\textcolor{keywordtype}{double} p);}
+\DoxyCodeLine{20     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_ae9e62321b33fb639a893248f68e2332d}{calc\_rho}}(\textcolor{keywordtype}{double} p);}
+\DoxyCodeLine{21     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_a4f97a20ee36629fc405ccca0ceeee9d2}{calc\_dbdp}}(\textcolor{keywordtype}{double} p);}
+\DoxyCodeLine{22     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_a83e6e30415551f40f54cde8bf69b5161}{calc\_mu}}(\textcolor{keywordtype}{double} p);}
+\DoxyCodeLine{23     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_gas_a4196da3326b75ab79d8e245f6e9bc93c}{calc\_dmudp}}(\textcolor{keywordtype}{double} p);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     std::string \mbox{\hyperlink{class_c_gas_a05579c8a6d16261d33ec0959f065d6e7}{get\_type}}() \{ \textcolor{keywordflow}{return} type; \}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{private}:}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{double} Z\_KIAM(\textcolor{keywordtype}{double} p);}
+\DoxyCodeLine{30     \textcolor{keywordtype}{double} mu\_LGE(\textcolor{keywordtype}{double} rho);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     std::string type = \textcolor{stringliteral}{"{}gas"{}};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{double} cf\{ 0.00215094 \};    }
+\DoxyCodeLine{35     \textcolor{keywordtype}{double} p0\{ 1.0335123 \};     }
+\DoxyCodeLine{36     \textcolor{keywordtype}{double} mu\{ 0.0262317 \};     }
+\DoxyCodeLine{37     \textcolor{keywordtype}{double} T0\{ 288.75 \};        }
+\DoxyCodeLine{38     \textcolor{keywordtype}{double} T\{ 353.15 \};         }
+\DoxyCodeLine{39     \textcolor{keywordtype}{double} Tpc\{ 216.32 \};       }
+\DoxyCodeLine{40     \textcolor{keywordtype}{double} Ppc\{ 46.34 \};        }
+\DoxyCodeLine{41     \textcolor{keywordtype}{double} Ma\{ 20.3 \};          }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keyword}{const} \textcolor{keywordtype}{double} R = 0.08478;   }
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

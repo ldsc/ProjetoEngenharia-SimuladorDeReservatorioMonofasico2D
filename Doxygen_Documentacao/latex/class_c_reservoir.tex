@@ -17,37 +17,33 @@ double \mbox{\hyperlink{class_c_reservoir_a32c510a7825fbf321d26a930fce06d64}{cal
 \item 
 bool \mbox{\hyperlink{class_c_reservoir_a5ba072659dc30512854bd4f12e503e2b}{is\+Liquid}} ()
 \begin{DoxyCompactList}\small\item\em funcoes get \end{DoxyCompactList}\item 
-double \mbox{\hyperlink{class_c_reservoir_ad71e1c998664e9f638d94f7dbc95ed98}{get\+\_\+rw}} ()
+double \mbox{\hyperlink{class_c_reservoir_a042c9237f4e874c4a3b34acf7a4f25ad}{Rw}} ()
 \item 
-double \mbox{\hyperlink{class_c_reservoir_a029216a78623c812e130a92233caab57}{get\+\_\+re}} ()
+double \mbox{\hyperlink{class_c_reservoir_a1d2237b4ea1f787a5a13a9a0e6613343}{Re}} ()
 \item 
-std\+::vector$<$ double $>$ \mbox{\hyperlink{class_c_reservoir_aa60944d604208a916e3fabf63cc028fa}{get\+\_\+dz}} ()
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_c_reservoir_acb98b7edceaf681cbd942412b36fdf24}{Dz}} ()
 \item 
-double \mbox{\hyperlink{class_c_reservoir_a70ea97b2c49537139278bb4eb968377b}{get\+\_\+theta}} ()
+double \mbox{\hyperlink{class_c_reservoir_a831effc8d51cefcb8e321783246ae112}{Theta}} ()
 \item 
-double \mbox{\hyperlink{class_c_reservoir_a38e8c1fa57d4e14a93db92cd0511e70b}{get\+\_\+k0r}} ()
+double \mbox{\hyperlink{class_c_reservoir_a47894c8844f9f03156f0a8055c180d5b}{K0r}} ()
 \item 
-double \mbox{\hyperlink{class_c_reservoir_ae8852989a9931f083b9e433d6fa39e2f}{get\+\_\+k0z}} ()
+double \mbox{\hyperlink{class_c_reservoir_afc8abb2948de35f04f41db0b4bc99d6e}{K0z}} ()
 \item 
-double \mbox{\hyperlink{class_c_reservoir_a2ba3d6c4399e7348551844a2a075d641}{get\+\_\+cphi}} ()
+double \mbox{\hyperlink{class_c_reservoir_a1566a881f53dabd0ba3089c987208052}{Cphi}} ()
 \item 
-double \mbox{\hyperlink{class_c_reservoir_a5930ffb2905e6280848ea93f337ef395}{get\+\_\+phi0}} ()
+double \mbox{\hyperlink{class_c_reservoir_aa21fcdd0b34b1bf864abd3aeca5f1235}{Phi0}} ()
 \item 
-double \mbox{\hyperlink{class_c_reservoir_aafbb1bc7a28c68eccd74a75fe62e8550}{get\+\_\+p0}} ()
+double \mbox{\hyperlink{class_c_reservoir_ae16890311c22989cd8b70cf654142ba6}{P0}} ()
 \item 
-double \mbox{\hyperlink{class_c_reservoir_a8a5fc8ce3a41b2a667dc7f78f6469bdc}{get\+\_\+p\+\_\+i}} ()
+double \mbox{\hyperlink{class_c_reservoir_ac1d3de9235cf65acb14180ae6ac9843f}{P\+\_\+i}} ()
 \item 
-double \mbox{\hyperlink{class_c_reservoir_a7571b59c93b73a72af149ab228930289}{get\+\_\+S}} ()
+double \mbox{\hyperlink{class_c_reservoir_a08fccc55ecd43d87d2f7046c00d98d9f}{S}} ()
 \item 
-double \mbox{\hyperlink{class_c_reservoir_aeb67cd8255154067e988b98a58171d1f}{get\+\_\+\+Temperature}} ()
+double \mbox{\hyperlink{class_c_reservoir_a6fc1fcb7e57eca1e434e033297058c44}{Temperature}} ()
 \item 
-bool \mbox{\hyperlink{class_c_reservoir_a5f5a455d9d4f3dfd46c12fab30cca0c9}{get\+\_\+aquifer}} ()
+bool \mbox{\hyperlink{class_c_reservoir_a18b310c90880a63bc83170d0b6376cee}{Aquifer}} ()
 \item 
-bool \mbox{\hyperlink{class_c_reservoir_aa46ef15bef4ec8b374a3da4ebc266696}{get\+\_\+inf\+Vol}} ()
-\item 
-void \mbox{\hyperlink{class_c_reservoir_ab8a1df7b3e698550352862f357b16a77}{set\+\_\+rw}} (double \+\_\+rw)
-\item 
-void \mbox{\hyperlink{class_c_reservoir_aff55a8d54d1ba33a3bcacb8f61da094a}{set\+\_\+re}} (double \+\_\+re)
+bool \mbox{\hyperlink{class_c_reservoir_a15d8d6a2acbc2bf5fd2e07bd175555ed}{Inf\+Vol}} ()
 \end{DoxyCompactItemize}
 
 
@@ -71,6 +67,12 @@ presenca de aquifero por volume infinito?
 
 
 \doxysubsection{Funções membros}
+\mbox{\Hypertarget{class_c_reservoir_a18b310c90880a63bc83170d0b6376cee}\label{class_c_reservoir_a18b310c90880a63bc83170d0b6376cee}} 
+\index{CReservoir@{CReservoir}!Aquifer@{Aquifer}}
+\index{Aquifer@{Aquifer}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{Aquifer()}{Aquifer()}}
+{\footnotesize\ttfamily bool CReservoir\+::\+Aquifer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 \mbox{\Hypertarget{class_c_reservoir_a32c510a7825fbf321d26a930fce06d64}\label{class_c_reservoir_a32c510a7825fbf321d26a930fce06d64}} 
 \index{CReservoir@{CReservoir}!calc\_dphidp@{calc\_dphidp}}
 \index{calc\_dphidp@{calc\_dphidp}!CReservoir@{CReservoir}}
@@ -83,89 +85,23 @@ presenca de aquifero por volume infinito?
 \doxysubsubsection{\texorpdfstring{calc\_phi()}{calc\_phi()}}
 {\footnotesize\ttfamily double CReservoir\+::calc\+\_\+phi (\begin{DoxyParamCaption}\item[{double}]{p }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_c_reservoir_a5f5a455d9d4f3dfd46c12fab30cca0c9}\label{class_c_reservoir_a5f5a455d9d4f3dfd46c12fab30cca0c9}} 
-\index{CReservoir@{CReservoir}!get\_aquifer@{get\_aquifer}}
-\index{get\_aquifer@{get\_aquifer}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_aquifer()}{get\_aquifer()}}
-{\footnotesize\ttfamily bool CReservoir\+::get\+\_\+aquifer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_c_reservoir_a1566a881f53dabd0ba3089c987208052}\label{class_c_reservoir_a1566a881f53dabd0ba3089c987208052}} 
+\index{CReservoir@{CReservoir}!Cphi@{Cphi}}
+\index{Cphi@{Cphi}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{Cphi()}{Cphi()}}
+{\footnotesize\ttfamily double CReservoir\+::\+Cphi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_c_reservoir_a2ba3d6c4399e7348551844a2a075d641}\label{class_c_reservoir_a2ba3d6c4399e7348551844a2a075d641}} 
-\index{CReservoir@{CReservoir}!get\_cphi@{get\_cphi}}
-\index{get\_cphi@{get\_cphi}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_cphi()}{get\_cphi()}}
-{\footnotesize\ttfamily double CReservoir\+::get\+\_\+cphi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_c_reservoir_acb98b7edceaf681cbd942412b36fdf24}\label{class_c_reservoir_acb98b7edceaf681cbd942412b36fdf24}} 
+\index{CReservoir@{CReservoir}!Dz@{Dz}}
+\index{Dz@{Dz}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{Dz()}{Dz()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ CReservoir\+::\+Dz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_c_reservoir_aa60944d604208a916e3fabf63cc028fa}\label{class_c_reservoir_aa60944d604208a916e3fabf63cc028fa}} 
-\index{CReservoir@{CReservoir}!get\_dz@{get\_dz}}
-\index{get\_dz@{get\_dz}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_dz()}{get\_dz()}}
-{\footnotesize\ttfamily std\+::vector$<$ double $>$ CReservoir\+::get\+\_\+dz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_c_reservoir_aa46ef15bef4ec8b374a3da4ebc266696}\label{class_c_reservoir_aa46ef15bef4ec8b374a3da4ebc266696}} 
-\index{CReservoir@{CReservoir}!get\_infVol@{get\_infVol}}
-\index{get\_infVol@{get\_infVol}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_infVol()}{get\_infVol()}}
-{\footnotesize\ttfamily bool CReservoir\+::get\+\_\+inf\+Vol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_c_reservoir_a38e8c1fa57d4e14a93db92cd0511e70b}\label{class_c_reservoir_a38e8c1fa57d4e14a93db92cd0511e70b}} 
-\index{CReservoir@{CReservoir}!get\_k0r@{get\_k0r}}
-\index{get\_k0r@{get\_k0r}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_k0r()}{get\_k0r()}}
-{\footnotesize\ttfamily double CReservoir\+::get\+\_\+k0r (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_c_reservoir_ae8852989a9931f083b9e433d6fa39e2f}\label{class_c_reservoir_ae8852989a9931f083b9e433d6fa39e2f}} 
-\index{CReservoir@{CReservoir}!get\_k0z@{get\_k0z}}
-\index{get\_k0z@{get\_k0z}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_k0z()}{get\_k0z()}}
-{\footnotesize\ttfamily double CReservoir\+::get\+\_\+k0z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_c_reservoir_aafbb1bc7a28c68eccd74a75fe62e8550}\label{class_c_reservoir_aafbb1bc7a28c68eccd74a75fe62e8550}} 
-\index{CReservoir@{CReservoir}!get\_p0@{get\_p0}}
-\index{get\_p0@{get\_p0}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_p0()}{get\_p0()}}
-{\footnotesize\ttfamily double CReservoir\+::get\+\_\+p0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_c_reservoir_a8a5fc8ce3a41b2a667dc7f78f6469bdc}\label{class_c_reservoir_a8a5fc8ce3a41b2a667dc7f78f6469bdc}} 
-\index{CReservoir@{CReservoir}!get\_p\_i@{get\_p\_i}}
-\index{get\_p\_i@{get\_p\_i}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_p\_i()}{get\_p\_i()}}
-{\footnotesize\ttfamily double CReservoir\+::get\+\_\+p\+\_\+i (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_c_reservoir_a5930ffb2905e6280848ea93f337ef395}\label{class_c_reservoir_a5930ffb2905e6280848ea93f337ef395}} 
-\index{CReservoir@{CReservoir}!get\_phi0@{get\_phi0}}
-\index{get\_phi0@{get\_phi0}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_phi0()}{get\_phi0()}}
-{\footnotesize\ttfamily double CReservoir\+::get\+\_\+phi0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_c_reservoir_a029216a78623c812e130a92233caab57}\label{class_c_reservoir_a029216a78623c812e130a92233caab57}} 
-\index{CReservoir@{CReservoir}!get\_re@{get\_re}}
-\index{get\_re@{get\_re}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_re()}{get\_re()}}
-{\footnotesize\ttfamily double CReservoir\+::get\+\_\+re (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_c_reservoir_ad71e1c998664e9f638d94f7dbc95ed98}\label{class_c_reservoir_ad71e1c998664e9f638d94f7dbc95ed98}} 
-\index{CReservoir@{CReservoir}!get\_rw@{get\_rw}}
-\index{get\_rw@{get\_rw}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_rw()}{get\_rw()}}
-{\footnotesize\ttfamily double CReservoir\+::get\+\_\+rw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_c_reservoir_a7571b59c93b73a72af149ab228930289}\label{class_c_reservoir_a7571b59c93b73a72af149ab228930289}} 
-\index{CReservoir@{CReservoir}!get\_S@{get\_S}}
-\index{get\_S@{get\_S}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_S()}{get\_S()}}
-{\footnotesize\ttfamily double CReservoir\+::get\+\_\+S (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_c_reservoir_aeb67cd8255154067e988b98a58171d1f}\label{class_c_reservoir_aeb67cd8255154067e988b98a58171d1f}} 
-\index{CReservoir@{CReservoir}!get\_Temperature@{get\_Temperature}}
-\index{get\_Temperature@{get\_Temperature}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_Temperature()}{get\_Temperature()}}
-{\footnotesize\ttfamily double CReservoir\+::get\+\_\+\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_c_reservoir_a70ea97b2c49537139278bb4eb968377b}\label{class_c_reservoir_a70ea97b2c49537139278bb4eb968377b}} 
-\index{CReservoir@{CReservoir}!get\_theta@{get\_theta}}
-\index{get\_theta@{get\_theta}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{get\_theta()}{get\_theta()}}
-{\footnotesize\ttfamily double CReservoir\+::get\+\_\+theta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_c_reservoir_a15d8d6a2acbc2bf5fd2e07bd175555ed}\label{class_c_reservoir_a15d8d6a2acbc2bf5fd2e07bd175555ed}} 
+\index{CReservoir@{CReservoir}!InfVol@{InfVol}}
+\index{InfVol@{InfVol}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{InfVol()}{InfVol()}}
+{\footnotesize\ttfamily bool CReservoir\+::\+Inf\+Vol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \mbox{\Hypertarget{class_c_reservoir_a5ba072659dc30512854bd4f12e503e2b}\label{class_c_reservoir_a5ba072659dc30512854bd4f12e503e2b}} 
 \index{CReservoir@{CReservoir}!isLiquid@{isLiquid}}
@@ -177,21 +113,69 @@ presenca de aquifero por volume infinito?
 
 funcoes get 
 
-\mbox{\Hypertarget{class_c_reservoir_aff55a8d54d1ba33a3bcacb8f61da094a}\label{class_c_reservoir_aff55a8d54d1ba33a3bcacb8f61da094a}} 
-\index{CReservoir@{CReservoir}!set\_re@{set\_re}}
-\index{set\_re@{set\_re}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{set\_re()}{set\_re()}}
-{\footnotesize\ttfamily void CReservoir\+::set\+\_\+re (\begin{DoxyParamCaption}\item[{double}]{\+\_\+re }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_c_reservoir_a47894c8844f9f03156f0a8055c180d5b}\label{class_c_reservoir_a47894c8844f9f03156f0a8055c180d5b}} 
+\index{CReservoir@{CReservoir}!K0r@{K0r}}
+\index{K0r@{K0r}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{K0r()}{K0r()}}
+{\footnotesize\ttfamily double CReservoir\+::\+K0r (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_c_reservoir_ab8a1df7b3e698550352862f357b16a77}\label{class_c_reservoir_ab8a1df7b3e698550352862f357b16a77}} 
-\index{CReservoir@{CReservoir}!set\_rw@{set\_rw}}
-\index{set\_rw@{set\_rw}!CReservoir@{CReservoir}}
-\doxysubsubsection{\texorpdfstring{set\_rw()}{set\_rw()}}
-{\footnotesize\ttfamily void CReservoir\+::set\+\_\+rw (\begin{DoxyParamCaption}\item[{double}]{\+\_\+rw }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_c_reservoir_afc8abb2948de35f04f41db0b4bc99d6e}\label{class_c_reservoir_afc8abb2948de35f04f41db0b4bc99d6e}} 
+\index{CReservoir@{CReservoir}!K0z@{K0z}}
+\index{K0z@{K0z}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{K0z()}{K0z()}}
+{\footnotesize\ttfamily double CReservoir\+::\+K0z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_reservoir_ae16890311c22989cd8b70cf654142ba6}\label{class_c_reservoir_ae16890311c22989cd8b70cf654142ba6}} 
+\index{CReservoir@{CReservoir}!P0@{P0}}
+\index{P0@{P0}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{P0()}{P0()}}
+{\footnotesize\ttfamily double CReservoir\+::\+P0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_reservoir_ac1d3de9235cf65acb14180ae6ac9843f}\label{class_c_reservoir_ac1d3de9235cf65acb14180ae6ac9843f}} 
+\index{CReservoir@{CReservoir}!P\_i@{P\_i}}
+\index{P\_i@{P\_i}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{P\_i()}{P\_i()}}
+{\footnotesize\ttfamily double CReservoir\+::\+P\+\_\+i (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_reservoir_aa21fcdd0b34b1bf864abd3aeca5f1235}\label{class_c_reservoir_aa21fcdd0b34b1bf864abd3aeca5f1235}} 
+\index{CReservoir@{CReservoir}!Phi0@{Phi0}}
+\index{Phi0@{Phi0}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{Phi0()}{Phi0()}}
+{\footnotesize\ttfamily double CReservoir\+::\+Phi0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_reservoir_a1d2237b4ea1f787a5a13a9a0e6613343}\label{class_c_reservoir_a1d2237b4ea1f787a5a13a9a0e6613343}} 
+\index{CReservoir@{CReservoir}!Re@{Re}}
+\index{Re@{Re}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{Re()}{Re()}}
+{\footnotesize\ttfamily double CReservoir\+::\+Re (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_reservoir_a042c9237f4e874c4a3b34acf7a4f25ad}\label{class_c_reservoir_a042c9237f4e874c4a3b34acf7a4f25ad}} 
+\index{CReservoir@{CReservoir}!Rw@{Rw}}
+\index{Rw@{Rw}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{Rw()}{Rw()}}
+{\footnotesize\ttfamily double CReservoir\+::\+Rw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_reservoir_a08fccc55ecd43d87d2f7046c00d98d9f}\label{class_c_reservoir_a08fccc55ecd43d87d2f7046c00d98d9f}} 
+\index{CReservoir@{CReservoir}!S@{S}}
+\index{S@{S}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{S()}{S()}}
+{\footnotesize\ttfamily double CReservoir\+::S (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_reservoir_a6fc1fcb7e57eca1e434e033297058c44}\label{class_c_reservoir_a6fc1fcb7e57eca1e434e033297058c44}} 
+\index{CReservoir@{CReservoir}!Temperature@{Temperature}}
+\index{Temperature@{Temperature}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{Temperature()}{Temperature()}}
+{\footnotesize\ttfamily double CReservoir\+::\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_reservoir_a831effc8d51cefcb8e321783246ae112}\label{class_c_reservoir_a831effc8d51cefcb8e321783246ae112}} 
+\index{CReservoir@{CReservoir}!Theta@{Theta}}
+\index{Theta@{Theta}!CReservoir@{CReservoir}}
+\doxysubsubsection{\texorpdfstring{Theta()}{Theta()}}
+{\footnotesize\ttfamily double CReservoir\+::\+Theta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
 \item 
-Programacao\+Pratica2021/\+Projeto\+Engenharia-\/\+Simulador2\+D-\/\+Nicholas-\/\+Kevin/listagens/\mbox{\hyperlink{_c_reservoir_8hpp}{CReservoir.\+hpp}}\item 
-Programacao\+Pratica2021/\+Projeto\+Engenharia-\/\+Simulador2\+D-\/\+Nicholas-\/\+Kevin/listagens/\mbox{\hyperlink{_c_reservoir_8cpp}{CReservoir.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Usuario/\+Desktop/\+Programacao\+Pratica2021/\+Projeto\+Engenharia-\/\+Simulador2\+D-\/\+Nicholas-\/\+Kevin/listagens/\mbox{\hyperlink{_c_reservoir_8hpp}{CReservoir.\+hpp}}\item 
+C\+:/\+Users/\+Usuario/\+Desktop/\+Programacao\+Pratica2021/\+Projeto\+Engenharia-\/\+Simulador2\+D-\/\+Nicholas-\/\+Kevin/listagens/\mbox{\hyperlink{_c_reservoir_8cpp}{CReservoir.\+cpp}}\end{DoxyCompactItemize}

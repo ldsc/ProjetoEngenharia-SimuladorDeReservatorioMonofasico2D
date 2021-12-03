@@ -200,9 +200,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/class diagram.eps
-	lyxscale 50
-	width 100text%
+	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/class diagram.jpeg
+	lyxscale 20
+	width 80text%
 	rotateAngle 90
 
 \end_inset
@@ -351,7 +351,7 @@ CGnuplot
 \begin_layout Itemize
 Classe 
 \series bold
-CSimulator
+CSimuladorMonofasico2D
 \series default
 : uma classe que representa o simulador, 
 \begin_inset Quotes eld
@@ -771,7 +771,7 @@ reference "cap:Diagrama-de-maquina-de-estado"
 
 \end_inset
 
- o diagrama de máquina de estado para o objeto CSimulador.
+ o diagrama de máquina de estado para o objeto CSimuladorMonofasico2D.
 \end_layout
 
 \begin_layout Standard

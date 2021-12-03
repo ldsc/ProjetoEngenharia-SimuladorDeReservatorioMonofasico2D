@@ -908,12 +908,12 @@ status open
 
 
 \backslash
-ref{CSimulador-hpp}
+ref{CSimuladorMonofasico2D-hpp}
 \end_layout
 
 \end_inset
 
- o arquivo com o código da classe CSimulador.
+ o arquivo com o código da classe CSimuladorMonofasico2D.
 \end_layout
 
 \begin_layout Standard
@@ -926,8 +926,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CSimulador.}, label={CSi
-mulador-hpp}] {../listagens/CSimulador.hpp}
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CSimuladorMonofasico2D.}
+, label={CSimuladorMonofasico2D-hpp}] {../listagens/CSimuladorMonofasico2D.hpp}
 \end_layout
 
 \end_inset
@@ -944,12 +944,12 @@ status open
 
 
 \backslash
-ref{CSimulador-cpp}
+ref{CSimuladorMonofasico2D-cpp}
 \end_layout
 
 \end_inset
 
- o arquivo com o código da implementação da classe CSimulador.
+ o arquivo com o código da implementação da classe CSimuladorMonofasico2D.
 \end_layout
 
 \begin_layout Standard
@@ -962,8 +962,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CSimulador.},
- label={CSimulador-cpp}] {../listagens/CSimulador.cpp}
+lstinputlisting[ caption={Arquivo de implementação da classe CSimuladorMonofasic
+o2D.}, label={CSimuladorMonofasico2D-cpp}] {../listagens/CSimuladorMonofasico2D.cpp}
 \end_layout
 
 \end_inset

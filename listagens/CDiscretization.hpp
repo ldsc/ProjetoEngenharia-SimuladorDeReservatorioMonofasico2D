@@ -13,24 +13,24 @@ private:
 	double dtmin{ 1.0 / 3600 };		/// passo de tempo minimo [h]
 	double eps_NR{ 1.0e-6 };		/// tolerancia de convergencia dos residuos
 	double eps_MB{ 1.0e-8 };		/// tolerancia de convergencia do balanco de materiais
-	double Ac{ 24 };				/// constante de conversao de unidades acumulo (ANP)
-	double Bc{ 0.0083621472 };		/// constante de conversao de unidades fluxo (ANP)
+	double ac{ 24 };				/// constante de conversao de unidades acumulo (ANP)
+	double bc{ 0.0083621472 };		/// constante de conversao de unidades fluxo (ANP)
 
 public:
 	CDiscretization() {}
 	CDiscretization(int _nz, int _nr, int _nrs, int _nt, int _ntp, int _max_iter, double _dtmin, double _eps_NR, double _eps_MB, double _Ac, double _Bc):
-		nz{ _nz }, nr{ _nr }, nrs{ _nrs }, nt{ _nt }, ntp{ _ntp }, max_iter{ _max_iter }, dtmin{ _dtmin }, eps_NR{ _eps_NR }, eps_MB{ _eps_MB }, Ac{ _Ac }, Bc{ _Bc }{}
+		nz{ _nz }, nr{ _nr }, nrs{ _nrs }, nt{ _nt }, ntp{ _ntp }, max_iter{ _max_iter }, dtmin{ _dtmin }, eps_NR{ _eps_NR }, eps_MB{ _eps_MB }, ac{ _Ac }, bc{ _Bc }{}
 	/// funcoes get
-	int get_nz()		{ return nz; }
-	int get_nr()		{ return nr; }
-	int get_nrs()		{ return nrs; }
-	int get_nt()		{ return nt; }
-	int get_ntp()		{ return ntp; }
-	int get_max_iter()	{ return max_iter; }
-	double get_dtmin()	{ return dtmin; }
-	double get_eps_NR() { return eps_NR; }
-	double get_eps_MB() { return eps_MB; }
-	double get_Ac()		{ return Ac; }
-	double get_Bc()		{ return Bc; }
+	int Nz()		{ return nz; }
+	int Nr()		{ return nr; }
+	int Nrs()		{ return nrs; }
+	int Nt()		{ return nt; }
+	int Ntp()		{ return ntp; }
+	int Max_iter()	{ return max_iter; }
+	double Eps_NR() { return eps_NR; }
+	double Eps_MB() { return eps_MB; }
+	double DTmin()	{ return dtmin; }
+	double Ac()		{ return ac; }
+	double Bc()		{ return bc; }
 };
 #endif

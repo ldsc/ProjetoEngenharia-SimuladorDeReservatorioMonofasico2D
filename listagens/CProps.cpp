@@ -6,8 +6,8 @@ CProps::CProps(CGrid* _grid, CFluido* _fluido, CReservoir* _reservoir, CDiscreti
 	reservoir = _reservoir;
 	discretization = _discretization;
 
-	nr = discretization->get_nr();
-	nz = discretization->get_nz();
+	nr = discretization->Nr();
+	nz = discretization->Nz();
 
 	b.resize(nr*nz);
 	dbdp.resize(nr * nz);
@@ -29,7 +29,7 @@ CProps::CProps(CGrid* _grid, CFluido* _fluido, CReservoir* _reservoir, CDiscreti
 	dphidp.resize(nr * nz);
 }
 
-void CProps::update(double pw, std::vector<double> pressure) {
+void CProps::Update(double pw, std::vector<double> pressure) {
 	for (int i = 0; i < nr*nz; i++) {
 		b[i] = fluido->calc_b(pressure[i]);
 		dbdp[i] = fluido->calc_dbdp(pressure[i]);
@@ -56,8 +56,7 @@ void CProps::update_well(double pw) {
 }
 
 void CProps::update_b(std::vector<double> pressure) {
-	double omega = grid->get_omega();
-	std::vector<double> z = grid->get_z();
+	double omega = grid->Omega();
 	int camada = -1;
 
 	for (int i = 0; i < nr*nz; i++) {
@@ -80,7 +79,7 @@ void CProps::update_b(std::vector<double> pressure) {
 		if (i >= (nz-1)*nr)
 			bjph[i] = b[i];
 		else
-			bjph[i] = (b[i] * z[camada] + b[i+nr] * z[camada+1]) / (z[camada] + z[camada+1]);
+			bjph[i] = (b[i] * grid->Z(camada) + b[i+nr] * grid->Z(camada+1)) / (grid->Z(camada) + grid->Z(camada+1));
 		/// fronteira superior vertical
 		if (i < nr)
 			bjmh[i] = b[i];
@@ -90,8 +89,7 @@ void CProps::update_b(std::vector<double> pressure) {
 }
 
 void CProps::update_mu(std::vector<double> pressure) {
-	double omega = grid->get_omega();
-	std::vector<double> z = grid->get_z();
+	double omega = grid->Omega();
 	int camada = -1;
 
 	for (int i = 0; i < nr * nz; i++) {
@@ -114,7 +112,7 @@ void CProps::update_mu(std::vector<double> pressure) {
 		if (i >= (nz - 1) * nr)
 			mujph[i] = mu[i];
 		else
-			mujph[i] = (mu[i] * z[camada] + mu[i + nr] * z[camada + 1]) / (z[camada] + z[camada + 1]);
+			mujph[i] = (mu[i] * grid->Z(camada) + mu[i + nr] * grid->Z(camada + 1)) / (grid->Z(camada) + grid->Z(camada + 1));
 		/// fronteira superior vertical
 		if (i < nr)
 			mujmh[i] = mu[i];

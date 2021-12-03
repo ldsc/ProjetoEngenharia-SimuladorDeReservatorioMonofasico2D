@@ -1,5 +1,5 @@
 \hypertarget{_c_discretization_8hpp_source}{}\doxysection{CDiscretization.\+hpp}
-\label{_c_discretization_8hpp_source}\index{ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CDiscretization.hpp@{ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CDiscretization.hpp}}
+\label{_c_discretization_8hpp_source}\index{C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CDiscretization.hpp@{C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CDiscretization.hpp}}
 \mbox{\hyperlink{_c_discretization_8hpp}{Vá para a documentação desse arquivo.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CDISCRETIZATION\_HPP}}
@@ -17,24 +17,24 @@
 \DoxyCodeLine{13     \textcolor{keywordtype}{double} dtmin\{ 1.0 / 3600 \};     }
 \DoxyCodeLine{14     \textcolor{keywordtype}{double} eps\_NR\{ 1.0e-\/6 \};        }
 \DoxyCodeLine{15     \textcolor{keywordtype}{double} eps\_MB\{ 1.0e-\/8 \};        }
-\DoxyCodeLine{16     \textcolor{keywordtype}{double} Ac\{ 24 \};                }
-\DoxyCodeLine{17     \textcolor{keywordtype}{double} Bc\{ 0.0083621472 \};      }
+\DoxyCodeLine{16     \textcolor{keywordtype}{double} ac\{ 24 \};                }
+\DoxyCodeLine{17     \textcolor{keywordtype}{double} bc\{ 0.0083621472 \};      }
 \DoxyCodeLine{18 }
 \DoxyCodeLine{19 \textcolor{keyword}{public}:}
 \DoxyCodeLine{20     \mbox{\hyperlink{class_c_discretization_a24da12ebc2ac50d99751e9a5b41289f7}{CDiscretization}}() \{\}}
 \DoxyCodeLine{21     \mbox{\hyperlink{class_c_discretization_ad22f04357ca1fa6181dce97aa5c6b411}{CDiscretization}}(\textcolor{keywordtype}{int} \_nz, \textcolor{keywordtype}{int} \_nr, \textcolor{keywordtype}{int} \_nrs, \textcolor{keywordtype}{int} \_nt, \textcolor{keywordtype}{int} \_ntp, \textcolor{keywordtype}{int} \_max\_iter, \textcolor{keywordtype}{double} \_dtmin, \textcolor{keywordtype}{double} \_eps\_NR, \textcolor{keywordtype}{double} \_eps\_MB, \textcolor{keywordtype}{double} \_Ac, \textcolor{keywordtype}{double} \_Bc):}
-\DoxyCodeLine{22         nz\{ \_nz \}, nr\{ \_nr \}, nrs\{ \_nrs \}, nt\{ \_nt \}, ntp\{ \_ntp \}, max\_iter\{ \_max\_iter \}, dtmin\{ \_dtmin \}, eps\_NR\{ \_eps\_NR \}, eps\_MB\{ \_eps\_MB \}, Ac\{ \_Ac \}, Bc\{ \_Bc \}\{\}}
-\DoxyCodeLine{24     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_discretization_a0fdbaca5749e80036100dbc69acd432d}{get\_nz}}()      \{ \textcolor{keywordflow}{return} nz; \}}
-\DoxyCodeLine{25     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_discretization_a1a134f9c2bfe52d90bff11854f3a620a}{get\_nr}}()      \{ \textcolor{keywordflow}{return} nr; \}}
-\DoxyCodeLine{26     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_discretization_a4a5645f6ab4c0471a698c0829776b071}{get\_nrs}}()        \{ \textcolor{keywordflow}{return} nrs; \}}
-\DoxyCodeLine{27     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_discretization_a70e4fb20af788a8d4b34cd8df60344fb}{get\_nt}}()      \{ \textcolor{keywordflow}{return} nt; \}}
-\DoxyCodeLine{28     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_discretization_a210f59b82eecd568180a0ade729e353c}{get\_ntp}}()        \{ \textcolor{keywordflow}{return} ntp; \}}
-\DoxyCodeLine{29     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_discretization_a905ec53888d5fce333a1c0724df11438}{get\_max\_iter}}()  \{ \textcolor{keywordflow}{return} max\_iter; \}}
-\DoxyCodeLine{30     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_discretization_a3520bdbd2f69c9774422a9d5afab98e4}{get\_dtmin}}() \{ \textcolor{keywordflow}{return} dtmin; \}}
-\DoxyCodeLine{31     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_discretization_a9e22b1ceabe6ad6d1f2ee264913b6bbf}{get\_eps\_NR}}() \{ \textcolor{keywordflow}{return} eps\_NR; \}}
-\DoxyCodeLine{32     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_discretization_af24d8a11a35b5f84fcceb9e15295f7a1}{get\_eps\_MB}}() \{ \textcolor{keywordflow}{return} eps\_MB; \}}
-\DoxyCodeLine{33     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_discretization_afcfe2d593953fd8e5b6e8b9ff308080a}{get\_Ac}}()       \{ \textcolor{keywordflow}{return} Ac; \}}
-\DoxyCodeLine{34     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_discretization_ad24ad9e7fe13a99354ad9dd8eba06b61}{get\_Bc}}()       \{ \textcolor{keywordflow}{return} Bc; \}}
+\DoxyCodeLine{22         nz\{ \_nz \}, nr\{ \_nr \}, nrs\{ \_nrs \}, nt\{ \_nt \}, ntp\{ \_ntp \}, max\_iter\{ \_max\_iter \}, dtmin\{ \_dtmin \}, eps\_NR\{ \_eps\_NR \}, eps\_MB\{ \_eps\_MB \}, ac\{ \_Ac \}, bc\{ \_Bc \}\{\}}
+\DoxyCodeLine{24     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_discretization_a3f29c5c3637f38cc52c31a70249f66c7}{Nz}}()      \{ \textcolor{keywordflow}{return} nz; \}}
+\DoxyCodeLine{25     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_discretization_a7eaf0f738d174ce777ef8d4994cf09dc}{Nr}}()      \{ \textcolor{keywordflow}{return} nr; \}}
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_discretization_a67247d4755df8ac2bec6abf6b163eab5}{Nrs}}()        \{ \textcolor{keywordflow}{return} nrs; \}}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_discretization_a2303df39907991dc7f16c47953dcd063}{Nt}}()      \{ \textcolor{keywordflow}{return} nt; \}}
+\DoxyCodeLine{28     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_discretization_ac7d2e0e254bff118f120481efdf06938}{Ntp}}()        \{ \textcolor{keywordflow}{return} ntp; \}}
+\DoxyCodeLine{29     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_c_discretization_ac1ff6d3a517f5c173a26c769a8f49276}{Max\_iter}}()  \{ \textcolor{keywordflow}{return} max\_iter; \}}
+\DoxyCodeLine{30     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_discretization_a9805479299fd3cb9b353f2170f639227}{Eps\_NR}}() \{ \textcolor{keywordflow}{return} eps\_NR; \}}
+\DoxyCodeLine{31     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_discretization_a3f8063b2e9aaa7bdef2d0d46585c616b}{Eps\_MB}}() \{ \textcolor{keywordflow}{return} eps\_MB; \}}
+\DoxyCodeLine{32     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_discretization_a8c72b69e5da4f3ff3203ada614b739a0}{DTmin}}() \{ \textcolor{keywordflow}{return} dtmin; \}}
+\DoxyCodeLine{33     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_discretization_aec65e8bdeb94ad01c410b97476440750}{Ac}}()       \{ \textcolor{keywordflow}{return} ac; \}}
+\DoxyCodeLine{34     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_discretization_aa9c0501ec64ec5de49a7337faa4a1e94}{Bc}}()       \{ \textcolor{keywordflow}{return} bc; \}}
 \DoxyCodeLine{35 \};}
 \DoxyCodeLine{36 \textcolor{preprocessor}{\#endif}}
 

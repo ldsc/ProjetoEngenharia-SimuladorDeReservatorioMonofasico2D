@@ -1,5 +1,5 @@
 \hypertarget{_c_props_8hpp_source}{}\doxysection{CProps.\+hpp}
-\label{_c_props_8hpp_source}\index{ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CProps.hpp@{ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CProps.hpp}}
+\label{_c_props_8hpp_source}\index{C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CProps.hpp@{C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-\/Simulador2D-\/Nicholas-\/Kevin/listagens/CProps.hpp}}
 \mbox{\hyperlink{_c_props_8hpp}{Vá para a documentação desse arquivo.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CPROPS\_HPP}}
@@ -26,86 +26,60 @@
 \DoxyCodeLine{22 }
 \DoxyCodeLine{23     std::vector<double> b;}
 \DoxyCodeLine{24     std::vector<double> dbdp;}
-\DoxyCodeLine{25 }
-\DoxyCodeLine{26     std::vector<double> biph;}
-\DoxyCodeLine{27     std::vector<double> bimh;}
-\DoxyCodeLine{28     std::vector<double> bjph;}
-\DoxyCodeLine{29     std::vector<double> bjmh;}
-\DoxyCodeLine{30 }
-\DoxyCodeLine{31 }
-\DoxyCodeLine{32     std::vector<double> mu;}
-\DoxyCodeLine{33     std::vector<double> dmudp;}
-\DoxyCodeLine{34 }
-\DoxyCodeLine{35     std::vector<double> muiph;}
-\DoxyCodeLine{36     std::vector<double> muimh;}
-\DoxyCodeLine{37     std::vector<double> mujph;}
-\DoxyCodeLine{38     std::vector<double> mujmh;}
+\DoxyCodeLine{25     std::vector<double> biph;}
+\DoxyCodeLine{26     std::vector<double> bimh;}
+\DoxyCodeLine{27     std::vector<double> bjph;}
+\DoxyCodeLine{28     std::vector<double> bjmh;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     std::vector<double> mu;}
+\DoxyCodeLine{31     std::vector<double> dmudp;}
+\DoxyCodeLine{32     std::vector<double> muiph;}
+\DoxyCodeLine{33     std::vector<double> muimh;}
+\DoxyCodeLine{34     std::vector<double> mujph;}
+\DoxyCodeLine{35     std::vector<double> mujmh;}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     std::vector<double> phi;}
+\DoxyCodeLine{38     std::vector<double> dphidp;}
 \DoxyCodeLine{39 }
-\DoxyCodeLine{40 }
-\DoxyCodeLine{41     std::vector<double> phi;}
-\DoxyCodeLine{42     std::vector<double> dphidp;}
-\DoxyCodeLine{43 }
-\DoxyCodeLine{44     \textcolor{keywordtype}{double} bw = .0;}
-\DoxyCodeLine{45     \textcolor{keywordtype}{double} dbwdp1 = .0;}
-\DoxyCodeLine{46     \textcolor{keywordtype}{double} dbwdpw = .0;}
-\DoxyCodeLine{47     \textcolor{keywordtype}{double} muw = .0;}
-\DoxyCodeLine{48     \textcolor{keywordtype}{double} dmuwdp1 = .0;}
-\DoxyCodeLine{49     \textcolor{keywordtype}{double} dmuwdpw = .0;}
+\DoxyCodeLine{40     \textcolor{keywordtype}{double} bw = .0;}
+\DoxyCodeLine{41     \textcolor{keywordtype}{double} dbwdp1 = .0;}
+\DoxyCodeLine{42     \textcolor{keywordtype}{double} dbwdpw = .0;}
+\DoxyCodeLine{43     \textcolor{keywordtype}{double} muw = .0;}
+\DoxyCodeLine{44     \textcolor{keywordtype}{double} dmuwdp1 = .0;}
+\DoxyCodeLine{45     \textcolor{keywordtype}{double} dmuwdpw = .0;}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} update\_b(std::vector<double> pressure);}
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} update\_mu(std::vector<double> pressure);}
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} update\_well(\textcolor{keywordtype}{double} pw);}
 \DoxyCodeLine{50 }
-\DoxyCodeLine{51     \textcolor{keywordtype}{void} update\_b(std::vector<double> pressure);}
-\DoxyCodeLine{52     \textcolor{keywordtype}{void} update\_mu(std::vector<double> pressure);}
-\DoxyCodeLine{53     \textcolor{keywordtype}{void} update\_well(\textcolor{keywordtype}{double} pw);}
-\DoxyCodeLine{54 }
-\DoxyCodeLine{55 \textcolor{keyword}{public}:}
-\DoxyCodeLine{56     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_props_a53aa5499e4d71348e789ba4a9dd31263}{update}}(\textcolor{keywordtype}{double} pw, std::vector<double> pressure);}
+\DoxyCodeLine{51 \textcolor{keyword}{public}:}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_props_a5a673150794ce3a601e5e09892e82fcf}{Update}}(\textcolor{keywordtype}{double} pw, std::vector<double> pressure);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_ab01b03abcf0a831e0b65508b525054ea}{Phi}}(\textcolor{keywordtype}{int} i)        \{ \textcolor{keywordflow}{return} phi[i]; \}}
+\DoxyCodeLine{56     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a75ba7b4bd551ae9db9187ac9ea0b8b8a}{Dphidp}}(\textcolor{keywordtype}{int} i)  \{ \textcolor{keywordflow}{return} dphidp[i]; \}}
 \DoxyCodeLine{57 }
-\DoxyCodeLine{59     std::vector<double> \mbox{\hyperlink{class_c_props_a48cb8357c90684ccbda2b0bc56ed3ce1}{get\_phi}}()        \{ \textcolor{keywordflow}{return} phi; \}}
-\DoxyCodeLine{60     std::vector<double> \mbox{\hyperlink{class_c_props_a9c518781a9d33dc9fde89c84764a63c9}{get\_dphidp}}()  \{ \textcolor{keywordflow}{return} dphidp; \}}
-\DoxyCodeLine{61     std::vector<double> \mbox{\hyperlink{class_c_props_a50287347ced833f3501e49a103f6ab3c}{get\_b}}()            \{ \textcolor{keywordflow}{return} b; \}}
-\DoxyCodeLine{62     std::vector<double> \mbox{\hyperlink{class_c_props_a79363cdd36d69d88c91c8a48e168ee8f}{get\_dbdp}}()      \{ \textcolor{keywordflow}{return} dbdp; \}}
-\DoxyCodeLine{63 }
-\DoxyCodeLine{64     std::vector<double> \mbox{\hyperlink{class_c_props_a51bba116666fd004b03ff88e60c22127}{get\_biph}}()      \{ \textcolor{keywordflow}{return} biph; \}}
-\DoxyCodeLine{65     std::vector<double> \mbox{\hyperlink{class_c_props_af5da51d3bb675c53039e7a93cf306970}{get\_bimh}}()      \{ \textcolor{keywordflow}{return} bimh; \}}
-\DoxyCodeLine{66     std::vector<double> \mbox{\hyperlink{class_c_props_a0a101f306ed8adb88289bde989b60057}{get\_bjph}}()      \{ \textcolor{keywordflow}{return} bjph; \}}
-\DoxyCodeLine{67     std::vector<double> \mbox{\hyperlink{class_c_props_a959aa4845e0e8944450442771b056cda}{get\_bjmh}}()      \{ \textcolor{keywordflow}{return} bjmh; \}}
-\DoxyCodeLine{68 }
-\DoxyCodeLine{69 }
-\DoxyCodeLine{70     std::vector<double> \mbox{\hyperlink{class_c_props_a511a5ffcc7cf6fe9f6a00df97179158b}{get\_mu}}()      \{ \textcolor{keywordflow}{return} mu; \}}
-\DoxyCodeLine{71     std::vector<double> \mbox{\hyperlink{class_c_props_a05f500578dda8c4e533abf2f129213c3}{get\_dmudp}}()        \{ \textcolor{keywordflow}{return} dmudp; \}}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a234080605909c8bb5bd0ecb7b0af4374}{B}}(\textcolor{keywordtype}{int} i)            \{ \textcolor{keywordflow}{return} b[i]; \}}
+\DoxyCodeLine{60     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a8c3a93b31536eb8c812c304646e84096}{Dbdp}}(\textcolor{keywordtype}{int} i)      \{ \textcolor{keywordflow}{return} dbdp[i]; \}}
+\DoxyCodeLine{61     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a19c3e87369150994478b2866e3c2b613}{Biph}}(\textcolor{keywordtype}{int} i)      \{ \textcolor{keywordflow}{return} biph[i]; \}}
+\DoxyCodeLine{62     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a7ca97603ce42d4e0962525fd8aacbb68}{Bimh}}(\textcolor{keywordtype}{int} i)      \{ \textcolor{keywordflow}{return} bimh[i]; \}}
+\DoxyCodeLine{63     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_ab40b5b88d23c0afb4cffaa6c56931ebb}{Bjph}}(\textcolor{keywordtype}{int} i)      \{ \textcolor{keywordflow}{return} bjph[i]; \}}
+\DoxyCodeLine{64     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a66af707f4f887ede24a1aa6e8cd165cc}{Bjmh}}(\textcolor{keywordtype}{int} i)      \{ \textcolor{keywordflow}{return} bjmh[i]; \}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a5bc28523eee30b3c9094cf9fb764908a}{Mu}}(\textcolor{keywordtype}{int} i)      \{ \textcolor{keywordflow}{return} mu[i]; \}}
+\DoxyCodeLine{67     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_aa6c5c645f0b00cd50d04cf09a50c800b}{Dmudp}}(\textcolor{keywordtype}{int} i)        \{ \textcolor{keywordflow}{return} dmudp[i]; \}}
+\DoxyCodeLine{68     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_ab9a362a79250a552a6b94d99f565e666}{Muiph}}(\textcolor{keywordtype}{int} i)        \{ \textcolor{keywordflow}{return} mujph[i]; \}}
+\DoxyCodeLine{69     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a8f1fe1835124b130f21e1a42a9ffdc3b}{Muimh}}(\textcolor{keywordtype}{int} i)        \{ \textcolor{keywordflow}{return} muimh[i]; \}}
+\DoxyCodeLine{70     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_af8569ea646d0658418e66a001f1b3afe}{Mujph}}(\textcolor{keywordtype}{int} i)        \{ \textcolor{keywordflow}{return} mujph[i]; \}}
+\DoxyCodeLine{71     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a6c466a6fccdc697f5f9942e805498a76}{Mujmh}}(\textcolor{keywordtype}{int} i)        \{ \textcolor{keywordflow}{return} mujmh[i]; \}}
 \DoxyCodeLine{72 }
-\DoxyCodeLine{73     std::vector<double> \mbox{\hyperlink{class_c_props_aacc95c4e75064780fd7f33d8da632de3}{get\_muiph}}()        \{ \textcolor{keywordflow}{return} mujph; \}}
-\DoxyCodeLine{74     std::vector<double> \mbox{\hyperlink{class_c_props_a5a36896bf11378e4d34a300899ca70e5}{get\_muimh}}()        \{ \textcolor{keywordflow}{return} muimh; \}}
-\DoxyCodeLine{75     std::vector<double> \mbox{\hyperlink{class_c_props_a244e1b46a58804bad20c74a129ab7498}{get\_mujph}}()        \{ \textcolor{keywordflow}{return} mujph; \}}
-\DoxyCodeLine{76     std::vector<double> \mbox{\hyperlink{class_c_props_ae984538534f2e92fb52cd5043e12ff78}{get\_mujmh}}()        \{ \textcolor{keywordflow}{return} mujmh; \}}
-\DoxyCodeLine{77 }
-\DoxyCodeLine{79     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a6904b980def63aebaea2e196922eb853}{get\_phi}}(\textcolor{keywordtype}{int} i)        \{ \textcolor{keywordflow}{return} phi[i]; \}}
-\DoxyCodeLine{80     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_ac9eba27b7020b4a1206aa553d1942e4a}{get\_dphidp}}(\textcolor{keywordtype}{int} i)  \{ \textcolor{keywordflow}{return} dphidp[i]; \}}
-\DoxyCodeLine{81 }
-\DoxyCodeLine{82 }
-\DoxyCodeLine{83     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_afbcb34a3295b322be478def5601f18fd}{get\_b}}(\textcolor{keywordtype}{int} i)            \{ \textcolor{keywordflow}{return} b[i]; \}}
-\DoxyCodeLine{84     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_ac2e17d389d6a1970d2553654b6437453}{get\_dbdp}}(\textcolor{keywordtype}{int} i)      \{ \textcolor{keywordflow}{return} dbdp[i]; \}}
-\DoxyCodeLine{85 }
-\DoxyCodeLine{86     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_ac4e2961ddf3c99433f6923c68a9bd762}{get\_biph}}(\textcolor{keywordtype}{int} i)      \{ \textcolor{keywordflow}{return} biph[i]; \}}
-\DoxyCodeLine{87     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_adea00e337f19d88e01a1b731f9a6065e}{get\_bimh}}(\textcolor{keywordtype}{int} i)      \{ \textcolor{keywordflow}{return} bimh[i]; \}}
-\DoxyCodeLine{88     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_af6b982a4aeb6d235366abebd58c98f9a}{get\_bjph}}(\textcolor{keywordtype}{int} i)      \{ \textcolor{keywordflow}{return} bjph[i]; \}}
-\DoxyCodeLine{89     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a68e6b9122c6471921bf88ea211c7e897}{get\_bjmh}}(\textcolor{keywordtype}{int} i)      \{ \textcolor{keywordflow}{return} bjmh[i]; \}}
-\DoxyCodeLine{90 }
-\DoxyCodeLine{91 }
-\DoxyCodeLine{92     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a609284cd5b7fbe3c81ef7abbdabf0b1c}{get\_mu}}(\textcolor{keywordtype}{int} i)      \{ \textcolor{keywordflow}{return} mu[i]; \}}
-\DoxyCodeLine{93     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_aa5468936cee596912b433224f0752a6e}{get\_dmudp}}(\textcolor{keywordtype}{int} i)        \{ \textcolor{keywordflow}{return} dmudp[i]; \}}
-\DoxyCodeLine{94 }
-\DoxyCodeLine{95     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a16048c71101710cc0140588da346f76c}{get\_muiph}}(\textcolor{keywordtype}{int} i)        \{ \textcolor{keywordflow}{return} mujph[i]; \}}
-\DoxyCodeLine{96     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a15031a1afa46ee4467510921fdf5c2b7}{get\_muimh}}(\textcolor{keywordtype}{int} i)        \{ \textcolor{keywordflow}{return} muimh[i]; \}}
-\DoxyCodeLine{97     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a8e265894e206454fae90c91f94e5f61c}{get\_mujph}}(\textcolor{keywordtype}{int} i)        \{ \textcolor{keywordflow}{return} mujph[i]; \}}
-\DoxyCodeLine{98     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a5ae4cc28c81805f8d16ea35382ee8a67}{get\_mujmh}}(\textcolor{keywordtype}{int} i)        \{ \textcolor{keywordflow}{return} mujmh[i]; \}}
-\DoxyCodeLine{99 }
-\DoxyCodeLine{101     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a9550dac42fb14351ca3ccbf7f933e027}{get\_bw}}()                   \{ \textcolor{keywordflow}{return} bw; \}}
-\DoxyCodeLine{102     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a68b18bac572af18b4305093fba77d211}{get\_dbwdp1}}()               \{ \textcolor{keywordflow}{return} dbwdp1; \}}
-\DoxyCodeLine{103     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_aee1f68feb6e630e478be49fab7dbcca8}{get\_dbwdpw}}()               \{ \textcolor{keywordflow}{return} dbwdpw; \}}
-\DoxyCodeLine{104     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_aeb179bf47ddd57183efe5dc3786b9bce}{get\_muw}}()             \{ \textcolor{keywordflow}{return} muw; \}}
-\DoxyCodeLine{105     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a637c3bdf2f7b59ceaf354296f061c94c}{get\_dmuwdp1}}()         \{ \textcolor{keywordflow}{return} dmuwdp1; \}}
-\DoxyCodeLine{106     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a8e80ac236890f31c9f7ef26e4abbc561}{get\_dmuwdpw}}()         \{ \textcolor{keywordflow}{return} dmuwdpw; \}}
-\DoxyCodeLine{107 \};}
-\DoxyCodeLine{108 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{74     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a7bcc86f905ac581b71dc7507f18af40d}{Bw}}()                   \{ \textcolor{keywordflow}{return} bw; \}}
+\DoxyCodeLine{75     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_ac7b93ea0a28e7bbf642786518a9ece02}{Dbwdp1}}()               \{ \textcolor{keywordflow}{return} dbwdp1; \}}
+\DoxyCodeLine{76     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_adeb8162ffbc1de44cb8f2b9069edc755}{Dbwdpw}}()               \{ \textcolor{keywordflow}{return} dbwdpw; \}}
+\DoxyCodeLine{77     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_a860c822157a5460374a255a20e31b463}{Muw}}()             \{ \textcolor{keywordflow}{return} muw; \}}
+\DoxyCodeLine{78     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_adec447645afb1237d3f016b7e71c283c}{Dmuwdp1}}()         \{ \textcolor{keywordflow}{return} dmuwdp1; \}}
+\DoxyCodeLine{79     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_c_props_aaca8803e486a763455673d972856d06c}{Dmuwdpw}}()         \{ \textcolor{keywordflow}{return} dmuwdpw; \}}
+\DoxyCodeLine{80 \};}
+\DoxyCodeLine{81 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update_0',['update',['../class_c_props.html#a53aa5499e4d71348e789ba4a9dd31263',1,'CProps']]]
+  ['lu_5fsolver_0',['LU_solver',['../class_c_matrix.html#a77c0b9e0d482509ee55ba2010cde42f8',1,'CMatrix']]]
 ];
