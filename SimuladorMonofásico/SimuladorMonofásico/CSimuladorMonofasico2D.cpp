@@ -1,9 +1,11 @@
 #include "CSimuladorMonofasico2D.hpp"
 
 CSimuladorMonofasico2D::CSimuladorMonofasico2D() {
+	std::cout << "------------------------------------" << std::endl;
+	std::cout << "------- SIMULADOR MONOFASICO -------" << std::endl;
+	std::cout << "------------------------------------" << std::endl;
 	std::cout << "Nome do arquivo: ";
 	std::string nameFile;
-	std::cin >> nameFile;
 
 	//nameFile = "input.dat";
 	std::cout << nameFile << std::endl;
@@ -87,14 +89,14 @@ void CSimuladorMonofasico2D::run() {
 			iteracoes++;
 		} while (iteracoes < 10 && isErrorNotAcceptable(dt, R, props_nu, Q[0]));
 
-		std::cout << "Tempo: " << grid->Time(t) << " - iteracoes: " << iteracoes << " - duracao: " << float(clock() - begin_time) / CLOCKS_PER_SEC << std::endl;
+		std::cout << "Tempo: " << grid->Time(t) << " - iteracoes: " << iteracoes << " - duracao: " << float(clock() - begin_time) / CLOCKS_PER_SEC << "\t\r" << std::flush;;
 		p_n = p_nu;
 		pw_n = pw_nu;
 		iteracoes = 0;
 		Pw[t] = pw_nu;
 		Pressure.push_back(p_n);
 	}
-	CMatrix::mostrarMatriz(Pw, "Pw");
+	//CMatrix::mostrarMatriz(Pw, "Pw");
 	plot(grid->Time(), Pw);
 	plotSurface();
 }
