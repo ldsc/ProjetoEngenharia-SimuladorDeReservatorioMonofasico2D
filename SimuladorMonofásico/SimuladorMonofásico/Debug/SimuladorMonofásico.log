@@ -1,13 +1,10 @@
-﻿  CGas.cpp
-  CSimuladorMonofasico2D.cpp
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(49,29): warning C4018: '<': incompatibilidade de signed/unsigned
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(250,20): warning C4018: '<': incompatibilidade de signed/unsigned
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(275,20): warning C4018: '<': incompatibilidade de signed/unsigned
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(438,41): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(438,37): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(438,33): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(438,29): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
-C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(438,25): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
-  main.cpp
-  Gerando Código...
+﻿  CSimuladorMonofasico2D.cpp
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(52,29): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(253,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(278,20): warning C4018: '<': incompatibilidade de signed/unsigned
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(441,41): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(441,37): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(441,33): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(441,29): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
+C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\SimuladorMonofásico\CSimuladorMonofasico2D.cpp(441,25): warning C4244: 'argumento': conversão de 'double' para 'float', possível perda de dados
   SimuladorMonofásico.vcxproj -> C:\Users\nicholas\Desktop\ProgramacaoPratica\ProjetoEngenharia-Simulador2D-Nicholas-Kevin\SimuladorMonofásico\Debug\SimuladorMonofásico.exe
