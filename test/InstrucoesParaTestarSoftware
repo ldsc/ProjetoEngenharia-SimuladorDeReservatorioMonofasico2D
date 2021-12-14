@@ -1,0 +1,5 @@
+1) Entre na pasta src e gere o executavel
+2) Copiar o executavel para o diretorio test
+3) Rodar o executavel
+4) Fornecer o nome do arquivo de entrada; o mesmo pode ser previamente alterado
+5) Compare os resultados obtidos com o documento que explica o funcionamento do software, localizado na pasta doc
