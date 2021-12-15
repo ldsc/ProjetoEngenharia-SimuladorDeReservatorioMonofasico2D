@@ -851,7 +851,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Logo_Doxygen.PNG
+	filename ../imagens/Logo_Doxygen.PNG
 	lyxscale 80
 	scale 50
 
@@ -911,7 +911,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Classes_Doxygen.png
+	filename ../imagens/Classes_Doxygen.png
 	lyxscale 80
 	scale 60
 
@@ -971,7 +971,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Arquivos_Doxygen.png
+	filename ../imagens/Arquivos_Doxygen.png
 	lyxscale 80
 	scale 60
 
@@ -1030,7 +1030,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/CSimulador_doxygen.PNG
+	filename ../imagens/CSimulador_doxygen.PNG
 	lyxscale 80
 	scale 60
 

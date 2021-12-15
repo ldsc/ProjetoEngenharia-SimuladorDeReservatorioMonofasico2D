@@ -287,7 +287,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/surf_plot.png
+	filename ../imagens/surf_plot.png
 	lyxscale 70
 	scale 70
 
@@ -347,7 +347,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/comp1.eps
+	filename ../imagens/comp1.eps
 	scale 80
 
 \end_inset
@@ -454,7 +454,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/surf_plot_comp2.png
+	filename ../imagens/surf_plot_comp2.png
 	lyxscale 70
 	scale 70
 
@@ -512,7 +512,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/comp2.eps
+	filename ../imagens/comp2.eps
 	scale 80
 
 \end_inset

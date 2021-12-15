@@ -569,9 +569,9 @@ color{mymauve}},
 status collapsed
 
 \begin_layout Plain Layout
-Nota importante: as listagens, arquivos .h .cpp, devem ser salvas usando formato
- ISO 8859-1, que é um formato internacional para línguas latinas (o que
- inclui o portugues).
+Nota importante: as SimuladorMonofasico/SimuladorMonofasico, arquivos .h
+ .cpp, devem ser salvas usando formato ISO 8859-1, que é um formato internacional
+ para línguas latinas (o que inclui o portugues).
  Se os arquivos forem salvos no formato UTF-8 alguns caracteres de acentuação
  irão aparecer errados.
 \end_layout
@@ -644,7 +644,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CAplicacao.}, label={CAp
-licacao-h}] {../listagens/CAplicacao.h}
+licacao-h}] {../SimuladorMonofasico/SimuladorMonofasico/CAplicacao.h}
 \end_layout
 
 \end_inset
@@ -685,7 +685,8 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CAplicacao.},
- label={CAplicacao-cpp}] {../listagens/CAplicacao.cpp}
+ label={CAplicacao-cpp}] {../SimuladorMonofasico/SimuladorMonofasico/CAplicacao.cpp
+}
 \end_layout
 
 \end_inset
@@ -728,7 +729,8 @@ lstinputlisting[ caption={
 
 Arquivo de implementação da função 
 \backslash
-texttt{main()}.}, label={programa-cpp}] {../listagens/Programa.cpp}
+texttt{main()}.}, label={programa-cpp}] {../SimuladorMonofasico/SimuladorMonofasico
+/Programa.cpp}
 \end_layout
 
 \end_inset
@@ -762,7 +764,8 @@ lstset{language=,backgroundcolor=
 \backslash
 color{azulclaro}}   
 \backslash
-lstinputlisting[caption=] {../listagens/Programa.out}   
+lstinputlisting[caption=] {../SimuladorMonofasico/SimuladorMonofasico/Programa.out}
+   
 \end_layout
 
 \begin_layout Plain Layout
@@ -819,7 +822,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da função main().}, label={mai
-n-cpp}] {../listagens/main.cpp}
+n-cpp}] {../SimuladorMonofasico/SimuladorMonofasico/main.cpp}
 \end_layout
 
 \end_inset
@@ -855,7 +858,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CWell.}, label={CWell-hp
-p}] {../listagens/CWell.hpp}
+p}] {../SimuladorMonofasico/SimuladorMonofasico/CWell.hpp}
 \end_layout
 
 \end_inset
@@ -891,7 +894,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CWell.}, label={CWel
-l-cpp}] {../listagens/CWell.cpp}
+l-cpp}] {../SimuladorMonofasico/SimuladorMonofasico/CWell.cpp}
 \end_layout
 
 \end_inset
@@ -927,7 +930,8 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CSimuladorMonofasico2D.}
-, label={CSimuladorMonofasico2D-hpp}] {../listagens/CSimuladorMonofasico2D.hpp}
+, label={CSimuladorMonofasico2D-hpp}] {../SimuladorMonofasico/SimuladorMonofasico/
+CSimuladorMonofasico2D.hpp}
 \end_layout
 
 \end_inset
@@ -963,7 +967,8 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CSimuladorMonofasic
-o2D.}, label={CSimuladorMonofasico2D-cpp}] {../listagens/CSimuladorMonofasico2D.cpp}
+o2D.}, label={CSimuladorMonofasico2D-cpp}] {../SimuladorMonofasico/SimuladorMonofas
+ico/CSimuladorMonofasico2D.cpp}
 \end_layout
 
 \end_inset
@@ -999,7 +1004,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CReservoir.}, label={CRe
-servoir-hpp}] {../listagens/CReservoir.hpp}
+servoir-hpp}] {../SimuladorMonofasico/SimuladorMonofasico/CReservoir.hpp}
 \end_layout
 
 \end_inset
@@ -1035,7 +1040,8 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CReservoir.},
- label={CReservoir-cpp}] {../listagens/CReservoir.cpp}
+ label={CReservoir-cpp}] {../SimuladorMonofasico/SimuladorMonofasico/CReservoir.cpp
+}
 \end_layout
 
 \end_inset
@@ -1071,7 +1077,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CProps.}, label={CProps-
-hpp}] {../listagens/CProps.hpp}
+hpp}] {../SimuladorMonofasico/SimuladorMonofasico/CProps.hpp}
 \end_layout
 
 \end_inset
@@ -1107,7 +1113,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CProps.}, label={CPr
-ops-cpp}] {../listagens/CProps.cpp}
+ops-cpp}] {../SimuladorMonofasico/SimuladorMonofasico/CProps.cpp}
 \end_layout
 
 \end_inset
@@ -1143,7 +1149,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CLiquido.}, label={CLiqu
-ido-hpp}] {../listagens/CLiquido.hpp}
+ido-hpp}] {../SimuladorMonofasico/SimuladorMonofasico/CLiquido.hpp}
 \end_layout
 
 \end_inset
@@ -1179,7 +1185,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CLiquido.},
- label={CLiquido-cpp}] {../listagens/CLiquido.cpp}
+ label={CLiquido-cpp}] {../SimuladorMonofasico/SimuladorMonofasico/CLiquido.cpp}
 \end_layout
 
 \end_inset
@@ -1215,7 +1221,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CGrid.}, label={CGrid-hp
-p}] {../listagens/CGrid.hpp}
+p}] {../SimuladorMonofasico/SimuladorMonofasico/CGrid.hpp}
 \end_layout
 
 \end_inset
@@ -1251,7 +1257,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CGrid.}, label={CGri
-d-cpp}] {../listagens/CGrid.cpp}
+d-cpp}] {../SimuladorMonofasico/SimuladorMonofasico/CGrid.cpp}
 \end_layout
 
 \end_inset
@@ -1287,7 +1293,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CGrid.}, label={CGrid-hp
-p}] {../listagens/CGrid.hpp}
+p}] {../SimuladorMonofasico/SimuladorMonofasico/CGrid.hpp}
 \end_layout
 
 \end_inset
@@ -1323,7 +1329,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CGrid.}, label={CGri
-d-cpp}] {../listagens/CGrid.cpp}
+d-cpp}] {../SimuladorMonofasico/SimuladorMonofasico/CGrid.cpp}
 \end_layout
 
 \end_inset
@@ -1359,7 +1365,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CGnuplot.}, label={CGnup
-lot-hpp}] {../listagens/CGnuplot.hpp}
+lot-hpp}] {../SimuladorMonofasico/SimuladorMonofasico/CGnuplot.hpp}
 \end_layout
 
 \end_inset
@@ -1395,7 +1401,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CGnuplot.},
- label={CGnuplot-cpp}] {../listagens/CGnuplot.cpp}
+ label={CGnuplot-cpp}] {../SimuladorMonofasico/SimuladorMonofasico/CGnuplot.cpp}
 \end_layout
 
 \end_inset
@@ -1431,7 +1437,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CGas.}, label={CGas-hpp}
-] {../listagens/CGas.hpp}
+] {../SimuladorMonofasico/SimuladorMonofasico/CGas.hpp}
 \end_layout
 
 \end_inset
@@ -1467,7 +1473,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CGas.}, label={CGas-
-cpp}] {../listagens/CGas.cpp}
+cpp}] {../SimuladorMonofasico/SimuladorMonofasico/CGas.cpp}
 \end_layout
 
 \end_inset
@@ -1503,7 +1509,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CFluido.}, label={CFluid
-o-hpp}] {../listagens/CFluido.hpp}
+o-hpp}] {../SimuladorMonofasico/SimuladorMonofasico/CFluido.hpp}
 \end_layout
 
 \end_inset
@@ -1539,7 +1545,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CFluido.}, label={CF
-luido-cpp}] {../listagens/CFluido.cpp}
+luido-cpp}] {../SimuladorMonofasico/SimuladorMonofasico/CFluido.cpp}
 \end_layout
 
 \end_inset
@@ -1575,7 +1581,8 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CDiscretization.},
- label={CDiscretization-hpp}] {../listagens/CDiscretization.hpp}
+ label={CDiscretization-hpp}] {../SimuladorMonofasico/SimuladorMonofasico/CDiscret
+ization.hpp}
 \end_layout
 
 \end_inset
@@ -1611,7 +1618,8 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CDiscretization.},
- label={CDiscretization-cpp}] {../listagens/CDiscretization.cpp}
+ label={CDiscretization-cpp}] {../SimuladorMonofasico/SimuladorMonofasico/CDiscret
+ization.cpp}
 \end_layout
 
 \end_inset

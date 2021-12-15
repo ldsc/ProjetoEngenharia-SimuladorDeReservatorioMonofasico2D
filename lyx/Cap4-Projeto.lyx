@@ -716,7 +716,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Componente.eps
+	filename ../imagens/Diagrama_Componente.eps
 	lyxscale 70
 	scale 85
 
@@ -805,7 +805,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Implantacao.eps
+	filename ../imagens/Diagrama_Implantacao.eps
 	lyxscale 70
 	width 80text%
 

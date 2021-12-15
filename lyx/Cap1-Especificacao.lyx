@@ -995,7 +995,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/DiagCasoDeUso-AnaliseDosResultados-Especifico1.png
+	filename ../imagens/DiagCasoDeUso-AnaliseDosResultados-Especifico1.png
 	lyxscale 50
 	scale 30
 
@@ -1047,7 +1047,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/DiagCasoDeUso-AnaliseDosResultados-Especifico2.png
+	filename ../imagens/DiagCasoDeUso-AnaliseDosResultados-Especifico2.png
 	lyxscale 50
 	scale 30
 

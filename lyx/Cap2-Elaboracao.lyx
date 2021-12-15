@@ -422,7 +422,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Arranjo.PNG
+	filename ../imagens/Arranjo.PNG
 	lyxscale 60
 	scale 60
 
@@ -469,7 +469,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Malha.PNG
+	filename ../imagens/Malha.PNG
 	lyxscale 60
 	scale 60
 
@@ -1334,7 +1334,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Pacotes.eps
+	filename ../imagens/Diagrama_Pacotes.eps
 	lyxscale 80
 	scale 50
 	rotateAngle 90

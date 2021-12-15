@@ -200,7 +200,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/class diagram.jpeg
+	filename ../imagens/class diagram.jpeg
 	lyxscale 20
 	width 80text%
 	rotateAngle 90
@@ -454,7 +454,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Sequencia_Geral.eps
+	filename ../imagens/Diagrama_Sequencia_Geral.eps
 	lyxscale 50
 	width 100text%
 
@@ -518,7 +518,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Sequencia_Especifico.eps
+	filename ../imagens/Diagrama_Sequencia_Especifico.eps
 	lyxscale 50
 	width 100text%
 
@@ -630,7 +630,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Comunicacao1.eps
+	filename ../imagens/Diagrama_Comunicacao1.eps
 	lyxscale 50
 	width 100text%
 
@@ -695,7 +695,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Comunicacao2.eps
+	filename ../imagens/Diagrama_Comunicacao2.eps
 	lyxscale 50
 	width 100text%
 
@@ -784,7 +784,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_Maquina_Estado.eps
+	filename ../imagens/Diagrama_Maquina_Estado.eps
 	lyxscale 50
 	width 100text%
 
@@ -856,7 +856,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/ProgramacaoPratica2021/ProjetoEngenharia-Simulador2D-Nicholas-Kevin/imagens/Diagrama_de_Atividades.eps
+	filename ../imagens/Diagrama_de_Atividades.eps
 	lyxscale 50
 	width 100text%
 
